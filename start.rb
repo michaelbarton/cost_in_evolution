@@ -1,8 +1,11 @@
 require 'rubygems'
 require 'ramaze'
+require 'yaml'
 
 # require all controllers and models
 acquire __DIR__/:controller/'*'
 acquire __DIR__/:model/'*'
 
-Ramaze.start :adapter => :mongrel, :port => 7000
+config = YAML::load(File.open('config.yml'))
+
+Ramaze.start config['ramaze']
