@@ -6,7 +6,7 @@ require 'yaml'
 acquire __DIR__/:controller/'*'
 acquire __DIR__/:model/'*'
 
-config = YAML::load(File.open('config.yml'))
+config = YAML::load(File.open(File.dirname(__FILE__) + '/config.yml'))
 
 class Ramaze::Controller
   URL_ROOT = lambda{config['url_root']}
