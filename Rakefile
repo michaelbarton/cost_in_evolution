@@ -8,4 +8,8 @@ namespace :db do
     DataMapper::Persistence.auto_migrate!
   end
 
+  desc "Clears all database tables"
+  task :drop do
+    DataMapper::Persistence.drop_all_tables!()   
+  end
 end
