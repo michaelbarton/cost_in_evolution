@@ -1,6 +1,6 @@
 class MainController < Ramaze::Controller
 
-  layout '/index'
+  engine :Haml
 
   def index
     @project = Project.find(:all).first

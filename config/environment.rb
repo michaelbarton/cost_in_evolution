@@ -2,6 +2,7 @@ require 'rubygems'
 require 'ramaze'
 require 'yaml'
 require 'activerecord'
+require 'haml'
 
 ActiveRecord::Base.establish_connection(YAML::load(File.open(File.dirname(__FILE__) + '/database.yml')))
 ActiveRecord::Base.logger = Logger.new 'log/db.log'
