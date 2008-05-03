@@ -3,6 +3,7 @@ require 'ramaze'
 require 'yaml'
 require 'data_mapper'
 require 'haml'
+require 'bluecloth'
 
 
 DataMapper::Database.setup(
