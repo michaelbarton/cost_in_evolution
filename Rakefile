@@ -10,6 +10,6 @@ namespace :db do
 
   desc "Clears all database tables"
   task :drop do
-    DataMapper::Persistence.drop_all_tables!()   
+    DataMapper::Persistence.drop_all_tables!
   end
 end
