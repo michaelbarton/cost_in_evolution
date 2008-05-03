@@ -13,3 +13,9 @@ namespace :db do
     DataMapper::Persistence.drop_all_tables!
   end
 end
+
+desc 'Reset then rebuild the project'
+task :rebuild => [
+  'db:drop',
+  'db:create'
+]
