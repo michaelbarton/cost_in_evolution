@@ -20,4 +20,9 @@ namespace 'analysis' do
     end
   end
   
+  desc 'Resets and rebuilds all the analyses'
+  task :rebuild => [
+    'set_summary'
+  ]
+
 end
