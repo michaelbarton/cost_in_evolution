@@ -6,4 +6,8 @@ class MainController < Ramaze::Controller
     @summary = BlueCloth.new(p.summary).to_html
     @version = p.version
   end
+
+  def style
+  end
+
 end
