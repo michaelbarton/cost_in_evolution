@@ -3,8 +3,10 @@
   %head
     %title= @title
   %body
-    #title
-      %h2= @title
-    #version
-      %h3= @version
-    #summary= @summary
+    #wrapper
+      #title
+        %h1= @title
+      #version= @version
+      #content
+        #summary= @summary
+      #footer
