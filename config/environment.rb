@@ -4,6 +4,7 @@ require 'yaml'
 require 'data_mapper'
 require 'haml'
 require 'bluecloth'
+require 'bio'
 
 
 DataMapper::Database.setup(
