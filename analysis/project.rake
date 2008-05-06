@@ -2,6 +2,8 @@ PROJECT_VERSION = '0.0.1'
 
 namespace 'analysis' do
 
+  load File.dirname(__FILE__) + '/001_sitewise_substitution_rate/analysis.rake'
+
   desc 'Loads the project summary'
   task 'set_summary' do
     Project.delete_all
@@ -22,7 +24,8 @@ namespace 'analysis' do
   
   desc 'Resets and rebuilds all the analyses'
   task :rebuild => [
-    'set_summary'
+    'set_summary',
+    '001:rebuild'
   ]
 
 end
