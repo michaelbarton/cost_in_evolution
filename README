@@ -1,0 +1,36 @@
+This a set of bioinformatics experiments as well as a dynamic webpage to display the results
+
+## model
+
+This directory contains a set of datamapper classes that allow rows in the database to be manipulated as simple ruby objects.
+
+ * project.rb Main class that describes the entire project
+ * gene.rb Holds sequence data about yeast genes
+
+## config
+
+Contains general ruby configuration data, as well as ramaze configuration
+
+* environment.rb Requires necessary ruby gems. Loads databases parameters. Loads classes and controllers.
+* database.yml Database access parameters. In YAML format. Should be created for each installation of this code.
+* config,yml General project configuration parameters. Ramaze port, server, and rendering engine. Should also be configured for each installation.
+
+## controller
+
+Ramaze controllers that serve up data to views
+
+## view
+
+HTML generators for www front
+
+## spec
+
+Data testing classes using rspec
+
+## analysis
+
+Rake files and data that run the bioinformatics analysis. Organised by linear running order, ie 002 should only depend on data from 001, and nothing from 003.
+
+## start.rb
+
+Starts the ramaze web server
