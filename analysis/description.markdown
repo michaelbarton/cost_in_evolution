@@ -1,0 +1,3 @@
+# The role of amino acid cost in protein sequence evolution
+
+The project aims to examine if the biosynthetic cost of amino acid affects it usage in a protein sequence. My hypothesis is that expensive proteins will be conserved in the sequence because their functional importance outweighs any constraints on using biosynthetically cheaper amino acids. Cheaper amino acids on the other hand will vary more, as they may just be used as filler in the gaps in protein sequence. Of course amino acids will have functional roles just as much a expensive amino acids, but when there is no constraint for function cheaper amino acid will be favoured, and the choice at each position will vary.
