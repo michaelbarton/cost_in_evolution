@@ -8,7 +8,7 @@ namespace 'analysis' do
   task 'set_summary' do
     Project.delete_all
 
-    file = File.dirname(__FILE__) + '/description.txt'
+    file = File.dirname(__FILE__) + '/description.markdown'
 
     File.open(file) do |f| 
       Project.create({
