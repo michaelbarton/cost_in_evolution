@@ -1,5 +1,5 @@
 class Project < DataMapper::Base
-  property :title,         :string
+  property :title,         :text
   property :summary,       :text
   property :last_modified, :datetime
   property :major_version, :integer
