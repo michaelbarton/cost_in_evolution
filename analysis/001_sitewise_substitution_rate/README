@@ -1,0 +1,11 @@
+## Milestone 001
+
+### load_sequence_data
+
+Loads protein coding S.cerevisiae genes sequences into the database. Uses data from the SGD ftp repository.
+
+### load_alignment_data
+
+Loads S.cerevisiae protein coding gene alignment data into the database. This task excludes any alignments which do not have S.cerevisiae genes from the SGD ORF dataset, which excludes dubious and pseudogenes. Any alignments which do not contain S.cerevisiae genes are also excluded.
+
+
