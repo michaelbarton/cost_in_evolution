@@ -15,6 +15,11 @@ namespace '001' do
     end
   end
 
+  desc 'Clears sequence alignment data'
+  task :clear_alignment_data do
+    Alignment.delete_all
+  end
+
   desc 'Clears all data, and repeats milestone 001 analysis'
   task :rebuild => [
     'load_sequence_data'
