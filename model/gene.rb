@@ -5,7 +5,7 @@ class Gene < DataMapper::Base
   def self.create_from_flatfile(entry)
     Gene.create(
       :name      =>  entry.definition.split(/\s+/).first,
-      :dna       =>  entry.data
+      :dna       =>  entry.data.strip
     )
   end
 
