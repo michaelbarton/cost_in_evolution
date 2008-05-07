@@ -2,3 +2,4 @@ config.yml
 database.yml
 *.log
 *.swp
+*.sqlite3
