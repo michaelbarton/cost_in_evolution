@@ -37,7 +37,8 @@ namespace '001' do
 
   desc 'Clears all data, and repeats milestone 001 analysis'
   task :rebuild => [
-    'load_sequence_data'
+    'load_sequence_data',
+    'load_alignment_data'
   ]
 
 end
