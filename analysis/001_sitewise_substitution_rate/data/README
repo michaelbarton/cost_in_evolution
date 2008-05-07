@@ -4,3 +4,13 @@ ORF Coding Sequences (CDS) only, without 5'-UTR, 3'-UTR, intron sequences, or ba
 
 Data taken from SGD on May 7 2008
 ftp://genome-ftp.stanford.edu/yeast/data_download/sequence/genomic_sequence/orf_dna/orf_coding.fasta.gz
+
+## yeast_alignments.txt.gz
+
+Yeast multiple sequence alignments from Wall 2005
+http://www.pnas.org/cgi/content/abstract/102/15/5483
+
+Concatenated together and compressed with gzip
+
+WARNING
+This data is not included in the repository as I do not have permission to distribute it.
