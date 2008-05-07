@@ -1,0 +1,6 @@
+### yeast_protein_genes.fasta.gz
+
+ORF Coding Sequences (CDS) only, without 5'-UTR, 3'-UTR, intron sequences, or bases not translated due to translational frameshifting. For all ORFs except Dubious ORFs and pseudogenes.
+
+Data taken from SGD on May 7 2008
+ftp://genome-ftp.stanford.edu/yeast/data_download/sequence/genomic_sequence/orf_dna/orf_coding.fasta.gz
