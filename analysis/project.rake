@@ -23,9 +23,14 @@ namespace 'analysis' do
   end
   
   desc 'Resets and rebuilds all the analyses'
-  task :rebuild => [
+  task :analysis_rebuild => [
+    '001:analysis_rebuild'
+  ]
+
+  desc 'Rebuilds website files'
+  task :www_rebuild => [
     'set_summary',
-    '001:rebuild'
+     '001:www_rebuild'
   ]
 
 end

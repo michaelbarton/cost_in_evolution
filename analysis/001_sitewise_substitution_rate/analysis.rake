@@ -36,9 +36,13 @@ namespace '001' do
   end
 
   desc 'Clears all data, and repeats milestone 001 analysis'
-  task :rebuild => [
+  task :analysis_rebuild => [
     'load_sequence_data',
     'load_alignment_data'
   ]
+
+  desc 'Rebuilds website files'
+  task :www_rebuild do
+  end
 
 end

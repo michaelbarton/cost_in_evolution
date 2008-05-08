@@ -25,5 +25,9 @@ desc 'Reset then rebuild the project'
 task :rebuild => [
   'db:drop',
   'db:create',
-  'analysis:rebuild'
+  'analysis:analysis_rebuild',
+  'www_rebuild'
 ]
+
+desc 'Rebuilds website files'
+task :www_rebuild => ['analysis:www_rebuild']
