@@ -28,7 +28,7 @@ class Alignment < DataMapper::Base
   private
   
   def self.find_yeast_gene_name(alignment)
-    match = /F(Y[A-Z]{2}\d{3}[CW])/.match(alignment)
+    match = /F(Y[A-Z]{2}\d{3}[CW](-[AB])?)/.match(alignment)
     if match
       match[1]
     else
