@@ -6,6 +6,12 @@ require 'haml'
 require 'bluecloth'
 require 'bio'
 
+LOGGER = Logger.new('log/analysis.log')
+
+class DataMapper::Base
+  @@logger = Logger.new('log/analysis.log')
+end
+
 
 DataMapper::Database.setup(
   YAML::load(
