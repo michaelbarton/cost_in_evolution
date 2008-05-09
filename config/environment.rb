@@ -1,6 +1,8 @@
+require 'erb'
+require 'yaml'
+
 require 'rubygems'
 require 'ramaze'
-require 'yaml'
 require 'data_mapper'
 require 'haml'
 require 'bluecloth'
