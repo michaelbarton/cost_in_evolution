@@ -3,3 +3,4 @@ database.yml
 *.log
 *.swp
 *.sqlite3
+data/*.gz
