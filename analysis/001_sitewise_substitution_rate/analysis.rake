@@ -11,7 +11,7 @@ namespace '001' do
 
   desc 'Load yeast DNA sequence data'
   task :load_sequence_data => :clear_sequence_data do
-    file_gz = File.dirname(__FILE__) + '/data/yeast_protein_genes.fasta.gz'
+    file_gz = PROJECT_ROOT + '/data/yeast_protein_genes.fasta.gz'
     Zlib::GzipReader.open(file_gz) do |file|
       Bio::FlatFile.auto(file).each {|entry| Gene.create_from_flatfile entry }
     end
@@ -24,7 +24,7 @@ namespace '001' do
 
   desc 'Loads the sequence alignment data'
   task :load_alignment_data => ['clear_alignment_data'] do
-    file_gz = File.dirname(__FILE__) + '/data/yeast_alignments.txt.gz'
+    file_gz = PROJECT_ROOT + '/data/yeast_alignments.txt.gz'
     Zlib::GzipReader.open(file_gz) do |file|
       entry = file.readline
       file.each_line do |line|

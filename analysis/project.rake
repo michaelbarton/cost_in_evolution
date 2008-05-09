@@ -2,13 +2,13 @@ PROJECT_VERSION = '0.0.1'
 
 namespace 'analysis' do
 
-  load File.dirname(__FILE__) + '/001_sitewise_substitution_rate/analysis.rake'
+  load PROJECT_ROOT  + '/analysis/001_sitewise_substitution_rate/analysis.rake'
 
   desc 'Loads the project summary'
   task 'set_summary' do
     Project.delete_all
 
-    file = File.dirname(__FILE__) + '/description.markdown'
+    file = PROJECT_ROOT + '/analysis/description.markdown'
 
     File.open(file) do |f| 
       Project.create({

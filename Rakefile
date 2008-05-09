@@ -1,10 +1,12 @@
+PROJECT_ROOT = File.dirname(__FILE__)
+
 require File.dirname(__FILE__) + '/config/environment.rb'
 load File.dirname(__FILE__) + '/analysis/project.rake'
 
 namespace :log do
   desc 'Clears all log files'
   task :clear do
-    Dir.glob(File.dirname(__FILE__) + '/log/*.log').each { |file| File.delete(file) }
+    Dir.glob(PROJECT_ROOT + '/log/*.log').each { |file| File.delete(file) }
   end
 end
 
