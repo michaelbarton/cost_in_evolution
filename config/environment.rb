@@ -14,12 +14,10 @@ class DataMapper::Base
   @@logger = Logger.new('log/analysis.log')
 end
 
-
-DataMapper::Database.setup(
-  YAML::load(
-    File.open(File.dirname(__FILE__) + '/database.yml')
-  )
-)
+# Load and set up eat of the different databases
+YAML::load(File.open(File.dirname(__FILE__) + '/database.yml')).each do |key,value|
+  DataMapper::Database.setup(key.to_sym,value)
+end
 
 Dir.glob(File.dirname(__FILE__) + '/../controller/*.rb') {|file| require file}
 Dir.glob(File.dirname(__FILE__) + '/../model/*.rb') {|file| require file}
