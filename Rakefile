@@ -23,6 +23,10 @@ namespace :db do
   end
 end
 
+Spec::Rake::SpecTask.new do |t|
+    t.pattern = 'spec/**/*.spec.rb'
+end
+
 desc 'Reset then rebuild the project'
 task :rebuild => [
   'db:drop',

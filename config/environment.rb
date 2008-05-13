@@ -7,6 +7,8 @@ require 'data_mapper'
 require 'haml'
 require 'bluecloth'
 require 'bio'
+require 'spec'
+require 'spec/rake/spectask'
 
 LOGGER = Logger.new('log/analysis.log')
 
