@@ -1,8 +1,11 @@
 class Alignment < DataMapper::Base
+
   property :gene_id,    :integer
   property :alignment,  :text
   property :gene_count, :integer
   property :length,     :integer
+
+  validates_presence_of :gene_id,   :alignment, :gene_count, :length
 
   def self.create_from_alignment(entry)
  
