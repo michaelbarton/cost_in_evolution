@@ -8,7 +8,7 @@ class MainController < Ramaze::Controller
     @milestones = Milestone.all.sort { |a,b| a.number <=> b.number }
   end
 
-  def style
+  define_method 'css/style' do
   end
 
 end
