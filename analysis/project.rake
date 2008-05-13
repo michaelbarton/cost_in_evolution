@@ -30,7 +30,7 @@ namespace 'analysis' do
   desc 'Rebuilds website files'
   task :www_rebuild => [
     'set_summary',
-     '001:www_rebuild'
+    '001:www_rebuild'
   ]
 
 end
