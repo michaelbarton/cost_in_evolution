@@ -26,10 +26,10 @@ namespace '001' do
   task :load_alignment_data => ['clear_alignment_data'] do
     file_gz = PROJECT_ROOT + '/data/yeast_alignments.txt.gz'
     Zlib::GzipReader.open(file_gz) do |file|
-      entry = file.readline
+      entry = nil
       file.each_line do |line|
         if line =~ /\d\s\d+/ 
-          Alignment.create_from_alignment(entry.strip)
+          Alignment.create_from_alignment(entry.strip) if entry
           entry = line
         end
         entry += line
