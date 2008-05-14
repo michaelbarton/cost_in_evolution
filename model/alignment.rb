@@ -17,6 +17,8 @@ class Alignment < DataMapper::Base
 
   def self.create_from_alignment(entry)
  
+    entry.strip!
+
     cerevisiae_gene = self.find_yeast_gene_name(entry)
     if cerevisiae_gene.nil?
       @@logger.warn "Load alignment: No yeast ORF found in #{self.find_first_entry(entry)} alignment"
@@ -54,12 +56,11 @@ class Alignment < DataMapper::Base
 
   def self.remove_first_line(entry)
     t = entry.split(/[\n\r]/)
-    t[1,t.length] * '\n'
+    t[1,t.length] * "\n"
   end
  
   def self.find_first_entry(entry)
     entry.strip.split("\n")[2].split(' ')[0]
   end
-
 
 end
