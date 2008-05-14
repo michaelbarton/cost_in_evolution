@@ -7,6 +7,14 @@ class Alignment < DataMapper::Base
 
   validates_presence_of :gene_id,   :alignment, :gene_count, :length
 
+  validates_true_for    :alignment, :logic => lambda {
+    re = Regexp.new(/\d+\s\d+/)
+    ! re.match(alignment)
+  }, :message => 'Alignment field should not contain alignment count and length'
+
+  validates_format_of   :alignment, :with => /F(Y[A-Z]{2}\d{3}[CW](-[AB])?)/,
+    :message => 'Alignment should contain an S. cerevisiae gene'
+
   def self.create_from_alignment(entry)
  
     cerevisiae_gene = self.find_yeast_gene_name(entry)
