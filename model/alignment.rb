@@ -31,13 +31,21 @@ class Alignment < DataMapper::Base
       return 
     end
 
-    stats = self.alignment_statistics(entry)
+    align = Alignment.new
+    align.gene_id = gene.id
+    align.gene_count, align.length = self.alignment_statistics(entry).values
+    align.alignment = self.remove_first_line(entry)
 
-    Alignment.create(
-      :gene_id     => gene.id,
-      :alignment   => self.remove_first_line(entry),
-      :gene_count  => stats[:count],
-      :length      => stats[:length])
+    if align.valid?
+      align.save!
+      return align
+    else
+      align.errors.each {|error| @@logger.warn "#{gene.name} : #{error}"}
+      return
+    end
+
+    
+
   end
 
   def self.find_yeast_gene_name(alignment)
