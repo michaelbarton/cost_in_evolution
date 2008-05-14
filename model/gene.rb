@@ -1,5 +1,5 @@
 class Gene < DataMapper::Base
-  property :name,  :string
+  property :name,  :string,  :index => :unique
   property :dna,   :text
 
   def self.create_from_flatfile(entry)
