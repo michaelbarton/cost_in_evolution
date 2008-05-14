@@ -28,9 +28,9 @@ namespace '001' do
     Zlib::GzipReader.open(file_gz) do |file|
       entry = nil
       file.each_line do |line|
-        if line =~ /\d\s\d+/ 
+        if line =~ /\d+\s\d+/ 
           Alignment.create_from_alignment(entry.strip) if entry
-          entry = line
+          entry = ''
         end
         entry += line
       end
