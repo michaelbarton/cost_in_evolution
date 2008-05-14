@@ -17,6 +17,21 @@ describe 'Creating a valid record' do
     Alignment.all.length == 1
   end
 
+  it 'should have the correct length' do
+    @align.length.should == 822
+  end
+
+  it 'should have the correct gene count' do
+    @align.gene_count.should == 3
+  end
+
+  it 'should contain the correct alignment' do
+    File.open(valid_align) do |f|
+      f.readline
+      @align.alignment.should == f.read.strip
+    end
+  end
+
   after do
     Alignment.delete_all
     Gene.delete_all
