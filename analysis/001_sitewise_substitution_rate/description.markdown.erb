@@ -1,10 +1,10 @@
-# Estimating sitewise evolutionary rate in yeast protein sequences
+## Estimating sitewise evolutionary rate in yeast protein sequences
 
 This milestone aims to estimate the evolutionary rate of each position of a large subset of *S.cerevisiae* proteins. The evolutionary rate will be estimated by using the [codeml tool][paml] and four species multiple sequence alignment data from [Wall *et al* 2005][wall]
 
-## Data
+### Data
 
 In the multiple sequence alignment data set there are <%= Alignment.all.length %> alignments. There are <%= Alignment.count(:gene_count => 3) %> alignments with three species, and <%= Alignment.count(:gene_count => 4) %> alignments with four yeast species. The yeast species that are used in the alignments are *S. paradoxus*, *S. bayanus*, *S. mikatae*, *S. cerevisiae*.
 
-[paml] http://mbe.oxfordjournals.org/cgi/content/abstract/msm088v1
-[wall] http://www.pnas.org/cgi/content/abstract/102/15/5483
+[paml]: http://mbe.oxfordjournals.org/cgi/content/abstract/msm088v1
+[wall]: http://www.pnas.org/cgi/content/abstract/102/15/5483
