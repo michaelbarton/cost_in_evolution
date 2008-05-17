@@ -1,13 +1,3 @@
-!!!
-%html
-  %head
-    %title= @title
-    %link{ :rel => 'stylesheet', :media => 'all', :type => 'text/css', :href => 'css/style' }
-  %body
-    #wrapper
-      #title
-        %h1= @title
-      #version= "Version #{@version}"
-      #content
-        #summary= @summary
-      #footer
+#version= "Version #{@version}"
+#summary
+  =@summary

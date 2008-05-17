@@ -1,5 +1,10 @@
 class MainController < Ramaze::Controller
 
+  layout :page => [:index]
+
+  def page
+  end
+
   def index
     p = Project.all.first
     @title = p.title
