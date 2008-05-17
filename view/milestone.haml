@@ -1,0 +1,10 @@
+%h2= @title
+- if @list
+  - @milestones.each do |m|
+    #milestone
+      %h3= m.title
+      = m.html_summary
+- else
+  #milestone
+    %h3= @milestone.title
+    = @milestone.html_description

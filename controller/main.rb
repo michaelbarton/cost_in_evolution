@@ -1,6 +1,6 @@
 class MainController < Ramaze::Controller
 
-  layout :page => [:index]
+  layout :page => [:index,:milestone]
 
   def page
   end
@@ -10,7 +10,19 @@ class MainController < Ramaze::Controller
     @title = p.title
     @summary = p.html_summary
     @version = p.version
-    @milestones = Milestone.all.sort { |a,b| a.number <=> b.number }
+    @summary = p.html_summary
+  end
+
+  def milestone(n = nil)
+    unless n
+      @list = true
+      @title = "Project Milestones"
+      @milestones = Milestone.all.sort
+    else
+      @list = false
+      @milestone = Milestone.all(:number => n).first
+      @title = "Project Milestone " + @milestone.number.to_s
+    end
   end
 
   define_method 'css/style' do
