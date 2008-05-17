@@ -45,15 +45,8 @@ namespace '001' do
 
   desc 'Rebuilds website files'
   task :www_rebuild do
-    Milestone.all(:number => @number){|record| record.destroy!}
     file = File.dirname(__FILE__) + '/description.markdown.erb'
-    File.open(file) do |f|
-      Milestone.create({
-        :number        => @number,
-        :title       => f.readline.gsub('# ','').strip,
-        :description => ERB.new(f.read.strip).result
-      })
-    end
+    Milestone.create_from_markdown_erb(@number,file)
   end
 
 end
