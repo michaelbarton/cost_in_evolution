@@ -29,6 +29,7 @@ end
 
 desc 'Reset then rebuild the project'
 task :rebuild => [
+  'log:clear',
   'db:drop',
   'db:create',
   'analysis:analysis_rebuild',
