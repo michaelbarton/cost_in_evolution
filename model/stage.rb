@@ -1,4 +1,4 @@
-class Milestone < DataMapper::Base
+class Stage < DataMapper::Base
   include Comparable
 
   property :number,      :integer

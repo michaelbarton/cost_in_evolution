@@ -1,6 +1,6 @@
 class MainController < Ramaze::Controller
 
-  layout :page => [:index,:milestone]
+  layout :page => [:index,:stage]
 
   def page
   end
@@ -11,15 +11,15 @@ class MainController < Ramaze::Controller
     @summary = p.html_summary
   end
 
-  def milestone(n = nil)
+  def stage(n = nil)
     unless n
       @list = true
-      @title = "Project Milestones"
-      @milestones = Milestone.all.sort
+      @title = "Project Stage"
+      @stages = Stage.all.sort
     else
       @list = false
-      @milestone = Milestone.all(:number => n).first
-      @title = "Project Milestone " + @milestone.number.to_s
+      @stage = Stage.all(:number => n).first
+      @title = "Project Stage " + @stage.number.to_s
     end
   end
 

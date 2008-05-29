@@ -46,7 +46,7 @@ namespace '001' do
   desc 'Rebuilds website files'
   task :www_rebuild do
     file = File.dirname(__FILE__) + '/description.markdown.erb'
-    Milestone.create_from_markdown_erb(@number,file)
+    Stage.create_from_markdown_erb(@number,file)
   end
 
 end
