@@ -21,13 +21,14 @@ class Alignment < DataMapper::Base
 
     cerevisiae_gene = self.find_yeast_gene_name(entry)
     if cerevisiae_gene.nil?
-      @@logger.warn "Load alignment: No yeast ORF found in #{self.find_first_entry(entry)} alignment"
+      Needle::Registry.instance[:logger].warn(
+        "Load alignment: No yeast ORF found in #{self.find_first_entry(entry)} alignment")
       return
     end
 
     gene = Gene.first(:name => cerevisiae_gene)
     if gene.nil?
-      @@logger.warn "Load alignment: #{cerevisiae_gene} is not a verified ORF"
+      Needle::Registry.instance[:logger].warn "Load alignment: #{cerevisiae_gene} is not a verified ORF"
       return 
     end
 
@@ -40,11 +41,9 @@ class Alignment < DataMapper::Base
       align.save!
       return align
     else
-      align.errors.each {|error| @@logger.warn "#{gene.name} : #{error}"}
+      align.errors.each {|error| Needle::Registry.instance[:logger].warn "#{gene.name} : #{error}"}
       return
     end
-
-    
 
   end
 

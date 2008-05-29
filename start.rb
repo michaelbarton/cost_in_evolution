@@ -1,8 +1,8 @@
 require File.dirname(__FILE__) + '/config/environment.rb'
 
-config = YAML::load(File.open(File.dirname(__FILE__) + '/config/config.yml'))
+config = Needle::Registry.instance[:config]
 
-Ramaze::Log.loggers << Ramaze::Informer.new(config['www_log'])
+Ramaze::Log.loggers << Ramaze::Informer.new(config['log']['www'])
 
 if config['path_rewrite']
   path_re = Regexp.new(config['path_rewrite'])

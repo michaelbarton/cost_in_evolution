@@ -9,12 +9,15 @@ require 'bluecloth'
 require 'bio'
 require 'spec'
 require 'spec/rake/spectask'
+require 'needle'
 
-LOGGER = Logger.new('log/analysis.log')
-
-class DataMapper::Base
-  @@logger = Logger.new('log/analysis.log')
+class Needle::Registry
+  include Singleton
 end
+
+r = Needle::Registry.instance
+r.register(:config) { YAML::load(File.open(File.dirname(__FILE__) + '/config.yml')) }
+r.register(:logger) { Logger.new(r.config['log']['analysis']) }
 
 # Load and set up eat of the different databases
 YAML::load(File.open(File.dirname(__FILE__) + '/database.yml')).each do |key,value|
