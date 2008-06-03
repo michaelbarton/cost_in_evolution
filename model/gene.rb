@@ -2,11 +2,21 @@ class Gene < DataMapper::Base
   property :name,  :string,  :index => :unique
   property :dna,   :text
 
+  validates_presence_of :name, :dna
+
+  # Checks that the sequence has a start codon, a stop codon, and contains only ATGC
+  validates_format_of :dna, :with => /^ATG[ATGC\n]+(TAG|TAA|TGA)$/im
+
   def self.create_from_flatfile(entry)
-    Gene.create(
-      :name      =>  entry.definition.split(/\s+/).first,
-      :dna       =>  entry.data.strip
-    )
+    gene = Gene.new
+    gene.name = entry.definition.split(/\s+/).first
+    gene.dna = entry.data.strip
+    if gene.valid?
+      gene.save!
+    else
+      Needle::Registry.instance[:logger].warn(
+       "Load gene: #{gene.name} is not a valid coding ORF")
+    end
   end
 
 end
