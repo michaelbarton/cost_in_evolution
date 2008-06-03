@@ -1,8 +1,8 @@
-## Milestone 001
+## Stage 001
 
 ### load_sequence_data
 
-Loads protein coding S.cerevisiae genes sequences into the database. Uses data from the SGD ftp repository.
+Loads protein coding S.cerevisiae genes sequences into the database. Uses data from the SGD ftp repository. Uses validations to ensure that all genes are coding.
 
 ### load_alignment_data
 
