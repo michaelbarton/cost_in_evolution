@@ -1,0 +1,5 @@
+This is the root directory of all the analyses in the project.
+
+Each analysis directory begins with a three digit number. The rake task in each directory is pulled in by the rake file in this directory.
+
+001 - Loads the coding gene sequence data, and multiple sequence alignment data

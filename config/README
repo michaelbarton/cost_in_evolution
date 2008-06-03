@@ -1,0 +1,14 @@
+This directory sets up the project environment
+
+## config.yml
+
+General project parameters in YAML format. Should not generally be under version control as is implementation specific.
+
+## database.yml
+
+Database configuration parameters. Again should not generally be under version control.
+
+## environment.rb
+
+Sets up the ruby environment for the project.
+

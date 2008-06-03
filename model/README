@@ -1,0 +1,17 @@
+Datamapper database models used to interact with the db.
+
+# project
+
+Stores project details
+
+# stages
+
+Stores individual information about each stage of the analysis
+
+# gene
+
+Coding gene sequences
+
+# alignment
+
+multiple sequence alignments
