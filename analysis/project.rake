@@ -2,7 +2,7 @@ PROJECT_VERSION = '0.0.1'
 
 namespace 'analysis' do
 
-  load PROJECT_ROOT  + '/analysis/001_sitewise_substitution_rate/analysis.rake'
+  Dir.glob('analysis/*/analysis.rake').each {|file| load file}
 
   desc 'Loads the project summary'
   task 'set_summary' do
