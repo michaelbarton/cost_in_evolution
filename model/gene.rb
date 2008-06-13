@@ -13,6 +13,7 @@ class Gene < DataMapper::Base
     gene.dna = entry.data.strip
     if gene.valid?
       gene.save!
+      return gene
     else
       Needle::Registry.instance[:logger].warn(
        "Load gene: #{gene.name} is not a valid coding ORF")
