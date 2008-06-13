@@ -5,6 +5,10 @@ class MainController < Ramaze::Controller
   def page
   end
 
+  def version
+    Project.all.first.version
+  end
+
   def index
     p = Project.all.first
     @version = p.version
