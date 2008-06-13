@@ -1,12 +1,18 @@
 require File.dirname(__FILE__) + '/helper.rb'
 
-valid_align = File.dirname(__FILE__) + '/data/yal037w.txt'
+valid_gene = File.dirname(__FILE__) + '/data/yal037w.fasta.txt'
+valid_align = File.dirname(__FILE__) + '/data/yal037w.alignment.txt'
 
 describe 'Creating a valid record' do
 
-  before do
-    Gene.create(:name => 'YAL037W' , :dna => 'ATG...') 
+  before(:each) do
+    Gene.create_from_flatfile( Bio::FlatFile.auto(valid_gene).next_entry )
     @align = Alignment.create_from_alignment(File.open(valid_align).read)
+  end
+
+  after(:each) do
+    Alignment.delete_all
+    Gene.delete_all
   end
 
   it 'should be valid' do
@@ -30,11 +36,6 @@ describe 'Creating a valid record' do
       f.readline
       @align.alignment.should == f.read.strip
     end
-  end
-
-  after do
-    Alignment.delete_all
-    Gene.delete_all
   end
 
 end
