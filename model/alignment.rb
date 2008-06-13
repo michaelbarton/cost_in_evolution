@@ -15,6 +15,11 @@ class Alignment < DataMapper::Base
   validates_format_of   :alignment, :with => /F(Y[A-Z]{2}\d{3}[CW](-[AB])?)/,
     :message => 'Alignment should contain an S. cerevisiae gene'
 
+  def to_s
+    result =  "#{self.gene_count} #{self.length}\n"
+    result << self.alignment
+  end
+
   def self.create_from_alignment(entry)
  
     entry.strip!

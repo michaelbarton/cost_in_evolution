@@ -95,3 +95,21 @@ describe 'Alignment remove first line' do
     Alignment.remove_first_line(test).should == "BBB\nCCC"
   end
 end
+
+describe 'Alignment to string' do
+
+  before do
+    Gene.create_from_flatfile( Bio::FlatFile.auto(valid_gene).next_entry )
+    @align = Alignment.create_from_alignment(File.open(valid_align).read)
+  end
+
+  it 'should return the alignment in string format' do
+   @align.to_s.strip.should == File.open(valid_align).read.strip
+  end
+
+  after do
+    Alignment.delete_all
+    Gene.delete_all
+  end
+
+end
