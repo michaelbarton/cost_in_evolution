@@ -26,3 +26,4 @@ end
 
 Dir.glob(File.dirname(__FILE__) + '/../controller/*.rb') {|file| require file}
 Dir.glob(File.dirname(__FILE__) + '/../model/*.rb') {|file| require file}
+Dir.glob(File.dirname(__FILE__) + '/../vendor/*/lib/setup.rb') {|file| require file}
