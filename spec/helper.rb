@@ -16,3 +16,7 @@ class Alignment
     :test
   end
 end 
+
+Needle::Registry.instance.register(:logger) do
+   Logger.new(Needle::Registry.instance.config['log']['testing']) 
+end
