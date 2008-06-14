@@ -7,6 +7,9 @@ class EvolutionaryRate < DataMapper::Base
   property :position,     :integer  # The position in the alignment this refers too
   property :site_rate,    :float    # The evolutionary rate of that position
   property :amino_acids,  :string   # The amino acids at this positon in the alignment
+
+  def self.codeml_estimate_rate(alignment)
+  end
   
   def self.store_in_temp_file(alignment)
     tfile = Tempfile.new('alignment').path
