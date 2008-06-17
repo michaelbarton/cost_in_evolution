@@ -12,6 +12,29 @@ class EvolutionaryRate
   belongs_to :alignment
 
   def self.codeml_estimate_rate(alignment)
+    config = Ladder::CodeML.create_config_file(
+      :seqfile      => self.store_in_temp_file(alignment),
+      :treefile     => self.generate_tree_file(alignment),
+      :seqtype      => 3,
+      :ndata        => 1,
+      :aaRatefile   => File.expand_path(File.dirname(__FILE__) + '/../data/wag.dat'),
+      :RateAncestor => 1
+    )
+
+    codeml = Ladder::CodeML.new(File.dirname(__FILE__) + '/../bin/codeml')
+    results = codeml.run(config)
+    codeml.clean_up
+
+    for i in 1..results[:rates].length - 1 do
+      EvolutionaryRate.create(
+        :alignment_id => alignment.id,
+        :gene_rate    => results[:alpha],
+        :position     => i,
+        :site_rate    => results[:rates][i][:rate],
+        :amino_acids  => results[:rates][i][:data]
+      )
+    end  
+   
   end
   
   def self.store_in_temp_file(alignment)

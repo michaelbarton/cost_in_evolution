@@ -28,13 +28,45 @@ describe EvolutionaryRate do
     end
   end
 
-  describe 'Doing codeml analysis' do
-
+  describe 'Running codeml analysis' do
     it 'should not throw an error' do
       lambda {
         EvolutionaryRate.codeml_estimate_rate(Alignment.all.first)
       }.should_not raise_error
     end
+  end
+
+  describe 'Codeml results' do 
+
+   before do
+     EvolutionaryRate.codeml_estimate_rate(Alignment.all.first)
+   end
+
+   it 'should have the expected number of resuts' do
+     EvolutionaryRate.all.length.should == 262
+   end
+
+   it 'should have the correct alignment association' do
+     EvolutionaryRate.first.alignment.gene.name.should == "YAL037W"
+   end
+   
+   it 'the first position should have the expected results' do
+     position = EvolutionaryRate.first(:position => 1)
+     position.site_rate.should == 0.710
+     position.amino_acids.should == "MMM"
+   end
+
+   it 'the 100th position should have the expected results' do
+     position = EvolutionaryRate.first(:position => 100)
+     position.site_rate.should == 1.334
+     position.amino_acids.should == "GGS"
+   end
+
+   it 'the last position should have the expected results' do
+     position = EvolutionaryRate.first(:position => 262)
+     position.site_rate.should == 0.844
+     position.amino_acids.should == "FFF"
+   end
 
   end
 
