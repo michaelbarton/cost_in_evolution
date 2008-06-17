@@ -5,20 +5,13 @@ valid_align = File.dirname(__FILE__) + '/data/yal037w.alignment.txt'
 
 describe EvolutionaryRate do
 
-  def clear_tables
-    Gene.delete_all
-    Alignment.delete_all
-    EvolutionaryRate.delete_all
-  end
-
   before(:each) do
-    clear_tables
     Gene.create_from_flatfile( Bio::FlatFile.auto(valid_gene).next_entry )
     Alignment.create_from_alignment(File.open(valid_align).read)
   end
 
   after(:each) do
-    clear_tables
+    clear_all_tables
   end
 
   describe 'Loading alignment into a temporary file' do

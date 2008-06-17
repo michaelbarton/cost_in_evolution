@@ -1,6 +1,12 @@
-class Gene < DataMapper::Base
-  property :name,  :string,  :index => :unique
-  property :dna,   :text
+class Gene
+  include DataMapper::Resource
+  include Validatable
+
+  property :id,    Integer,  :serial => true
+  property :name,  String,   :index => :unique
+  property :dna,   Text
+
+  has n, :alignments
 
   validates_presence_of :name, :dna
 
@@ -12,7 +18,7 @@ class Gene < DataMapper::Base
     gene.name = entry.definition.split(/\s+/).first
     gene.dna = entry.data.strip
     if gene.valid?
-      gene.save!
+      gene.save
       return gene
     else
       Needle::Registry.instance[:logger].warn(

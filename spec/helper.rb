@@ -1,22 +1,19 @@
 require File.dirname(__FILE__) + '/../config/environment.rb'
 
-DataMapper.database(:testing) do
-  DataMapper::Persistence.drop_all_tables!
-  DataMapper::Persistence.auto_migrate!
-end
+method = %q{ def self.default_repository_name; :testing; end }
+[Gene, Alignment, EvolutionaryRate].each {|c| c.class_eval(method) }
 
-class Gene
-  def self.default_repository_name
-    :test
-  end
-end 
-
-class Alignment
-  def self.default_repository_name
-    :test
-  end
-end 
+# Drop all tables here somewhere?
+DataMapper.auto_migrate!(:testing)
 
 Needle::Registry.instance.register(:logger) do
    Logger.new(Needle::Registry.instance.config['log']['testing']) 
+end
+
+public 
+
+def clear_all_tables
+  [Gene, Alignment, EvolutionaryRate].each do |table|
+    table.all.each &:destroy
+  end
 end

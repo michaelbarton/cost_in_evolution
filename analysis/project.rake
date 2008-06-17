@@ -6,7 +6,7 @@ namespace 'analysis' do
 
   desc 'Loads the project summary'
   task 'set_summary' do
-    Project.delete_all
+    Project.all.each &:destroy
 
     file = PROJECT_ROOT + '/analysis/description.markdown'
 

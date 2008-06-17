@@ -5,11 +5,11 @@ valid_gene = File.dirname(__FILE__) + '/data/yal037w.fasta.txt'
 describe Gene do
 
   before(:all) do
-    Gene.delete_all
+    Gene.all.each{|g| g.destroy}
   end
 
   after(:all) do
-    Gene.delete_all
+    Gene.all.each{|g| g.destroy}
   end
 
   describe 'creating a valid gene' do

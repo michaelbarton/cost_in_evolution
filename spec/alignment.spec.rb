@@ -11,8 +11,7 @@ describe 'Creating a valid record' do
   end
 
   after(:each) do
-    Alignment.delete_all
-    Gene.delete_all
+    clear_all_tables
   end
 
   it 'should be valid' do
@@ -107,9 +106,6 @@ describe 'Alignment to string' do
    @align.to_s.strip.should == File.open(valid_align).read.strip
   end
 
-  after do
-    Alignment.delete_all
-    Gene.delete_all
   end
 
 end

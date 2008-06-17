@@ -1,9 +1,15 @@
-class Alignment < DataMapper::Base
+class Alignment
+  include DataMapper::Resource
+  include Validatable
+ 
+  property :id,         Integer,  :serial => true
+  property :gene_id,    Integer
+  property :alignment,  Text
+  property :gene_count, Integer
+  property :length,     Integer
 
-  property :gene_id,    :integer
-  property :alignment,  :text
-  property :gene_count, :integer
-  property :length,     :integer
+  belongs_to :gene
+  has n,     :evolutionary_rate 
 
   validates_presence_of :gene_id,   :alignment, :gene_count, :length
 
@@ -43,7 +49,7 @@ class Alignment < DataMapper::Base
     align.alignment = self.remove_first_line(entry)
 
     if align.valid?
-      align.save!
+      align.save
       return align
     else
       align.errors.each {|error| Needle::Registry.instance[:logger].warn "#{gene.name} : #{error}"}

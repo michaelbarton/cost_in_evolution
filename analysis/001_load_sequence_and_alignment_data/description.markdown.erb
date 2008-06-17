@@ -6,7 +6,7 @@ This stage loads gene sequence and alignment data for *S.cerevisae* coding genes
 
 There are <%= Gene.all.length %> protein coding genes in this data set. The data set was downloaded in fasta format from the [SGD ftp server][sgd]. The dataset was last modified on <%= File.stat("data/yeast_protein_genes.fasta.gz").mtime %>
 
-In the multiple sequence alignment data set there are <%= Alignment.all.length %> alignments. There are <%= Alignment.count(:gene_count => 3) %> alignments with three species, and <%= Alignment.count(:gene_count => 4) %> alignments with four yeast species. The yeast species that are used in the alignments are *S. paradoxus*, *S. bayanus*, *S. mikatae*, *S. cerevisiae*.
+In the multiple sequence alignment data set there are <%= Alignment.all.length %> alignments. There are <%= Alignment.all(:gene_count => 3).length %> alignments with three species, and <%= Alignment.all(:gene_count => 4).length %> alignments with four yeast species. The yeast species that are used in the alignments are *S. paradoxus*, *S. bayanus*, *S. mikatae*, *S. cerevisiae*.
 
 [wall]: http://www.pnas.org/cgi/content/abstract/102/15/5483
 [sgd]: ftp://genome-ftp.stanford.edu/yeast/data_download/sequence/genomic_sequence/orf_dna/
