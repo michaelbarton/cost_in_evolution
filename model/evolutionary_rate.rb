@@ -1,5 +1,6 @@
 class EvolutionaryRate
   include DataMapper::Resource
+  include Validatable
 
   # This model stores the evoltionary rate of postions in a multiple sequence alignment
   property :id,           Integer,  :serial => true
@@ -10,6 +11,10 @@ class EvolutionaryRate
   property :amino_acids,  String                       # The amino acids at this positon in the alignment
 
   belongs_to :alignment
+
+  validates_presence_of :alignment_id, :gene_rate, :position, :site_rate, :amino_acids
+
+  validates_numericality_of :alignment_id, :gene_rate, :position, :site_rate
 
   def self.codeml_estimate_rate(alignment)
     config = Ladder::CodeML.create_config_file(
