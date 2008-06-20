@@ -1,5 +1,6 @@
 require 'erb'
 require 'yaml'
+require 'enumerator'
 
 require 'rubygems'
 gem 'dm-core'

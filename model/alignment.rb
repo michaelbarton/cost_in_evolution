@@ -1,7 +1,8 @@
 class Alignment
   include DataMapper::Resource
   include Validatable
- 
+  include Enumerable
+
   property :id,         Integer,  :serial => true
   property :gene_id,    Integer
   property :alignment,  Text
@@ -24,6 +25,27 @@ class Alignment
   def to_s
     result =  "#{self.gene_count} #{self.length}\n"
     result << self.alignment
+  end
+
+  def sequences 
+    self.alignment.split(/\n/).inject(Hash.new) do |hash, line|
+      id, sequence = line.split(/\s+/,2)
+      hash[id] = sequence.strip
+      hash
+    end
+  end
+
+  def each
+    codons = Array.new
+    self.sequences.values.each do |s|
+      tmp = Array.new
+      s.split(//).each_slice(3) {|codon| tmp << codon.join}
+      tmp.each_with_index do |codon, i| 
+        codons[i] ||= Array.new
+        codons[i] << codon
+      end
+    end
+    codons.each{ |x| yield x }
   end
 
   def self.create_from_alignment(entry)
