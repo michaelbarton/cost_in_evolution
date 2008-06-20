@@ -11,6 +11,7 @@ class Alignment
 
   belongs_to :gene
   has n,     :evolutionary_rate 
+  has n,     :alignment_codon
 
   validates_presence_of :gene_id,   :alignment, :gene_count, :length
 
