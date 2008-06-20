@@ -1,5 +1,5 @@
 class AlignmentCodon
-  include DataMApper::Resource
+  include DataMapper::Resource
 
   property :id, Integer,     :serial => true
   property :alignment_id,    Integer
