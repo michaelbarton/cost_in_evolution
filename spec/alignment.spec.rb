@@ -32,6 +32,10 @@ describe Alignment do
       @align.gene_count.should == 3
     end
 
+    it 'should have the correct tree' do
+      @align.tree.should == "((FYAL037W,PYAL037W)BYAL037W)"
+    end
+
     it 'should contain the correct alignment' do
       File.open(valid_align) do |f|
         f.readline

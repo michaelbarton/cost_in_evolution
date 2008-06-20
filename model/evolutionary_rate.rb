@@ -71,7 +71,7 @@ class EvolutionaryRate
 
   def self.generate_tree_file(alignment)
     tfile = Tempfile.new('tree').path
-    File.open(tfile, 'w') {|file| file.puts "(#{(1..alignment.gene_count).to_a * ','})"}
+    File.open(tfile, 'w') {|file| file.puts alignment.tree}
     tfile
   end
 
