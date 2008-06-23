@@ -1,7 +1,9 @@
 require File.dirname(__FILE__) + '/../config/environment.rb'
 
 method = %q{ def self.default_repository_name; :testing; end }
-[Gene, Alignment, EvolutionaryRate].each {|c| c.class_eval(method) }
+ObjectSpace.each_object(Class) do |c|
+  c.class_eval(method) if c.include?(DataMapper::Resource)
+end 
 
 # Drop all tables here somewhere?
 DataMapper.auto_migrate!(:testing)
