@@ -34,11 +34,11 @@ describe AlignmentCodon do
 
     it 'should save' do
       @ac.save
-      AlignmentCodon.count.should == 1
+      AlignmentCodon.all.length.should == 1
     end
 
     it 'using an incorrect position should cause it to be invalid' do
-      @ac.position = 2
+      @ac.start_position = 2
       @ac.valid?.should == false
     end
 
