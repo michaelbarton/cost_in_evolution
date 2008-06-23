@@ -1,12 +1,7 @@
 require File.dirname(__FILE__) + '/../config/environment.rb'
 
-method = %q{ def self.default_repository_name; :testing; end }
-ObjectSpace.each_object(Class) do |c|
-  c.class_eval(method) if c.include?(DataMapper::Resource)
-end 
-
-# Drop all tables here somewhere?
-DataMapper.auto_migrate!(:testing)
+DataMapper.setup(:default,Needle::Registry.instance[:database_connections]['testing'])
+DataMapper.auto_migrate!
 
 Needle::Registry.instance.register(:logger) do
    Logger.new(Needle::Registry.instance.config['log']['testing']) 

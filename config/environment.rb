@@ -22,11 +22,10 @@ end
 r = Needle::Registry.instance
 r.register(:config) { YAML::load(File.open(File.dirname(__FILE__) + '/config.yml')) }
 r.register(:logger) { Logger.new(r.config['log']['analysis']) }
+r.register(:database_connections) {YAML::load(File.open(File.dirname(__FILE__) + '/database.yml'))}
 
 # Load and set up eat of the different databases
-YAML::load(File.open(File.dirname(__FILE__) + '/database.yml')).each do |key,value|
-  DataMapper.setup(key.to_sym,value)
-end
+DataMapper.setup(:default,r[:database_connections]['default'])
 
 Dir.glob(File.dirname(__FILE__) + '/../controller/*.rb') {|file| require file}
 Dir.glob(File.dirname(__FILE__) + '/../model/*.rb') {|file| require file}
