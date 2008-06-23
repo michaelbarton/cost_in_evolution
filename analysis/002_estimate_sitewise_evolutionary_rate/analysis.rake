@@ -1,6 +1,6 @@
 namespace '002' do
 
-  @number = 1  
+  @number = 2
 
   desc 'Clears evolutionary rate data'
   task :clear_evo_rate_data do

@@ -36,6 +36,16 @@ class Alignment
     end
   end
 
+  def tree
+    species = sequences.keys
+    if species.length == 3 and species.any? {|s| s =~ /^B.+/}
+      return "((#{species.detect{|x| x[/^F/]}},#{species.detect{|x| x[/^P/]}})#{species.detect{|x| x[/^B/]}})"
+    else
+      return "(((#{species.detect{|x| x[/^F/]}},#{species.detect{|x| x[/^P/]}})#{species.detect{|x| x[/^M/]}})#{species.detect{|x| x[/^B/]}})"
+    end
+    nil
+  end
+
   def each
     codons = Array.new
     self.sequences.values.each do |s|
