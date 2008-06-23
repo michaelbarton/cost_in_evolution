@@ -1,12 +1,5 @@
-class Gene
-  include DataMapper::Resource
+class Gene < ActiveRecord::Base
   include Validatable
-
-  property :id,    Integer,  :serial => true
-  property :name,  String,   :index => :unique
-  property :dna,   Text
-
-  has n, :alignments
 
   validates_presence_of :name, :dna
 

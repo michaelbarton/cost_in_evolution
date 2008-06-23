@@ -1,13 +1,6 @@
-class Alignment
-  include DataMapper::Resource
+class Alignment < ActiveRecord::Base
   include Validatable
   include Enumerable
-
-  property :id,         Integer,  :serial => true
-  property :gene_id,    Integer
-  property :alignment,  Text
-  property :gene_count, Integer
-  property :length,     Integer
 
   belongs_to :gene
   has n,     :evolutionary_rate 
