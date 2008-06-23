@@ -12,6 +12,10 @@ describe AlignmentCodon do
     ac.amino_acids.sort.should == amino_acids.sort
   end 
 
+  before(:each) do
+    clear_all_tables
+  end
+
   after(:each) do
     clear_all_tables
   end
