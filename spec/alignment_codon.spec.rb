@@ -29,7 +29,21 @@ describe AlignmentCodon do
       @ac.alignment_id = Alignment.first.id
       @ac.start_position = 0
       @ac.codons = ['---','---','ATG']
-      @ac.amino_acids = ['-','-','M']
+      @ac.amino_acids = ['X','X','M']
+    end
+
+    it 'codons method should return an array' do
+      @ac.codons.sort.should == ['---','---','ATG'].sort
+    end
+
+    it 'codons should match those expected in the alignment' do
+      @ac.codons.sort.should == @ac.alignment.to_a[@ac.start_position].sort
+    end
+
+    it 'translated codons should match expected amino acids' do
+      @ac.codons.inject(Array.new) { |array,codon|
+        array << Bio::Sequence::NA.new(codon).translate
+      }.sort.should == @ac.amino_acids.sort
     end
 
     it 'should be valid' do
@@ -48,6 +62,11 @@ describe AlignmentCodon do
 
     it 'using an incorrect alignment id should cause it to be invalid' do
       @ac.alignment_id = Alignment.first.id + 1
+      @ac.valid?.should == false
+    end
+
+    it 'using an incorrect amino acid arrays should cause it to be invalid' do
+      @ac.amino_acids = ['G','X','X']
       @ac.valid?.should == false
     end
 
