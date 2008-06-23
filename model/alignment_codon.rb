@@ -26,7 +26,7 @@ class AlignmentCodon
       array << Bio::Sequence::NA.new(codon).translate
     end
     self.amino_acids.sort == expected.sort
-  }
+  }, :message => "Translated codons should match amino acids"
 
   def codons
     attribute_get(:codons).split(',')
