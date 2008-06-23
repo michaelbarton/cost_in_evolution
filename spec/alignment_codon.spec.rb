@@ -27,7 +27,7 @@ describe AlignmentCodon do
       Alignment.create_from_alignment(File.open(valid_align).read)
       @ac = AlignmentCodon.new
       @ac.alignment_id = Alignment.first.id
-      @ac.start_position = 1
+      @ac.start_position = 0
       @ac.codons = ['---','---','ATG']
       @ac.amino_acids = ['-','-','M']
     end
@@ -62,26 +62,24 @@ describe AlignmentCodon do
     end
 
     it 'should create the expected number of records' do
-      AlignmentCodon.count.should == 274
+      AlignmentCodon.all.length.should == 274
     end
- 
 
     it 'should create the expected first record' do
-      test_alignment_codon(AlignmentCodon.first,1,['---','---','ATG'],['-','-','M'])
+      test_alignment_codon(AlignmentCodon.first,0,['---','---','ATG'],['X','X','M'])
     end
 
     it 'should create the expected last record' do
-      test_alignment_codon(AlignmentCodon.last,274,['TTT','TTT','TTC'],['F','F','F'])
+      test_alignment_codon(AlignmentCodon.first(:start_position => 819),819,['TTT','TTT','TTC'],['F','F','F'])
     end
 
-    it 'should create the expected 10th record' do
-      test_alignment_codon(AlignmentCodon.first(:start_position => 10),10,['GGT','---','---'],['G','-','-'])
+    it 'should create the expected 3rd record' do
+      test_alignment_codon(AlignmentCodon.first(:start_position => 9),9,['GGT','---','---'],['G','X','X'])
     end
 
-    it 'should create the expected 100th record' do
-      test_alignment_codon(AlignmentCodon.first(:start_position => 100),100,['ATA','ATA','GTA'],['I','I','V'])
+    it 'should create the expected 33rd record' do
+      test_alignment_codon(AlignmentCodon.first(:start_position => 99),99,['ATA','ATA','GTA'],['I','I','V'])
     end
-
 
   end
 
