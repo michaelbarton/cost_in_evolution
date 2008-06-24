@@ -3,7 +3,7 @@ class CreateGenesTable < ActiveRecord::Migration
   def self.up
     create_table :genes do |t|
       t.string :name
-      t.text   :text
+      t.text   :dna
     end
   end
 
