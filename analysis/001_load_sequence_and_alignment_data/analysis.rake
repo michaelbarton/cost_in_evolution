@@ -37,6 +37,16 @@ namespace '001' do
     end
   end
 
+  desc 'Clears alignment codon data'
+  task :clear_alignment_codons do
+    AlignmentCodon.all.each &:destroy
+  end
+  
+  desc 'Loads all the alignment codon data'
+  task :load_alignment_codons => :clear_alignment_codons do
+    Alignment.all.each { |a| AlignmentCodon.create_from_alignment(a) }
+  end
+
   desc 'Clears all data, and repeats milestone 001 analysis'
   task :analysis_rebuild => [
     'load_sequence_data',
