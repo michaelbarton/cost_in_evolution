@@ -1,4 +1,4 @@
-class CreateAlignmentsTable < ActiveRecord::MigrationA
+class CreateAlignmentsTable < ActiveRecord::Migration
 
   def self.up
     create_table :alignments do |t|
