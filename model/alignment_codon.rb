@@ -1,13 +1,6 @@
-class AlignmentCodon
-  include DataMapper::Resource
+class AlignmentCodon < ActiveRecord::Base
   include Validatable
 
-  property :id, Integer,     :serial => true
-  property :alignment_id,    Integer
-  property :start_position,  Integer
-  property :codons,          String
-  property :amino_acids,     String
-  
   belongs_to :alignment
 
   validates_presence_of :alignment_id, :start_position, :codons, :amino_acids
