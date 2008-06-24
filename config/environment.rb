@@ -21,8 +21,7 @@ end
 r = Needle::Registry.instance
 r.register(:config) { YAML::load(File.open(File.dirname(__FILE__) + '/config.yml')) }
 r.register(:logger) { Logger.new(r.config['log']['analysis']) }
-r.register(:connection) {
-  YAML::load(File.open(File.dirname(__FILE__) + '/database.yml')) }
+r.register(:database_connections) {YAML::load(File.open(File.dirname(__FILE__) + '/database.yml'))}
 
 ActiveRecord::Base.establish_connection(r[:connection]['default'])
 

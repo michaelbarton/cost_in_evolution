@@ -1,5 +1,5 @@
 config.yml
-database.yml
+*database.yml
 *.log
 *.swp
 *.sqlite3
