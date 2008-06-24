@@ -60,7 +60,7 @@ class Alignment < ActiveRecord::Base
       return
     end
 
-    gene = Gene.first(:name => cerevisiae_gene)
+    gene = Gene.find_by_name cerevisiae_gene
     if gene.nil?
       Needle::Registry.instance[:logger].warn "Load alignment: #{cerevisiae_gene} is not a verified ORF"
       return 
