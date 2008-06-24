@@ -14,15 +14,12 @@ namespace :db do
 
   desc "Build database tables based on model defined proterties"
   task :create do
-    DataMapper.auto_migrate!
+    ActiveRecord::Migrator.migrate(PROJECT_ROOT + '/model/migrations',nil)
   end
 
   desc "Clears all database tables"
   task :drop do
-    repo = repository(:default)
-    ObjectSpace.each_object(Class) do |c| 
-      repo.adapter.destroy_model_storage(repo,c) if c.include? DataMapper::Resource
-    end
+    ActiveRecord::Migrator.migrate(PROJECT_ROOT + '/model/migrations',0)
   end
 end
 
