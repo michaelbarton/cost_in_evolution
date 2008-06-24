@@ -47,16 +47,13 @@ class Alignment
   end
 
   def each
-    codons = Array.new
-    self.sequences.values.each do |s|
-      tmp = Array.new
-      s.split(//).each_slice(3) {|codon| tmp << codon.join}
-      tmp.each_with_index do |codon, i| 
-        codons[i] ||= Array.new
-        codons[i] << codon
-      end
-    end
-    codons.each{ |x| yield x }
+    # Three leters or a dash
+    codon_re = /[\w-]{3}/
+    # Split the sequences into codons
+    array_of_codon_arrays = self.sequences.values.map { |s| s.scan(codon_re) }
+    # Interleave the arrays
+    codons = array_of_codon_arrays.inject { |a,b| a.zip(b) }
+    codons.each{ |x| yield x.flatten }
   end
 
   def self.create_from_alignment(entry)
