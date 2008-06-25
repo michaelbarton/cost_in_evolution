@@ -21,6 +21,9 @@ namespace :db do
   task :drop do
     ActiveRecord::Migrator.migrate(PROJECT_ROOT + '/model/migrations',0)
   end
+
+  desc "Drops, then recreates the database tables"
+  task :recreate => [:drop,:create]
 end
 
 Spec::Rake::SpecTask.new do |t|
