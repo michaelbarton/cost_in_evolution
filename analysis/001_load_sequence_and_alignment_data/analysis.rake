@@ -6,7 +6,7 @@ namespace '001' do
 
   desc 'Clears yeast sequence data'
   task :clear_sequence_data do
-    Gene.all.each &:destroy
+    Gene.delete_all
   end
 
   desc 'Load yeast DNA sequence data'
@@ -19,7 +19,7 @@ namespace '001' do
 
   desc 'Clears sequence alignment data'
   task :clear_alignment_data do
-    Alignment.all.each &:destroy
+    Alignment.delete_all
   end
 
   desc 'Loads the sequence alignment data'
@@ -39,7 +39,7 @@ namespace '001' do
 
   desc 'Clears alignment codon data'
   task :clear_alignment_codons do
-    AlignmentCodon.all.each &:destroy
+    AlignmentCodon.delete_all
   end
   
   desc 'Loads all the alignment codon data'
