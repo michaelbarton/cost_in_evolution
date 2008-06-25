@@ -89,15 +89,15 @@ describe AlignmentCodon do
     end
 
     it 'should create the expected last record' do
-      test_alignment_codon(AlignmentCodon.first(:start_position => 819),819,['TTT','TTT','TTC'],['F','F','F'])
+      test_alignment_codon(AlignmentCodon.find_by_start_position(819),819,['TTT','TTT','TTC'],['F','F','F'])
     end
 
     it 'should create the expected 3rd record' do
-      test_alignment_codon(AlignmentCodon.first(:start_position => 9),9,['GGT','---','---'],['G','X','X'])
+      test_alignment_codon(AlignmentCodon.find_by_start_position(9),9,['GGT','---','---'],['G','X','X'])
     end
 
     it 'should create the expected 33rd record' do
-      test_alignment_codon(AlignmentCodon.first(:start_position => 99),99,['ATA','ATA','GTA'],['I','I','V'])
+      test_alignment_codon(AlignmentCodon.find_by_start_position(99),99,['ATA','ATA','GTA'],['I','I','V'])
     end
 
   end
