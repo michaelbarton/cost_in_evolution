@@ -19,19 +19,19 @@ class AlignmentCodon < ActiveRecord::Base
   }, :message => "Translated codons should match amino acids"
 
   def codons
-    attribute_get(:codons).split(',')
+    read_attribute(:codons).split(',')
   end
  
   def codons=(codons)
-    attribute_set(:codons,codons.join(','))
+    write_attribute(:codons,codons.join(','))
   end
 
   def amino_acids
-    attribute_get(:amino_acids).split(',')
+    read_attribute(:amino_acids).split(',')
   end
 
   def amino_acids=(amino_acids)
-    attribute_set(:amino_acids,amino_acids.join(','))
+    write_attribute(:amino_acids,amino_acids.join(','))
   end
 
   def self.create_from_alignment(alignment)
