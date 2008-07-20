@@ -1,11 +1,5 @@
-class Stage
-  include DataMapper::Resource
+class Stage < ActiveRecord::Base
   include Comparable
-
-  property :id,          Integer,  :serial => true
-  property :number,      Integer
-  property :title,       Text
-  property :description, Text
 
   belongs_to :project
 

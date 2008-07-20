@@ -1,13 +1,4 @@
-class Project
-  include DataMapper::Resource
-
-  property :id,            Integer,  :serial => true
-  property :title,         Text
-  property :summary,       Text
-  property :last_modified, DateTime
-  property :major_version, Integer
-  property :minor_version, Integer
-  property :tiny_version,  Integer
+class Project < ActiveRecord::Base
 
   def html_summary
     BlueCloth.new(self.summary).to_html
