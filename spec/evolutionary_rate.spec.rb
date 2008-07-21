@@ -24,7 +24,7 @@ describe EvolutionaryRate do
   describe 'Creating a temporary tree file' do
     it 'should generate the expected output' do
       file = EvolutionaryRate.generate_tree_file(Alignment.all.first)
-      File.open(file).read.strip.should == '(1,2,3)'
+      File.open(file).read.strip.should == '((FYAL037W,PYAL037W)BYAL037W)'
     end
   end
 
@@ -47,23 +47,25 @@ describe EvolutionaryRate do
    end
 
    it 'should have the correct alignment association' do
+     EvolutionaryRate.first.alignment.should_not == nil
+     EvolutionaryRate.first.alignment.gene.should_not == nil
      EvolutionaryRate.first.alignment.gene.name.should == "YAL037W"
    end
    
    it 'the first position should have the expected results' do
-     position = EvolutionaryRate.first(:position => 1)
+     position = EvolutionaryRate.find_by_position(1)
      position.site_rate.should == 0.710
      position.amino_acids.should == "MMM"
    end
 
    it 'the 100th position should have the expected results' do
-     position = EvolutionaryRate.first(:position => 100)
+     position = EvolutionaryRate.find_by_position(100)
      position.site_rate.should == 1.334
      position.amino_acids.should == "GGS"
    end
 
    it 'the last position should have the expected results' do
-     position = EvolutionaryRate.first(:position => 262)
+     position = EvolutionaryRate.find_by_position(262)
      position.site_rate.should == 0.844
      position.amino_acids.should == "FFF"
    end

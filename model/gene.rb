@@ -1,6 +1,8 @@
 class Gene < ActiveRecord::Base
   include Validatable
 
+  has_many :alignments
+
   validates_presence_of :name, :dna
 
   # Checks that the sequence has a start codon, a stop codon, and contains only ATGC
