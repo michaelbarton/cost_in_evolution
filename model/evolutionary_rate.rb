@@ -1,14 +1,5 @@
-class EvolutionaryRate
-  include DataMapper::Resource
+class EvolutionaryRate < ActiveRecord::Base
   include Validatable
-
-  # This model stores the evoltionary rate of postions in a multiple sequence alignment
-  property :id,           Integer,  :serial => true
-  property :alignment_id, Integer
-  property :gene_rate,    Float,    :precision => 5    # The evolution rate of the entire alignment
-  property :position,     Integer                      # The position in the alignment this refers too
-  property :site_rate,    Float,    :precision => 5    # The evolutionary rate of that position
-  property :amino_acids,  String                       # The amino acids at this positon in the alignment
 
   belongs_to :alignment
 

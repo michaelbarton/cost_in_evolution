@@ -6,7 +6,7 @@ namespace 'analysis' do
 
   desc 'Loads the project summary'
   task 'set_summary' do
-    Project.all.each &:destroy
+    Project.delete_all
 
     file = PROJECT_ROOT + '/analysis/description.markdown'
 
@@ -14,9 +14,9 @@ namespace 'analysis' do
       Project.create({
         :title         => f.readline.gsub(/#\s+/,''),
         :summary       => f.read,
-        :major_version => PROJECT_VERSION.split('.')[0],
-        :minor_version => PROJECT_VERSION.split('.')[1],
-        :tiny_version  => PROJECT_VERSION.split('.')[2],
+        :major_version => PROJECT_VERSION.split('.')[0].to_i,
+        :minor_version => PROJECT_VERSION.split('.')[1].to_i,
+        :tiny_version  => PROJECT_VERSION.split('.')[2].to_i,
         :last_modified => Date.parse(File.mtime(file).to_s)
       })
     end

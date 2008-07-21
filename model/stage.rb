@@ -1,11 +1,5 @@
-class Stage
-  include DataMapper::Resource
+class Stage < ActiveRecord::Base
   include Comparable
-
-  property :id,          Integer,  :serial => true
-  property :number,      Integer
-  property :title,       Text
-  property :description, Text
 
   belongs_to :project
 
@@ -22,7 +16,7 @@ class Stage
   end
 
   def self.create_from_markdown_erb(number,file)
-    self.all(:number => number).each {|r| r.destroy!}
+    self.find_all_by_number(number).each {|r| r.destroy}
     File.open(file) do |f|
       return self.create({
         :number      => number,
