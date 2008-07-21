@@ -16,7 +16,7 @@ class Stage < ActiveRecord::Base
   end
 
   def self.create_from_markdown_erb(number,file)
-    self.all(:number => number).each {|r| r.destroy!}
+    self.find_all_by_number(number).each {|r| r.destroy}
     File.open(file) do |f|
       return self.create({
         :number      => number,

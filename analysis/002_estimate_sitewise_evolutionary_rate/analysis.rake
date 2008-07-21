@@ -4,7 +4,7 @@ namespace '002' do
 
   desc 'Clears evolutionary rate data'
   task :clear_evo_rate_data do
-    EvolutionaryRate.all.each &:destroy
+    EvolutionaryRate.delete_all
   end
 
   desc 'Runs evolutionary rate analysis on alignments'
