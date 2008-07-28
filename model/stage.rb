@@ -7,12 +7,12 @@ class Stage < ActiveRecord::Base
      self.number <=> other.number
   end
 
-  def html_description
+  def content
     BlueCloth.new(self.description).to_html
   end
 
-  def html_summary
-    self.html_description.split(/\n/).first.strip
+  def summary
+    self.content.split(/\n/).first.strip
   end
 
   def self.create_from_markdown_erb(number,file)
