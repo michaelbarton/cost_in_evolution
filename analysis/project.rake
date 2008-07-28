@@ -5,7 +5,7 @@ namespace 'analysis' do
   Dir.glob('analysis/*/analysis.rake').each {|file| load file}
 
   desc 'Loads the project summary'
-  task 'set_summary' do
+  task 'set_description' do
     Project.delete_all
 
     file = PROJECT_ROOT + '/analysis/description.markdown'
@@ -13,7 +13,7 @@ namespace 'analysis' do
     File.open(file) do |f| 
       Project.create({
         :title         => f.readline.gsub(/#\s+/,''),
-        :summary       => f.read,
+        :description   => f.read,
         :major_version => PROJECT_VERSION.split('.')[0].to_i,
         :minor_version => PROJECT_VERSION.split('.')[1].to_i,
         :tiny_version  => PROJECT_VERSION.split('.')[2].to_i,
@@ -30,7 +30,7 @@ namespace 'analysis' do
 
   desc 'Rebuilds website files'
   task :www_rebuild => [
-    'set_summary',
+    'set_description',
     '001:www_rebuild'
   ]
 
