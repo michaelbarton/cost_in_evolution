@@ -26,4 +26,16 @@ class Stage < ActiveRecord::Base
     end
   end
 
+  def self.title
+    'Project Stages'
+  end
+
+  def self.content
+    Stage.all.sort.inject('') do |result, stage|
+      result << "<h3>#{stage.title}</h3>"
+      result << stage.summary
+    end
+  end
+
 end
+
