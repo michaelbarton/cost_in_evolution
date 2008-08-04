@@ -7,6 +7,7 @@ class CreateAlignmentsTable < ActiveRecord::Migration
       t.integer :gene_count
       t.integer :length
     end
+    add_index(:alignments, :gene_id)
   end
 
   def self.down

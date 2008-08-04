@@ -7,6 +7,9 @@ class CreateAlignmentCodonsTable < ActiveRecord::Migration
       t.string  :codons
       t.string  :amino_acids
     end
+    add_index(:alignment_codons, :alignment_id)
+    add_index(:alignment_codons, [:alignment_id, :start_position], :unique => true)
+
   end
 
   def self.down
