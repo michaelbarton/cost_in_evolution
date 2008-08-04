@@ -42,6 +42,10 @@ task :rebuild => [
 desc 'Rebuilds website files'
 task :www_rebuild => ['analysis:www_rebuild'] do
   haml = Haml::Engine.new(File.read(PROJECT_ROOT + '/www/views/layout.haml'))
-  
+ 
+  # Process index
   File.open(PROJECT_ROOT + '/www/site/index.html','w') {|x| x.puts haml.render(Project.first)}
+
+  # Process stages page
+  File.open(PROJECT_ROOT + '/www/site/stages.html','w') {|x| x.puts haml.render(Stage)}
 end
