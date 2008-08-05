@@ -54,16 +54,4 @@ class EvolutionaryRate < ActiveRecord::Base
    
   end
   
-  def self.store_in_temp_file(alignment)
-    tfile = Tempfile.new('alignment').path
-    File.open(tfile, 'w') {|file| file.puts alignment.to_s}
-    tfile
-  end
-
-  def self.generate_tree_file(alignment)
-    tfile = Tempfile.new('tree').path
-    File.open(tfile, 'w') {|file| file.puts alignment.tree}
-    tfile
-  end
-
 end
