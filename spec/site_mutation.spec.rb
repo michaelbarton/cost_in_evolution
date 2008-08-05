@@ -3,11 +3,12 @@ require File.dirname(__FILE__) + '/helper.rb'
 valid_gene = File.dirname(__FILE__) + '/data/yal037w.fasta.txt'
 valid_align = File.dirname(__FILE__) + '/data/yal037w.alignment.txt'
 
-describe EvolutionaryRate do
+describe SiteMutations do
 
   before(:each) do
     Gene.create_from_flatfile( Bio::FlatFile.auto(valid_gene).next_entry )
     Alignment.create_from_alignment(File.open(valid_align).read)
+    AlignmentCodons.create_from_alignment(Alignment.first)
   end
 
   after(:each) do
@@ -16,14 +17,14 @@ describe EvolutionaryRate do
 
   describe 'Loading alignment into a temporary file' do
     it 'should load the correct data' do
-      file = EvolutionaryRate.store_in_temp_file(Alignment.all.first)
+      file = EstimateEvolutionaryRate.store_in_temp_file(Alignment.first)
       File.open(file).read.should == File.open(valid_align).read
     end
   end
 
   describe 'Creating a temporary tree file' do
     it 'should generate the expected output' do
-      file = EvolutionaryRate.generate_tree_file(Alignment.all.first)
+      file = EstimateEvolutionaryRate.generate_tree_file(Alignment.first)
       File.open(file).read.strip.should == '((FYAL037W,PYAL037W)BYAL037W)'
     end
   end
