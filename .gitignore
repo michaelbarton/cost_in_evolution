@@ -5,3 +5,4 @@ config.yml
 *.sqlite3
 data/*.gz
 log/*
+www/site/*.html

@@ -7,12 +7,12 @@ class Stage < ActiveRecord::Base
      self.number <=> other.number
   end
 
-  def html_description
+  def content
     BlueCloth.new(self.description).to_html
   end
 
-  def html_summary
-    self.html_description.split(/\n/).first.strip
+  def summary
+    self.content.split(/\n/).first.strip
   end
 
   def self.create_from_markdown_erb(number,file)
@@ -26,4 +26,16 @@ class Stage < ActiveRecord::Base
     end
   end
 
+  def self.title
+    'Project Stages'
+  end
+
+  def self.content
+    Stage.all.sort.inject('') do |result, stage|
+      result << "<h3>#{stage.title}</h3>"
+      result << stage.summary
+    end
+  end
+
 end
+
