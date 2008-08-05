@@ -10,7 +10,7 @@ end
 public 
 
 def clear_all_tables
-  [Gene,Alignment,AlignmentCodon,EvolutionaryRate].each do |table|
+  [Gene,Alignment,AlignmentCodon,SiteMutation,GeneMutation].each do |table|
     table.delete_all
   end
 end
