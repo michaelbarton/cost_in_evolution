@@ -1,7 +1,11 @@
 class Project < ActiveRecord::Base
 
-  def html_summary
-    BlueCloth.new(self.summary).to_html
+  def content
+    BlueCloth.new(self.description).to_html
+  end
+
+  def summary
+    self.content.split(/\n/).first.strip
   end
 
   def version

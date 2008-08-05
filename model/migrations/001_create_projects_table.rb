@@ -3,7 +3,7 @@ class CreateProjectsTable < ActiveRecord::Migration
   def self.up
     create_table :projects do |t|
       t.text     :title
-      t.text     :summary
+      t.text     :description
       t.datetime :last_modified
       t.integer  :major_version
       t.integer  :minor_version

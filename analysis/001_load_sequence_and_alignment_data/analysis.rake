@@ -2,8 +2,6 @@ require 'zlib'
 
 namespace '001' do
 
-  @number = 1
-
   desc 'Clears yeast sequence data'
   task :clear_sequence_data do
     Gene.delete_all
@@ -52,11 +50,5 @@ namespace '001' do
     'load_sequence_data',
     'load_alignment_data'
   ]
-
-  desc 'Rebuilds website files'
-  task :www_rebuild do
-    file = File.dirname(__FILE__) + '/description.markdown.erb'
-    Stage.create_from_markdown_erb(@number,file)
-  end
 
 end
