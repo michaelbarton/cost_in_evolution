@@ -9,7 +9,7 @@ class CreateGeneMutationsTable < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :gene_mutatations
+    drop_table :gene_mutations
   end
 
 end
