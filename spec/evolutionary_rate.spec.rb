@@ -1,10 +1,13 @@
 require File.dirname(__FILE__) + '/helper.rb'
 
+GENE = File.dirname(__FILE__) + '/data/yal037w.fasta.txt'
+ALIGN = File.dirname(__FILE__) + '/data/yal037w.alignment.txt'
+
 describe EvolutionaryRate do
 
   before(:each) do
-    Gene.create_from_flatfile( Bio::FlatFile.auto(valid_gene).next_entry )
-    Alignment.create_from_alignment(File.open(valid_align).read)
+    Gene.create_from_flatfile( Bio::FlatFile.auto(GENE).next_entry )
+    Alignment.create_from_alignment(File.open(ALIGN).read)
   end
 
   after(:each) do
