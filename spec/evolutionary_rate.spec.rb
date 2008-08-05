@@ -18,6 +18,7 @@ describe EvolutionaryRate do
   EvolutionaryRate.class_eval do
     public :initialize
     public :create_tmp_dir
+    public :generate_alignment_file
     attr_reader :tmp_dir
   end
 
@@ -32,6 +33,11 @@ describe EvolutionaryRate do
     end
 
     it 'should create the temporary alignment file' do
+      EVO_RATE.create_tmp_dir
+      EVO_RATE.generate_alignment_file
+      File.exists?(EVO_RATE.tmp_dir + '/alignment').should == true
+      File.delete(EVO_RATE.tmp_dir + '/alignment')
+      Dir.delete(EVO_RATE.tmp_dir)
     end
 
     it 'should create the temporary tree file' do

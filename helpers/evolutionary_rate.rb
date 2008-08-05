@@ -10,7 +10,7 @@ class EvolutionaryRate
 
   def initialize(alignment)
     @alignment=alignment
-    @tmp_dir = "/tmp/" + random_string
+    @tmp_dir = "/scratch/local/" + random_string
   end
  
   def random_string
@@ -21,6 +21,9 @@ class EvolutionaryRate
     Dir.mkdir(@tmp_dir)
   end
 
+  def del_tmp_dir
+  end
+
   def use_tmp_dir
   end
 
@@ -29,7 +32,7 @@ class EvolutionaryRate
 
 
   def generate_alignment_file
-    tfile = Tempfile.new('alignment').path
+    tfile = @tmp_dir + '/alignment'
     File.open(tfile, 'w') {|file| file.puts @alignment.to_s}
     tfile
   end
