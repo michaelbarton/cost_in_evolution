@@ -7,14 +7,18 @@ class EvolutionaryRate
   end
 
   private
- 
+
   def initialize(alignment)
     @alignment=alignment
     @tmp_dir = "/tmp/" + random_string
   end
-  
+ 
   def random_string
     "#{Time.now.to_i + (rand * 10**10).to_i}"
+  end
+
+  def create_tmp_dir
+    Dir.mkdir(@tmp_dir)
   end
 
   def use_tmp_dir

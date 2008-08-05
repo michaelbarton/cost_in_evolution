@@ -17,11 +17,18 @@ describe EvolutionaryRate do
   # Make private methods public for testing
   EvolutionaryRate.class_eval do
     public :initialize
+    public :create_tmp_dir
+    attr_reader :tmp_dir
   end
 
   describe 'Using temporary directory and files' do
 
+    EVO_RATE = EvolutionaryRate.new(Alignment.first)
+
     it 'should create the temporary directory' do
+      EVO_RATE.create_tmp_dir
+      File.directory?(EVO_RATE.tmp_dir).should == true
+      Dir.delete(EVO_RATE.tmp_dir)
     end
 
     it 'should create the temporary alignment file' do
