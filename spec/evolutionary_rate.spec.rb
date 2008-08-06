@@ -17,27 +17,28 @@ describe EvolutionaryRate do
   # Make private methods public for testing
   EvolutionaryRate.class_eval do
     public :initialize
-    public :create_tmp_dir
-    public :generate_alignment_file
+    public :create_tmp_dir, :del_tmp_dir
+    public :generate_alignment_file, :generate_tree_file
     attr_reader :tmp_dir
   end
 
   describe 'Using temporary directory and files' do
 
-    EVO_RATE = EvolutionaryRate.new(Alignment.first)
-
     it 'should create the temporary directory' do
-      EVO_RATE.create_tmp_dir
-      File.directory?(EVO_RATE.tmp_dir).should == true
-      Dir.delete(EVO_RATE.tmp_dir)
+      @evo_rate = EvolutionaryRate.new(Alignment.first)
+      @evo_rate.create_tmp_dir
+      File.directory?(@evo_rate.tmp_dir).should == true
+      Dir.delete(@evo_rate.tmp_dir)
     end
 
     it 'should create the temporary alignment file' do
-      EVO_RATE.create_tmp_dir
-      EVO_RATE.generate_alignment_file
-      File.exists?(EVO_RATE.tmp_dir + '/alignment').should == true
-      File.delete(EVO_RATE.tmp_dir + '/alignment')
-      Dir.delete(EVO_RATE.tmp_dir)
+      @evo_rate = EvolutionaryRate.new(Alignment.first)
+      @evo_rate.create_tmp_dir
+      @evo_rate.generate_alignment_file
+      File.exists?(@evo_rate.tmp_dir + '/alignment').should == true
+      File.open(@evo_rate.tmp_dir + '/alignment').read.should == File.open(ALIGN).read
+      File.delete(@evo_rate.tmp_dir + '/alignment')
+      Dir.delete(@evo_rate.tmp_dir)
     end
 
     it 'should create the temporary tree file' do
