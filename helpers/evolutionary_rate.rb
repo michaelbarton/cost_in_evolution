@@ -30,7 +30,6 @@ class EvolutionaryRate
   def unuse_tmp_dir
   end
 
-
   def generate_alignment_file
     tfile = @tmp_dir + '/alignment'
     File.open(tfile, 'w') {|file| file.puts @alignment.to_s}
@@ -38,7 +37,7 @@ class EvolutionaryRate
   end
 
   def generate_tree_file
-    tfile = Tempfile.new('tree').path
+    tfile = @tmp_dir + '/tree'
     File.open(tfile, 'w') {|file| file.puts @alignment.tree}
     tfile
   end

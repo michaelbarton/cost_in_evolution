@@ -42,6 +42,13 @@ describe EvolutionaryRate do
     end
 
     it 'should create the temporary tree file' do
+      @evo_rate = EvolutionaryRate.new(Alignment.first)
+      @evo_rate.create_tmp_dir
+      @evo_rate.generate_tree_file
+      File.exists?(@evo_rate.tmp_dir + '/tree').should == true
+      File.open(@evo_rate.tmp_dir + '/tree').read.strip.should == '((FYAL037W,PYAL037W)BYAL037W)'
+      File.delete(@evo_rate.tmp_dir + '/tree')
+      Dir.delete(@evo_rate.tmp_dir)
     end
 
     it 'should delete the temporary directory and all files' do
