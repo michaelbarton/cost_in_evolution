@@ -23,7 +23,10 @@ class EvolutionaryRate
   end
 
   def del_tmp_dir
-    ['tree','alignment'].each {|f| File.delete("#{@tmp_dir}/#{f}")}
+    ['tree','alignment'].each do |f| 
+      file = "#{@tmp_dir}/#{f}"
+      File.delete(file) if File.exists?(file)
+    end
     Dir.rmdir(@tmp_dir)
   end
 
