@@ -52,6 +52,12 @@ describe EvolutionaryRate do
     end
 
     it 'should delete the temporary directory and all files' do
+      @evo_rate = EvolutionaryRate.new(Alignment.first)
+      @evo_rate.create_tmp_dir
+      @evo_rate.generate_tree_file
+      @evo_rate.generate_alignment_file
+      @evo_rate.del_tmp_dir
+      File.exists?(@evo_rate.tmp_dir).should == false
     end
 
     it 'should switch working directory to temporary directory' do
