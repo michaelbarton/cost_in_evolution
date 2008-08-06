@@ -19,6 +19,7 @@ describe EvolutionaryRate do
     public :initialize
     public :create_tmp_dir, :del_tmp_dir
     public :generate_alignment_file, :generate_tree_file
+    public :use_tmp_dir, :unuse_tmp_dir
     attr_reader :tmp_dir
   end
 
@@ -61,9 +62,21 @@ describe EvolutionaryRate do
     end
 
     it 'should switch working directory to temporary directory' do
+      @evo_rate = EvolutionaryRate.new(Alignment.first)
+      current = Dir.getwd
+      @evo_rate.use_tmp_dir
+      Dir.getwd.should == @evo_rate.tmp_dir
+      Dir.chdir(current)
+      @evo_rate.del_tmp_dir
     end
 
     it 'should switch back temporary directory to working directory'  do
+      @evo_rate = EvolutionaryRate.new(Alignment.first)
+      current = Dir.getwd
+      @evo_rate.use_tmp_dir
+      @evo_rate.unuse_tmp_dir
+      Dir.getwd.should == current
+      File.exists?(@evo_rate.tmp_dir).should == false
     end
 
   end
