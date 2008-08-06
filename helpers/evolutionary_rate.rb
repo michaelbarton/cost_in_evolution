@@ -31,9 +31,13 @@ class EvolutionaryRate
   end
 
   def use_tmp_dir
+    create_tmp_dir
+    Dir.chdir(@tmp_dir)
   end
 
   def unuse_tmp_dir
+    Dir.chdir(@current_dir)
+    del_tmp_dir
   end
 
   def generate_alignment_file
