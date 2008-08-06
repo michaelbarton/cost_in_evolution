@@ -10,7 +10,8 @@ class EvolutionaryRate
 
   def initialize(alignment)
     @alignment=alignment
-    @tmp_dir = "/scratch/local/" + random_string
+    @tmp_dir = "/usr/local/scratch/" + random_string
+    @current_dir = Dir.getwd
   end
  
   def random_string
