@@ -131,9 +131,6 @@ describe EvolutionaryRate do
       position[:data].should == "FFF"
    end
 
-   it 'should clear all files from the temporary directory' do
-   end
-
   end
 
 end
