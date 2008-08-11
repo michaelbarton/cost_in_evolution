@@ -1,3 +1,5 @@
+Dir.glob(File.dirname(__FILE__) + '/../vendor/*/lib') {|dir| $: << File.expand_path(dir)}
+
 require 'erb'
 require 'yaml'
 require 'enumerator'
@@ -8,11 +10,12 @@ require 'active_record'
 require 'ramaze'
 require 'haml'
 require 'bluecloth'
-require 'bio'
 require 'spec'
 require 'spec/rake/spectask'
 require 'needle'
 require 'validatable'
+require 'bio'
+require 'bio/appl/codeml'
 
 class Needle::Registry
   include Singleton
