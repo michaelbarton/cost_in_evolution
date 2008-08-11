@@ -1,5 +1,6 @@
 class AlignmentCodon < ActiveRecord::Base
   include Validatable
+  include Comparable
 
   belongs_to :alignment
   has_one    :site_mutation
@@ -33,6 +34,10 @@ class AlignmentCodon < ActiveRecord::Base
 
   def amino_acids=(amino_acids)
     write_attribute(:amino_acids,amino_acids.join(','))
+  end
+
+  def <=>(other)
+    self.start_position <=> other.start_position
   end
 
   def self.create_from_alignment(alignment)
