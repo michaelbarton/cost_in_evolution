@@ -1,3 +1,5 @@
+require 'pathname'
+
 class EvolutionaryRate
 
   attr_accessor :gene_rate, :site_rates, :tree_length
@@ -48,7 +50,7 @@ class EvolutionaryRate
 
   def initialize(alignment)
     @alignment=alignment
-    @tmp_dir = "/nfs/san_scratch/barton/" + random_string
+    @tmp_dir = Needle::Registry.instance.config['codeml']['tmp'] + '/' + random_string
     @current_dir = Dir.getwd
   end
  
@@ -61,11 +63,7 @@ class EvolutionaryRate
   end
 
   def del_tmp_dir
-    ['output','tree','alignment','config','rates','rst','rst1','lnf','rub'].each do |f| 
-      file = "#{@tmp_dir}/#{f}"
-      File.delete(file) if File.exists?(file)
-    end
-    Dir.rmdir(@tmp_dir)
+    Pathname.new(@tmp_dir).rmtree
   end
 
   def use_tmp_dir
