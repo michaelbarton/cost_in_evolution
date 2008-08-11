@@ -1,6 +1,6 @@
 class EvolutionaryRate
 
-  attr_reader :gene_rate, :site_rates
+  attr_accessor :gene_rate, :site_rates, :tree_length
 
   def run
 
@@ -33,11 +33,11 @@ class EvolutionaryRate
       return
     end
 
-    report = Bio::CodeML::Report.new(@tmp_dir + "/output.txt")
+    report = Bio::CodeML::Report.new(File.open(out_file).read)
 
-    @gene_rate = report.alpha
-    @tree_length = report.tree_length
-    @site_rates = Bio::CodeML::Rates.new(@tmp_dir + "/rates")
+    self.gene_rate = report.alpha
+    self.tree_length = report.tree_length
+    self.site_rates = Bio::CodeML::Rates.new(File.open(@tmp_dir + "/rates").read)
 
     unuse_tmp_dir
   end
