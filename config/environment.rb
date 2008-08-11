@@ -7,7 +7,6 @@ require 'enumerator'
 require 'rubygems'
 
 require 'active_record'
-require 'ramaze'
 require 'haml'
 require 'bluecloth'
 require 'spec'
@@ -29,6 +28,5 @@ r.register(:database_connections) {YAML::load(File.open(File.dirname(__FILE__) +
 ActiveRecord::Base.logger = Logger.new(r.config['log']['db'])
 ActiveRecord::Base.establish_connection(r[:database_connections]['default'])
 
-Dir.glob(File.dirname(__FILE__) + '/../controller/*.rb') {|file| require file}
 Dir.glob(File.dirname(__FILE__) + '/../model/*.rb') {|file| require file}
 Dir.glob(File.dirname(__FILE__) + '/../helpers/*.rb') {|file| require file}
