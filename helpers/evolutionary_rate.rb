@@ -10,7 +10,7 @@ class EvolutionaryRate
 
   def initialize(alignment)
     @alignment=alignment
-    @tmp_dir = "/usr/local/scratch/" + random_string
+    @tmp_dir = "/nfs/san_scratch/barton/" + random_string
     @current_dir = Dir.getwd
   end
  
@@ -23,7 +23,7 @@ class EvolutionaryRate
   end
 
   def del_tmp_dir
-    ['tree','alignment'].each do |f| 
+    ['tree','alignment','config','rates','rst','rst1','lnf','rub'].each do |f| 
       file = "#{@tmp_dir}/#{f}"
       File.delete(file) if File.exists?(file)
     end
