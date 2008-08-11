@@ -2,8 +2,44 @@ class EvolutionaryRate
 
   attr_reader :gene_rate, :site_rates
 
-  def self.estimate(alignment)
-    EvolutionaryRate.new(alignment).run
+  def run
+
+    Needle::Registry.instance[:logger].
+      debug "Estimating evolutionary rate for gene alignment #{@alignment.gene.name}"
+
+    # Create temporary directroy and generate necessary files
+    use_tmp_dir
+    align_file = self.generate_alignment_file
+    tree_file = self.generate_tree_file
+    config_file = @tmp_dir + "/config"
+
+    Bio::CodeML.create_config_file({
+      :seqfile      => align_file,
+      :treefile     => tree_file,
+      :seqtype      => 3,
+      :ndata        => 1,
+      :aaRatefile   => Needle::Registry.instance.config['codeml']['wag'],
+      :RateAncestor => 1
+    },config_file)
+
+    codeml = Bio::CodeML.new(Needle::Registry.instance.config['codeml']['bin'])
+
+    begin
+      codeml.run(config_file)
+    rescue => ex
+      Needle::Registry.instance[:logger].
+        error "Error running codeml for #{@alignment.gene.name}\n" + ex.message
+      unuse_tmp_dir
+      return
+    end
+
+    report = Bio::CodeML::Report.new(@tmp_dir + "/output.txt")
+
+    @gene_rate = report.alpha
+    @tree_length = report.tree_length
+    @site_rates = Bio::CodeML::Rates.new(@tmp_dir + "/rates")
+
+    unuse_tmp_dir
   end
 
   private
@@ -51,46 +87,5 @@ class EvolutionaryRate
     File.open(tfile, 'w') {|file| file.puts @alignment.tree}
     tfile
   end
-
-  def run
-
-    Needle::Registry.instance[:logger].
-      debug "Estimating evolutionary rate for gene alignment #{alignment.gene.name}"
-
-    align_file = self.generate_alignment_file
-    tree_file = self.generate_tree_file
-
-    config = Bio::CodeML.create_config_file(
-      :seqfile      => align_file,
-      :treefile     => tree_file,
-      :seqtype      => 3,
-      :ndata        => 1,
-      :aaRatefile   => File.expand_path(File.dirname(__FILE__) + '/../data/wag.dat'),
-      :RateAncestor => 1
-    )
-
-    codeml = Bio::CodeML.new(File.dirname(__FILE__) + '/../bin/codeml')
- 
-    use_tmp_dir
-
-    begin
-      codeml.run(config)
-    rescue => ex
-      Needle::Registry.instance[:logger].
-        error "Error running codeml for #{alignment.gene.name}\n" + ex.message
-      unuse_tmp_dir
-      return
-    end
-
-    report = Bio::CodeML::Report.new(@tmp_dir + "/output.txt")
-
-    self.gene_rate = report.alpha
-    self.tree_length = report.tree_length
-    self.site_rates = Bio::CodeML::Rates.new(@tmp_dir + "/rates")
-
-    unuse_tmp_dir
-    File.delete(tree_file)
-    File.delete(align_file)
-  end
-
+  
 end
