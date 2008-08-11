@@ -2,6 +2,7 @@ class AlignmentCodon < ActiveRecord::Base
   include Validatable
 
   belongs_to :alignment
+  has_one    :site_mutation
 
   validates_presence_of :alignment_id, :start_position, :codons, :amino_acids
 

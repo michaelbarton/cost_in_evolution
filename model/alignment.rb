@@ -3,7 +3,7 @@ class Alignment < ActiveRecord::Base
   include Enumerable
 
   belongs_to :gene
-  has_many   :evolutionary_rate 
+  has_one    :gene_rate 
   has_many   :alignment_codon
 
   validates_presence_of :gene_id,   :alignment, :gene_count, :length
