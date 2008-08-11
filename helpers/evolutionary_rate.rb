@@ -53,7 +53,7 @@ class EvolutionaryRate
   end
  
   def random_string
-    "#{Time.now.to_i + (rand * 10**10).to_i}"
+    "#{Time.now.to_i + (rand * 10**15).to_i}"
   end
 
   def create_tmp_dir
@@ -61,7 +61,7 @@ class EvolutionaryRate
   end
 
   def del_tmp_dir
-    ['tree','alignment','config','rates','rst','rst1','lnf','rub'].each do |f| 
+    ['output','tree','alignment','config','rates','rst','rst1','lnf','rub'].each do |f| 
       file = "#{@tmp_dir}/#{f}"
       File.delete(file) if File.exists?(file)
     end
