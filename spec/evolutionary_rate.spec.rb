@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/helper.rb'
 
-GENE = File.dirname(__FILE__) + '/data/yal037w.fasta.txt'
-ALIGN = File.dirname(__FILE__) + '/data/yal037w.alignment.txt'
+GENE = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.fasta.txt')
+ALIGN = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.alignment.txt')
 
 describe EvolutionaryRate do
 
