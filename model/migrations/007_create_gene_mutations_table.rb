@@ -4,6 +4,7 @@ class CreateGeneMutationsTable < ActiveRecord::Migration
     create_table :gene_mutations do |t|
       t.integer :alignment_id
       t.float   :rate
+      t.float   :tree_length
     end
     add_index(:gene_mutations,:alignment_id,:unique => true)
   end
