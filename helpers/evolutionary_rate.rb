@@ -11,9 +11,11 @@ class EvolutionaryRate
     use_tmp_dir
     align_file = self.generate_alignment_file
     tree_file = self.generate_tree_file
+    out_file = @tmp_dir + "/output"
     config_file = @tmp_dir + "/config"
 
     Bio::CodeML.create_config_file({
+      :outfile      => out_file,
       :seqfile      => align_file,
       :treefile     => tree_file,
       :seqtype      => 3,
