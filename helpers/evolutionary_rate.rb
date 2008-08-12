@@ -46,14 +46,14 @@ class EvolutionaryRate
     unuse_tmp_dir
   end
 
-  private
-
   def initialize(alignment)
     @alignment=alignment
     @tmp_dir = Needle::Registry.instance.config['codeml']['tmp'] + '/' + random_string
     @current_dir = Dir.getwd
   end
  
+  private
+
   def random_string
     "#{Time.now.to_i + (rand * 10**15).to_i}"
   end
