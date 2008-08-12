@@ -1,4 +1,4 @@
-PROJECT_ROOT = File.dirname(__FILE__)
+PROJECT_ROOT = File.expand_path(File.dirname(__FILE__))
 
 require File.dirname(__FILE__) + '/config/environment.rb'
 load File.dirname(__FILE__) + '/analysis/project.rake'
