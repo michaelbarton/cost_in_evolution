@@ -21,7 +21,11 @@ class Alignment < ActiveRecord::Base
     result << self.alignment
   end
 
-  def sequences 
+  def sequence_array 
+    self.alignment.split(/\n/).map{ |x| x.split(/\s+/,2).last.strip }
+  end
+
+  def sequence_hash
     self.alignment.split(/\n/).inject(Hash.new) do |hash, line|
       id, sequence = line.split(/\s+/,2)
       hash[id] = sequence.strip
@@ -30,7 +34,7 @@ class Alignment < ActiveRecord::Base
   end
 
   def tree
-    species = sequences.keys
+    species = sequence_hash.keys
     if species.length == 3 and species.any? {|s| s =~ /^B.+/}
       return "((#{species.detect{|x| x[/^F/]}},#{species.detect{|x| x[/^P/]}})#{species.detect{|x| x[/^B/]}})"
     else
@@ -43,7 +47,7 @@ class Alignment < ActiveRecord::Base
     # Three leters or a dash
     codon_re = /[\w-]{3}/
     # Split the sequences into codons
-    array_of_codon_arrays = self.sequences.values.map { |s| s.scan(codon_re) }
+    array_of_codon_arrays = self.sequence_array.map { |s| s.scan(codon_re) }
     # Interleave the arrays
     codons = array_of_codon_arrays.inject { |a,b| a.zip(b) }
     codons.each{ |x| yield x.flatten }
