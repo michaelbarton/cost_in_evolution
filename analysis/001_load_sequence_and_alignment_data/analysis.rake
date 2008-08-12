@@ -42,7 +42,13 @@ namespace '001' do
   
   desc 'Loads all the alignment codon data'
   task :load_alignment_codons => :clear_alignment_codons do
-    Alignment.all.each { |a| AlignmentCodon.create_from_alignment(a) }
+    starfish = %x|which starfish|.strip
+    loader = PROJECT_ROOT + '/model/starfish/load_alignment_codons.rb'
+    p = lambda{ system( "qsub -cwd -j y -V #{starfish} #{loader}") }
+
+    p.call
+    sleep(120)
+    16.times { p.call }
   end
 
   desc 'Clears all data, and repeats milestone 001 analysis'
