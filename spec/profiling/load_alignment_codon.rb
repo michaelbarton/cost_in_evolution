@@ -1,13 +1,13 @@
 require File.dirname(__FILE__) + '/../helper.rb'
+require 'ruby-prof'
 
-valid_gene = File.dirname(__FILE__) + '/../data/yal037w.fasta.txt'
-valid_align = File.dirname(__FILE__) + '/../data/yal037w.alignment.txt'
+load_gene
+align = load_align
 
-Gene.create_from_flatfile(Bio::FlatFile.auto(valid_gene).next_entry)
-Alignment.create_from_alignment(File.open(valid_align).read)
-
-align = Alignment.first
-
-AlignmentCodon.create_from_alignment(align)
-
+result = RubyProf.profile do
+  AlignmentCodon.create_from_alignment(align)
+end
 clear_all_tables
+
+printer = RubyProf::GraphPrinter.new(result)
+printer.print(STDOUT, 0)
