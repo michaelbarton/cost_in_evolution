@@ -4,7 +4,7 @@ class Alignment < ActiveRecord::Base
 
   belongs_to :gene
   has_one    :gene_rate 
-  has_many   :alignment_codon
+  has_many   :alignment_codons
 
   validates_presence_of :gene_id,   :alignment, :gene_count, :length
 
