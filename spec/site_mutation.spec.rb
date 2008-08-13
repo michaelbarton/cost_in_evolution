@@ -14,16 +14,22 @@ describe SiteMutation do
 
   describe 'loading site mutation rates' do
     it 'should run without error' do
+      er = EvolutionaryRate.new(Alignment.first).run
       lambda {
-        SiteMutation.create_from_rates(EvolutionaryRate.new(Alignment.first).run.site_rates)
-      }.should not_raise
+        SiteMutation.create_from_rates(er.site_rates,Alignment.first)
+      }.should_not raise_error
     end
   end
 
   describe 'the loaded results' do
 
     before(:each) do
-      SiteMutation.create_from_rates(EvolutionaryRate.new(Alignment.first).run.site_rates)
+      er = EvolutionaryRate.new(Alignment.first).run
+      SiteMutation.create_from_rates(er.site_rates,Alignment.first)
+    end
+
+    it 'should create the expected number of entries' do
+      SiteMutation.all.length.should == 262
     end
 
     it 'should store the first entry correctly' do
