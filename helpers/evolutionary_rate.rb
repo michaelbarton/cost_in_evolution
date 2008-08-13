@@ -11,8 +11,8 @@ class EvolutionaryRate
 
     # Create temporary directroy and generate necessary files
     use_tmp_dir
-    align_file = self.generate_alignment_file
-    tree_file = self.generate_tree_file
+    align_file = generate_alignment_file
+    tree_file = generate_tree_file
     out_file = @tmp_dir + "/output"
     config_file = @tmp_dir + "/config"
 
@@ -44,6 +44,8 @@ class EvolutionaryRate
     self.site_rates = Bio::CodeML::Rates.new(File.open(@tmp_dir + "/rates").read)
 
     unuse_tmp_dir
+
+    return self
   end
 
   def initialize(alignment)
