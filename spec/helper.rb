@@ -9,6 +9,9 @@ end
 
 public 
 
+GENE = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.fasta.txt')
+ALIGN = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.alignment.txt')
+
 def clear_all_tables
   [Gene,Alignment,AlignmentCodon,SiteMutation,GeneMutation].each do |table|
     table.delete_all

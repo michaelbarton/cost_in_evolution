@@ -1,8 +1,5 @@
 require File.dirname(__FILE__) + '/helper.rb'
 
-GENE = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.fasta.txt')
-ALIGN = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.alignment.txt')
-
 describe EvolutionaryRate do
 
   before(:each) do
@@ -16,7 +13,6 @@ describe EvolutionaryRate do
 
   # Make private methods public for testing
   EvolutionaryRate.class_eval do
-    public :initialize
     public :create_tmp_dir, :del_tmp_dir
     public :generate_alignment_file, :generate_tree_file
     public :use_tmp_dir, :unuse_tmp_dir
