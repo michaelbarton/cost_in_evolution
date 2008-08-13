@@ -1,8 +1,5 @@
 require File.dirname(__FILE__) + '/helper.rb'
 
-valid_gene = File.dirname(__FILE__) + '/data/yal037w.fasta.txt'
-valid_align = File.dirname(__FILE__) + '/data/yal037w.alignment.txt'
-
 describe Alignment do
 
   after(:each) do
@@ -12,8 +9,8 @@ describe Alignment do
   describe 'Creating a valid record' do
 
     before(:each) do
-      Gene.create_from_flatfile(Bio::FlatFile.auto(valid_gene).next_entry)
-      @align = Alignment.create_from_alignment(File.open(valid_align).read)
+      load_gene
+      @align = load_align
     end
 
     it 'should be valid' do
@@ -37,7 +34,7 @@ describe Alignment do
     end
 
     it 'should contain the correct alignment' do
-      File.open(valid_align) do |f|
+      File.open(ALIGN) do |f|
         f.readline
         @align.alignment.should == f.read.strip
       end
@@ -128,12 +125,12 @@ describe Alignment do
   describe 'Alignment to string' do
 
     before do
-      Gene.create_from_flatfile( Bio::FlatFile.auto(valid_gene).next_entry )
-      @align = Alignment.create_from_alignment(File.open(valid_align).read)
+      load_gene
+      @align = load_align
     end
 
     it 'should return the alignment in string format' do
-     @align.to_s.strip.should == File.open(valid_align).read.strip
+     @align.to_s.strip.should == File.open(ALIGN).read.strip
     end
 
   end

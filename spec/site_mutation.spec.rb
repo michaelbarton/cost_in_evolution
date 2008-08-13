@@ -3,9 +3,9 @@ require File.dirname(__FILE__) + '/helper.rb'
 describe SiteMutation do
 
   before(:each) do
-    Gene.create_from_flatfile( Bio::FlatFile.auto(GENE).next_entry )
-    Alignment.create_from_alignment(File.open(ALIGN).read)
-    AlignmentCodon.create_from_alignment(Alignment.first)
+    load_gene
+    load_align
+    load_align_codons
   end
 
   after(:each) do

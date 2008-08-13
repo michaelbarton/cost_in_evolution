@@ -1,8 +1,5 @@
 require File.dirname(__FILE__) + '/helper.rb'
 
-valid_gene = File.dirname(__FILE__) + '/data/yal037w.fasta.txt'
-valid_align = File.dirname(__FILE__) + '/data/yal037w.alignment.txt'
-
 describe AlignmentCodon do
 
   def test_alignment_codon(ac,position,codons,amino_acids)
@@ -23,8 +20,8 @@ describe AlignmentCodon do
   describe 'Creating a single record' do
 
     before(:each) do
-      Gene.create_from_flatfile(Bio::FlatFile.auto(valid_gene).next_entry)
-      Alignment.create_from_alignment(File.open(valid_align).read)
+      load_gene
+      load_align
       @ac = AlignmentCodon.new
       @ac.alignment_id = Alignment.first.id
       @ac.start_position = 0
@@ -75,9 +72,9 @@ describe AlignmentCodon do
   describe 'Creating a set of alignment codon records' do
 
     before(:each) do
-      Gene.create_from_flatfile(Bio::FlatFile.auto(valid_gene).next_entry)
-      Alignment.create_from_alignment(File.open(valid_align).read)
-      AlignmentCodon.create_from_alignment(Alignment.first)
+      load_gene
+      load_align
+      load_align_codons
     end
 
     it 'should create the expected number of records' do

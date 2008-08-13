@@ -3,8 +3,8 @@ require File.dirname(__FILE__) + '/helper.rb'
 describe EvolutionaryRate do
 
   before(:each) do
-    Gene.create_from_flatfile( Bio::FlatFile.auto(GENE).next_entry )
-    Alignment.create_from_alignment(File.open(ALIGN).read)
+    load_gene
+    load_align
   end
 
   after(:each) do

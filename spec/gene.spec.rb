@@ -1,7 +1,5 @@
 require File.dirname(__FILE__) + '/helper.rb'
 
-valid_gene = File.dirname(__FILE__) + '/data/yal037w.fasta.txt'
-
 describe Gene do
 
   before(:all) do
@@ -16,7 +14,7 @@ describe Gene do
 
    it 'should be valid when created with correct data' do
      gene = Gene.new
-     File.open(valid_gene) do |file|
+     File.open(GENE) do |file|
        gene.name = file.readline.strip.split(/\s+/).first.gsub('>','')
        gene.dna = file.read
      end
@@ -24,7 +22,7 @@ describe Gene do
    end
 
    it 'should not return nil when created from bioruby entry' do
-     gene = Gene.create_from_flatfile Bio::FlatFile.auto(valid_gene).next_entry
+     gene = load_gene
      gene.should_not == nil
    end
 
