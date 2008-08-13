@@ -35,6 +35,19 @@ describe SiteMutation do
     it 'should store the first entry correctly' do
       sm = AlignmentCodon.find_by_start_position(12).site_mutation
       sm.should_not be_nil
+      sm.rate.should == 0.710
+    end
+
+    it 'should store the 100th entry correctly' do
+      sm = AlignmentCodon.find_by_start_position(321).site_mutation
+      sm.should_not be_nil
+      sm.rate.should == 1.334
+    end
+
+    it 'should store the last entry correctly' do
+      sm = AlignmentCodon.find_by_start_position(819).site_mutation
+      sm.should_not be_nil
+      sm.rate.should == 0.844
     end
   end
 
