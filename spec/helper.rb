@@ -12,6 +12,18 @@ public
 GENE = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.fasta.txt')
 ALIGN = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.alignment.txt')
 
+def load_gene
+  Gene.create_from_flatfile( Bio::FlatFile.auto(GENE).next_entry )
+end
+
+def load_align
+  Alignment.create_from_alignment(File.open(ALIGN).read)
+end
+
+def load_align_codons
+  AlignmentCodon.create_from_alignment(Alignment.first)
+end
+
 def clear_all_tables
   [Gene,Alignment,AlignmentCodon,SiteMutation,GeneMutation].each do |table|
     table.delete_all
