@@ -108,4 +108,23 @@ class Alignment < ActiveRecord::Base
     entry.strip.split("\n")[2].split(' ')[0]
   end
 
+  #
+  # Database summary methods
+  #
+
+  def self.longest
+    Alignment.all.collect{|x| x.length}.max
+  end
+
+  def self.shortest
+    Alignment.all.collect{|x| x.length}.min
+  end
+
+  def self.mean
+    Alignment.all.map{|x| x.length}.to_statarray.mean
+  end
+
+  def self.standard_deviation
+    Alignment.all.map{|x| x.length}.to_statarray.stddev
+  end
 end
