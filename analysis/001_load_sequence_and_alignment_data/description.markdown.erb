@@ -1,12 +1,40 @@
 ## Load yeast gene and alignment data
 
-This stage loads gene sequence and alignment data for *S.cerevisae* coding genes, and sequence alignments for orthologs for related yeast species. The gene sequence is data is from SGD. The multiple sequence alignment data is from [Wall *et al* 2005][wall]
+In this part of the research I need to organise a database for gene sequence and alignment data for *S.cerevisae* coding genes, and sequence alignments for orthologs for related yeast species. The gene sequence data was downloaded from SGD. The multiple sequence alignment data comes from the [Wall *et al* 2005][wall] article.
 
 ### Data
 
-There are <%= Gene.all.length %> protein coding genes in this data set. The data set was downloaded in fasta format from the [SGD ftp server][sgd]. The dataset was last modified on <%= File.stat("data/yeast_protein_genes.fasta.gz").mtime %>
+#### Protein coding genes
 
-In the multiple sequence alignment data set there are <%= Alignment.all.length %> alignments. There are <%= Alignment.find_all_by_gene_count(3).length %> alignments with three species, and <%= Alignment.find_all_by_gene_count(4).length %> alignments with four yeast species. The yeast species that are used in the alignments are *S. paradoxus*, *S. bayanus*, *S. mikatae*, *S. cerevisiae*.
+##### Table
+
+The database table for genes contains columns for the SGD name of the sequence and the coding DNA. 
+
+##### Validations
+
+I validate the gene sequence by ensuring that the entire sequence is begins with ATG, contains only the characters ATGC plus line endings, and finishes with either TAG, TAA or TGA. I also ensure that neither the fields for name or DNA sequence are empty. This ensures that only protein coding genes are loaded into the database. 
+
+##### Data
+
+Each gene is loaded into the database from the SGD fasta file containing protein coding ORFs, and can be found on the [SGD ftp server][sgd]. This file was last modified on <%= File.stat("data/yeast_protein_genes.fasta.gz").mtime %>. The data is loaded into the database using the bioruby library, where for each fasta entry the first word of the header is stored as the gene name, and the fasta sequence is stored as the gene sequence.
+
+After loading there are <%= Gene.all.length %> protein coding genes in the database. The smallest gene is <%= Gene.shortest %> nucleotides long including stop codon, the longest gene is <%= Gene.longest %> nucleotides long including stop codon. The respective mean gene length and standard deviation is <%= Gene.mean %> and <%= Gene.standard_deviation %> nucleotides including stop codon.
+
+#### Alignments
+
+##### Table
+
+The alignment table contains the multiple sequence alignments for yeast protein coding genes for 3 or 4 species. This table has columns for the alignment text, the number of genes in the alignment and the length of the alignment. The table also maintains a foreign key association to the corresponding *S.cerevisiae* gene in the gene table.
+
+##### Validations
+ 
+The first validation for this table ensure that none of the columns are empty. The second validation ensures that the alignment contains a yeast gene, this is done by testing that there is a SGD yeast gene name, prefixed by an _F_, the notation used in the multiple sequence alignment dataset from the [Wall 2005][wall] article. The final validation ensures that the mutitple sequence alignment header is stripped from the text before saving in the database, this is because the header is not part of the nucleotide alignment data.
+
+#### Data
+
+In the database there are <%= Alignment.all.length %> alignments. There are <%= Alignment.find_all_by_gene_count(3).length %> alignments with three species, and <%= Alignment.find_all_by_gene_count(4).length %> alignments with four yeast species. The yeast species that are used in the alignments are *S. paradoxus*, *S. bayanus*, *S. mikatae*, *S. cerevisiae*. The original alignments, as described in the wall paper, were aligned using clustalw, using amino acid sequences as a template for the nucleotide alignments.
+
+The longest alignment is <%= Alignment.longest %> nucleotides including gaps and stop codons, the shortest alignment is <%= Alignment.shortest %> nucleotides includings gaps and stop codons. The respective mean and standard deviations of alignment length are <%= Alignment.mean %> and <%= Alignment.standard_deviation %>.
 
 [wall]: http://www.pnas.org/cgi/content/abstract/102/15/5483
 [sgd]: ftp://genome-ftp.stanford.edu/yeast/data_download/sequence/genomic_sequence/orf_dna/
