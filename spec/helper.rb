@@ -9,8 +9,8 @@ end
 
 public 
 
-GENE = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.fasta.txt')
-ALIGN = File.expand_path(File.dirname(__FILE__) + '/data/yal037w.alignment.txt')
+GENE = File.expand_path(File.dirname(__FILE__) + '/data/ydl177c.fasta.txt')
+ALIGN = File.expand_path(File.dirname(__FILE__) + '/data/ydl177c.alignment.txt')
 
 def load_gene
   Gene.create_from_flatfile( Bio::FlatFile.auto(GENE).next_entry )
