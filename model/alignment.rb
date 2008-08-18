@@ -47,12 +47,7 @@ class Alignment < ActiveRecord::Base
 
   def tree
     species = sequence_hash.keys
-    if species.length == 3 and species.any? {|s| s =~ /^B.+/}
-      return "((#{species.detect{|x| x[/^F/]}},#{species.detect{|x| x[/^P/]}})#{species.detect{|x| x[/^B/]}})"
-    else
-      return "(((#{species.detect{|x| x[/^F/]}},#{species.detect{|x| x[/^P/]}})#{species.detect{|x| x[/^M/]}})#{species.detect{|x| x[/^B/]}})"
-    end
-    nil
+    return "((#{species.detect{|x| x[/^F/]}},#{species.detect{|x| x[/^P/]}})#{species.detect{|x| x[/^B/]}})"
   end
 
   def each
