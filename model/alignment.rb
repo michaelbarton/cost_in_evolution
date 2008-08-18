@@ -9,14 +9,16 @@ class Alignment < ActiveRecord::Base
   validates_presence_of :gene_id,   :alignment, :gene_count, :length,
     :level => 1
 
+  validates_format_of   :alignment, :with => /F(Y[A-Z]{2}\d{3}[CW](-[AB])?)/,
+    :message => 'Alignment should contain an S. cerevisiae gene',
+    :level => 2
 
   validates_true_for    :alignment, :logic => lambda {
     re = Regexp.new(/\d+\s\d+/)
     ! re.match(alignment)
-  }, :message => 'Alignment field should not contain alignment count and length'
-
-  validates_format_of   :alignment, :with => /F(Y[A-Z]{2}\d{3}[CW](-[AB])?)/,
-    :message => 'Alignment should contain an S. cerevisiae gene'
+    },
+    :message => 'Alignment field should not contain alignment count and length',
+    :level => 3
 
   def to_s
     result =  "#{self.gene_count} #{self.length}\n"
