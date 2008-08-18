@@ -9,16 +9,20 @@ class Alignment < ActiveRecord::Base
   validates_presence_of :gene_id,   :alignment, :gene_count, :length,
     :level => 1
 
+  validates_true_for    :gene_count, :logic => lambda { gene_count == 4 },
+    :message => 'Alignment should contain four genes',
+    :level => 2
+
   validates_format_of   :alignment, :with => /F(Y[A-Z]{2}\d{3}[CW](-[AB])?)/,
     :message => 'Alignment should contain an S. cerevisiae gene',
-    :level => 2
+    :level => 3
 
   validates_true_for    :alignment, :logic => lambda {
     re = Regexp.new(/\d+\s\d+/)
     ! re.match(alignment)
     },
     :message => 'Alignment field should not contain alignment count and length',
-    :level => 3
+    :level => 4
 
   validates_true_for    :gene, :logic => lambda {
     align_sequence = self.sequence_hash["F#{gene.name}"].gsub(/[\s-]+/m,'').strip
@@ -26,7 +30,7 @@ class Alignment < ActiveRecord::Base
     align_sequence == gene.dna.chop.chop.chop
     },
     :message => 'Alignment sequence should match gene sequence',
-    :level => 4
+    :level => 5
 
   def to_s
     result =  "#{self.gene_count} #{self.length}\n"
