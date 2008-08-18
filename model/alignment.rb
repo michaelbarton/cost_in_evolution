@@ -66,6 +66,15 @@ class Alignment < ActiveRecord::Base
 
   def self.create_from_alignment(entry)
  
+    re = /([PMFB]Y\w\w\d{3}[WC](-AB)?)\s+([ATGC-]+)/m
+
+    # Convert the alignment to standardised format
+    # with each line containing the entry name and the text
+    header = entry.split("\n").first
+    entry = entry.scan(re).inject(header) do |string, matches|
+      string << "\n#{matches[0]}   #{matches[2].gsub("\n",'')}"
+    end
+
     entry.strip!
 
     cerevisiae_gene = self.find_yeast_gene_name(entry)
