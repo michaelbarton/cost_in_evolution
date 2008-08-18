@@ -6,7 +6,9 @@ class Alignment < ActiveRecord::Base
   has_one    :gene_rate 
   has_many   :alignment_codons
 
-  validates_presence_of :gene_id,   :alignment, :gene_count, :length
+  validates_presence_of :gene_id,   :alignment, :gene_count, :length,
+    :level => 1
+
 
   validates_true_for    :alignment, :logic => lambda {
     re = Regexp.new(/\d+\s\d+/)
