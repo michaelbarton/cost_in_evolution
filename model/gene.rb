@@ -11,7 +11,7 @@ class Gene < ActiveRecord::Base
   def self.create_from_flatfile(entry)
     gene = Gene.new
     gene.name = entry.definition.split(/\s+/).first
-    gene.dna = entry.data.gsub(/\s+/,'')
+    gene.dna = entry.data.strip
     if gene.valid?
       gene.save
       return gene
