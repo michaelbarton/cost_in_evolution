@@ -125,7 +125,7 @@ class Alignment < ActiveRecord::Base
   end
  
   def self.find_first_entry(entry)
-    entry.strip.split("\n")[2].split(' ')[0]
+    entry.strip.split("\n").first.split(/\s+/)[0]
   end
 
   #
