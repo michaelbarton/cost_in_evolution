@@ -22,15 +22,15 @@ describe Alignment do
     end
 
     it 'should have the correct length' do
-      @align.length.should == 822
+      @align.length.should == 606
     end
 
     it 'should have the correct gene count' do
-      @align.gene_count.should == 3
+      @align.gene_count.should == 4
     end
 
     it 'should have the correct tree' do
-      @align.tree.should == "((FYAL037W,PYAL037W)BYAL037W)"
+      @align.tree.should == "(((FYDL177C,PYDL177C)MYDL177C)BYDL177C)"
     end
 
     it 'should contain the correct alignment' do
@@ -42,15 +42,16 @@ describe Alignment do
 
     it 'should return the correct hash map' do
       @align.sequence_hash.should_not == nil
-      @align.sequence_hash.keys.sort.should == ['FYAL037W','PYAL037W','BYAL037W'].sort
-      @align.sequence_hash['FYAL037W'].should == '------------ATGGATATGGAAATCGAAGATTCAAGCCCCATAGATGACCTGAAGTTACAAAAACTGGATACCAATGTTTATTTTGGACCCTGTGAGATATTGACACAACCTATTCTTTTGCAATATGAAAATATTAAGTTCATCATTGGTGTCAATCTAAGTACTGAAAAGATAGCGTCGTTTTATACCCAGTATTTCAGGAACTCTAATTCGGTAGTCGTGAATCTTTGCTCACCAACTACAGCAGCAGTAGCAACAAAGAAGGCCGCAATTGATTTGTATATACGAAACAATACAATACTACTACAGAAATTCGTTGGACAGTACTTGCAGATGGGCAAAAAGATAAAAACATCTTTAACACAGGCACAAACCGATACAATCCAATCACTGCCCCAGTTTTGTAATTCGAATGTCCTCAGTGGTGAGCCCTTGGTACAGTACCAGGCATTCAACGATCTGTTGGCACTCTTTAAGTCATTTAGTCATTTTGGAAATATCTTGGTTATATCATCACATTCCTATGATTGCGCACTTCTCAAATTTCTTATTTCCAGGGTGATGACCTACTATCCACTAGTGACCATCCAGGATTCTTTGCAATATATGAAAGCAACCCTGAACATATCCATCAGTACATCCGATGAGTTCGATATTCTGAATGATAAAGAACTGTGGGAGTTTGGCCAAACCCAGGAAATTCTAAAACGTAGGCAGACGAGCTCAGTCAAGAGGAGATGTGTCAATTTACCAGAAAACTCTACGATCGATAACAGAATGCTTATGGGT---------ACCACAAAGCGAGGTCGCTTT'
+      @align.sequence_hash.keys.sort.should == ['FYDL177C','PYDL177C','BYDL177C','MYDL177C'].sort
+      @align.sequence_hash['FYDL177C'].should == '------------------------------------------------------------------------------------ATGAGTAAGAATGTTGGTAAGCTAGTGAAAATATGGAATGAATCAGAAGTTTTAGTTGATAGAAAATCGAAATTTCAAGCAAGATGTTGCCCATTACAAAATCAAAAGGATATACCCTCCATACTCCAAGAACTAACGCAAAACAACAAAAGCGTCTCCAAGGCATCCCACATGCACATGTATGCCTGGAGAACGGCCGAGGTATCAAATAATTTGCACTTACAA---------CAAGAGCAGAAAAAGAAGGGCAATAAAGCAAATAAGAGTAATAATAGT---CATGTTAACAAGTCAAGGAACATAACGGTGCAGCCAAAGAACATTGAGCAAGGATGTGCTGACTGTGGCGAAGCTGGTGCTGGACAGCGTTTATTGACCTTACTTGAAAGAGCAAACATATTCAACGTCTTGGTAATAGTGACCAGATGGTATGGTGGCACGCCTTTGGGCTCATCAAGATTCAGACACATTTCAACATGTGCAGTGGAAACCTTAAAGAAGGGTGGATTTCTTCCT'
     end
 
     it 'should return the correct sequence array' do
       @align.sequence_array.should_not == nil
       @align.sequence_array[0][0..9].should == '----------'
-      @align.sequence_array[1][0..9].should == 'ATGATAGGTG'
+      @align.sequence_array[1][0..9].should == '----------'
       @align.sequence_array[2][0..9].should == '----------'
+      @align.sequence_array[3][0..9].should == 'ATGCATCACT'
     end
 
    it 'should be comparable' do
@@ -59,10 +60,10 @@ describe Alignment do
    end
 
    it 'should implement each correctly' do
-     @align.to_a.first.should == ['---','ATG','---']
-     @align.to_a[10].should == ['GAT','GAT','---']
-     @align.to_a[100].should == ['ATA','ATT','ATT']
-     @align.to_a.last.should == ['TTT','TTT','TTC']
+     @align.to_a.first.should == ['---','---','---','ATG']
+     @align.to_a[10].should == ['---','---','---','TTA']
+     @align.to_a[100].should == ['AAT','AAC','CAC','AAC']
+     @align.to_a.last.should == ['CCC','CAT','CCT','CCT']
    end
 
   end
@@ -73,7 +74,7 @@ describe Alignment do
       @align = Alignment.new
       @align.gene_id = 1
       @align.gene_count = 1
-      @align.length = 3
+      @align.length = 4
     end
 
     it 'should not be valid when alignment field missing' do
