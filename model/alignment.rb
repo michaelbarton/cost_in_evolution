@@ -20,6 +20,14 @@ class Alignment < ActiveRecord::Base
     :message => 'Alignment field should not contain alignment count and length',
     :level => 3
 
+  validates_true_for    :gene, :logic => lambda {
+    align_sequence = self.sequence_hash["F#{gene.name}"].gsub(/[\s-]+/m,'').strip
+    # Chop, chop, chop off the stop codon
+    align_sequence == gene.dna.chop.chop.chop
+    },
+    :message => 'Alignment sequence should match gene sequence',
+    :level => 4
+
   def to_s
     result =  "#{self.gene_count} #{self.length}\n"
     result << self.alignment
