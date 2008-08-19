@@ -16,7 +16,7 @@ class EvolutionaryRate
     out_file = @tmp_dir + "/output"
     config_file = @tmp_dir + "/config"
 
-    Bio::CodeML.create_config_file({
+    Bio::PAML::Codeml.create_config_file({
       :outfile      => out_file,
       :seqfile      => align_file,
       :treefile     => tree_file,
@@ -27,7 +27,7 @@ class EvolutionaryRate
       :cleandata    => 0
     },config_file)
 
-    codeml = Bio::CodeML.new(Needle::Registry.instance.config['codeml']['bin'])
+    codeml = Bio::PAML::Codeml.new(Needle::Registry.instance.config['codeml']['bin'])
 
     begin
       codeml.run(config_file)
@@ -38,11 +38,11 @@ class EvolutionaryRate
       return
     end
 
-    report = Bio::CodeML::Report.new(File.open(out_file).read)
+    report = Bio::PAML::Codeml::Report.new(File.open(out_file).read)
 
     self.gene_rate = report.alpha
     self.tree_length = report.tree_length
-    self.site_rates = Bio::CodeML::Rates.new(File.open(@tmp_dir + "/rates").read)
+    self.site_rates = Bio::PAML::Codeml::Rates.new(File.open(@tmp_dir + "/rates").read)
 
     unuse_tmp_dir
 
