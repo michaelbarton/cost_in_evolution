@@ -2,11 +2,12 @@ require File.dirname(__FILE__) + '/helper.rb'
 
 describe AlignmentCodon do
 
-  def test_alignment_codon(ac,position,codons,amino_acids)
+  def test_alignment_codon(ac,position,codons,amino_acids,gaps)
     ac.should_not == nil
     ac.start_position.should == position
-    ac.codons.sort.should == codons.sort
-    ac.amino_acids.sort.should == amino_acids.sort
+    ac.codons.should == codons
+    ac.amino_acids.should == amino_acids
+    ac.gaps.should == gaps
   end 
 
   before(:each) do
@@ -25,22 +26,23 @@ describe AlignmentCodon do
       @ac = AlignmentCodon.new
       @ac.alignment_id = Alignment.first.id
       @ac.start_position = 0
-      @ac.codons = ['---','---','ATG']
-      @ac.amino_acids = ['X','X','M']
+      @ac.codons = ['---','---','---','ATG']
+      @ac.amino_acids = ['X','X','X','M']
+      @ac.gaps = true
     end
 
     it 'codons method should return an array' do
-      @ac.codons.sort.should == ['---','---','ATG'].sort
+      @ac.codons.should == ['---','---','---','ATG']
     end
 
     it 'codons should match those expected in the alignment' do
-      @ac.codons.sort.should == @ac.alignment.to_a[@ac.start_position].sort
+      @ac.codons.should == @ac.alignment.to_a[@ac.start_position]
     end
 
     it 'translated codons should match expected amino acids' do
       @ac.codons.inject(Array.new) { |array,codon|
         array << Bio::Sequence::NA.new(codon).translate
-      }.sort.should == @ac.amino_acids.sort
+      }.should == @ac.amino_acids
     end
 
     it 'should be valid' do
@@ -67,6 +69,10 @@ describe AlignmentCodon do
       @ac.valid?.should == false
     end
 
+    it 'setting gaps incorrectly should cause it to be invalid' do
+      @ac.gaps = false
+      @ac.valid?.should == false
+    end
   end
 
   describe 'Creating a set of alignment codon records' do
@@ -78,23 +84,23 @@ describe AlignmentCodon do
     end
 
     it 'should create the expected number of records' do
-      AlignmentCodon.all.length.should == 274
+      AlignmentCodon.all.length.should == 202
     end
 
     it 'should create the expected first record' do
-      test_alignment_codon(AlignmentCodon.first,0,['---','---','ATG'],['X','X','M'])
+      test_alignment_codon(AlignmentCodon.first,0,['---','---','---','ATG'],['X','X','X','M'],true)
     end
 
     it 'should create the expected last record' do
-      test_alignment_codon(AlignmentCodon.find_by_start_position(819),819,['TTT','TTT','TTC'],['F','F','F'])
+      test_alignment_codon(AlignmentCodon.find_by_start_position(603),603,['CCC','CAT','CCT','CCT'],['P','H','P','P'],false)
     end
 
     it 'should create the expected 3rd record' do
-      test_alignment_codon(AlignmentCodon.find_by_start_position(9),9,['GGT','---','---'],['G','X','X'])
+      test_alignment_codon(AlignmentCodon.find_by_start_position(9),9,['---','---','---','TTA'],['X','X','X','L'],true)
     end
 
     it 'should create the expected 33rd record' do
-      test_alignment_codon(AlignmentCodon.find_by_start_position(99),99,['ATA','ATA','GTA'],['I','I','V'])
+      test_alignment_codon(AlignmentCodon.find_by_start_position(99),99,['GGG','GGA','GGT','GGC'],['G','G','G','G'],false)
     end
 
   end
