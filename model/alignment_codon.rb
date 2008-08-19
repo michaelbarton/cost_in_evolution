@@ -5,11 +5,11 @@ class AlignmentCodon < ActiveRecord::Base
   belongs_to :alignment
   has_one    :site_mutation
 
-  validates_presence_of :alignment_id, :start_position, :codons, :amino_acids
+  validates_presence_of :alignment_id, :start_position, :codons, :amino_acids, :gaps
 
   validates_true_for :codons, :logic => lambda {
      self.alignment != nil and
-       self.alignment.to_a.at(self.start_position / 3).sort == self.codons.sort
+       self.alignment.to_a.at(self.start_position / 3) == self.codons
   }, :message => "Codons should match codons in alignment at start position"
 
   validates_true_for :start_position, :logic => lambda {
@@ -17,7 +17,11 @@ class AlignmentCodon < ActiveRecord::Base
   }, :message => "Start position should be a multiple of three"
 
   validates_true_for :amino_acids, :logic => lambda {
-    self.amino_acids.sort == self.codons.collect { |codon| Bio::Sequence::NA.new(codon).translate }.sort
+    self.amino_acids == self.codons.collect { |codon| Bio::Sequence::NA.new(codon).translate }
+  }, :message => "Translated codons should match amino acids"
+
+  validates_true_for :gaps, :logic => lambda {
+    self.gaps == self.codons.include?('---')
   }, :message => "Translated codons should match amino acids"
 
   def codons
@@ -46,7 +50,8 @@ class AlignmentCodon < ActiveRecord::Base
         :alignment_id   => alignment.id,
         :start_position => index,
         :codons         => codons,
-        :amino_acids    => codons.map{ |codon| Bio::Sequence::NA.new(codon).translate }
+        :amino_acids    => codons.map{ |codon| Bio::Sequence::NA.new(codon).translate },
+	:gaps           => codons.include?('---')
       )
       if ac.valid?
         ac.save
