@@ -23,7 +23,8 @@ class EvolutionaryRate
       :seqtype      => 3,
       :ndata        => 1,
       :aaRatefile   => Needle::Registry.instance.config['codeml']['wag'],
-      :RateAncestor => 1
+      :RateAncestor => 1,
+      :cleandata    => 0
     },config_file)
 
     codeml = Bio::CodeML.new(Needle::Registry.instance.config['codeml']['bin'])
