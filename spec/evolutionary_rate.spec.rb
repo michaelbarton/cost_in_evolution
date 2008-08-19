@@ -94,7 +94,7 @@ describe EvolutionaryRate do
     it 'should return expected tree length' do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
-      er.tree_length.should == 0.41890
+      er.tree_length.should be_close(0.41890,0.0001)
     end
 
     it 'should return expected number of site wise rates' do
