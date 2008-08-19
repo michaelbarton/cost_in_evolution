@@ -15,7 +15,7 @@ require 'needle'
 require 'statarray'
 require 'validatable'
 require 'bio'
-require 'bio/appl/codeml'
+require 'bio/appl/paml/codeml'
 
 class Needle::Registry
   include Singleton
