@@ -3,24 +3,22 @@ class SiteMutation < ActiveRecord::Base
 
   def self.create_from_rates(rate_data,alignment)
 
-    # The data for evolutionary rate
-    # Treat this as a stack
-    rate_data.compact!
+    # Convert rates to a hash of position => rate
+    rates = rate_data.inject(Hash.new) do |hash, rate|
+      # Replace stars with Xs
+      acids = rate[:data].gsub('*','X')
+      hash[acids] = rate[:rate]
+      hash
+    end
 
-    # The codons in the alignment
-    codons = alignment.alignment_codons.sort
-   
-    codons.each do |codon|
+    alignment.alignment_codons.each do |codon|
       acids = codon.amino_acids.join
-      position = rate_data.first
 
-      if position[:data] == acids
+      if rates[acids]
         SiteMutation.create(
 	  :alignment_codon_id => codon.id,
-	  :rate               => position[:rate]
+	  :rate               => rates[acids]
 	)
-	# Remove this codon from the queue as it has been assigned
-	rate_data.shift
       end
     end
   end
