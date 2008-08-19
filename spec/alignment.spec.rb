@@ -106,11 +106,11 @@ describe Alignment do
     end
 
     it 'should not be valid when the gene sequence does not match the alignment' do
-      gene = load_gene
-      align = load_align
 
-      gene.dna[10..10] = 'AAAAAA'
-      gene.save!
+      gene = Gene.create(:name => 'YDL177C', :dna => 'ATGAAATAG')
+      @align.gene_id = gene.id
+      @align.alignment = 'FYDL177C ATG...'
+ 
 
       @align.valid?.should_not == true
       @align.errors.length.should == 1
