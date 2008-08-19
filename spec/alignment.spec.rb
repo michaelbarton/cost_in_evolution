@@ -73,7 +73,7 @@ describe Alignment do
     before do
       @align = Alignment.new
       @align.gene_id = 1
-      @align.gene_count = 1
+      @align.gene_count = 4
       @align.length = 4
     end
 
@@ -95,6 +95,14 @@ describe Alignment do
       @align.valid?.should_not == true
       @align.errors.length.should == 1
       @align.errors.to_a.first.should == [:alignment, ["Alignment should contain an S. cerevisiae gene"]]
+    end
+
+    it 'should not be valid when there are not four genes' do
+      @align.alignment = 'ATG...'
+      @align.gene_count = 3
+      @align.valid?.should_not == true
+      @align.errors.length.should == 1
+      @align.errors.to_a.first.should == [:gene_count, ["Alignment should contain four genes"]]
     end
 
     it 'should not be valid when the gene sequence does not match the alignment' do
