@@ -80,21 +80,21 @@ describe Alignment do
     it 'should not be valid when alignment field missing' do
       @align.valid?.should_not == true
       @align.errors.length.should == 1
-      @align.errors.to_a.first == 'Alignment must not be blank'
+      @align.errors.to_a.first.should == [:alignment, ["can't be empty"]]
     end
 
     it 'should not be valid when count info included' do
       @align.alignment = "3 10\nFYAL001W ATG..."
       @align.valid?.should_not == true
       @align.errors.length.should == 1
-      @align.errors.to_a.first == 'Alignment field should not contain alignment count and length'
+      @align.errors.to_a.first.should == [:alignment, ["Alignment field should not contain alignment count and length"]]
     end
 
     it 'should not be valid when an S. cerevisiae is gene missing from alignment' do
       @align.alignment = "ATG..."
       @align.valid?.should_not == true
       @align.errors.length.should == 1
-      @align.errors.to_a.first == 'Alignment should contain an S. cerevisiae gene'
+      @align.errors.to_a.first.should == [:alignment, ["Alignment should contain an S. cerevisiae gene"]]
     end
 
     it 'should not be valid when the gene sequence does not match the alignment' do
@@ -106,7 +106,7 @@ describe Alignment do
 
       @align.valid?.should_not == true
       @align.errors.length.should == 1
-      @align.errors.to_a.first == 'Alignment sequence should match gene sequence'
+      @align.errors.to_a.first.should == [:gene, ["Alignment sequence should match gene sequence"]]
     end
   end
 
