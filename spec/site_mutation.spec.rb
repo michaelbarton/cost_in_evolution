@@ -29,25 +29,25 @@ describe SiteMutation do
     end
 
     it 'should create the expected number of entries' do
-      SiteMutation.all.length.should == 262
+      SiteMutation.all.length.should == 202
     end
 
     it 'should store the first entry correctly' do
-      sm = AlignmentCodon.find_by_start_position(12).site_mutation
+      sm = AlignmentCodon.find_by_start_position(0).site_mutation
       sm.should_not be_nil
-      sm.rate.should == 0.710
+      sm.rate.should == 1.000
     end
 
     it 'should store the 100th entry correctly' do
-      sm = AlignmentCodon.find_by_start_position(321).site_mutation
+      sm = AlignmentCodon.find_by_start_position(99 * 3).site_mutation
       sm.should_not be_nil
-      sm.rate.should == 1.334
+      sm.rate.should == 1.779
     end
 
     it 'should store the last entry correctly' do
-      sm = AlignmentCodon.find_by_start_position(819).site_mutation
+      sm = AlignmentCodon.find_by_start_position(201 * 3).site_mutation
       sm.should_not be_nil
-      sm.rate.should == 0.844
+      sm.rate.should == 1.752
     end
   end
 
