@@ -107,24 +107,24 @@ describe EvolutionaryRate do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
       position = er.site_rates[0]
-      position[:rate].should == 1
       position[:data].should == "***M"
+      position[:rate].should == 1
     end
 
     it 'the 100th site rate should have the expected results' do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
       position = er.site_rates[99]
-      position[:rate].should == 1.779
       position[:data].should == "SLLL"
+      position[:rate].should == 1.779
     end
 
     it 'the last site rate should have the expected results' do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
       position = er.site_rates.last
-      position[:rate].should == 1.752
       position[:data].should == "PHPP"
+      position[:rate].should == 1.752
    end
 
   end

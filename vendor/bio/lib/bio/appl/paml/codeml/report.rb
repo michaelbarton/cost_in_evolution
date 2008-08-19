@@ -1,5 +1,5 @@
 #
-# = bio/appl/codeml/report.rb - CodeML report parser
+# = bio/appl/paml/codeml/report.rb - Codeml report parser
 #
 # Copyright::  Copyright (C) 2008 Michael D. Barton <mail@michaelbarton.me.uk>
 #
@@ -7,15 +7,31 @@
 #
 # == Description
 #
-# This file contains a class that implement a simple interface to CodeML output file
+# This file contains a class that implement a simple interface to Codeml output file
 #
 # == References
 #
 # * http://abacus.gene.ucl.ac.uk/software/paml.html
 #
 
-module Bio
-  class CodeML
+require 'bio/appl/paml/codeml'
+
+module Bio::PAML
+  class Codeml
+
+    # == Description
+    #
+    # A simple class for parsing codeml output.
+    #
+    # WARNING: This data is parsed using a regex from the output file, and
+    # so will take the first result found. If using multiple tree's, your
+    # milage may vary. See the source for the regular expressions.
+    #
+    # require 'bio'
+    #
+    # report = Bio::PAML::Codeml::Report.new(File.open(codeml_output_file).read)
+    # report.gene_rate  # => Rate of gene evolution as defined be alpha
+    # report.tree_lengh # => Estimated phylogetic tree length
     class Report
 
       attr_reader :tree_log_likelihood, :tree_length, :alpha
@@ -42,5 +58,5 @@ module Bio
       end
 
     end # End Report
-  end # End CodeML
-end # End Bio
+  end # End Codeml
+end # End Bio::PAML
