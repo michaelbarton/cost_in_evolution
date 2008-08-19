@@ -97,6 +97,17 @@ describe Alignment do
       @align.errors.to_a.first == 'Alignment should contain an S. cerevisiae gene'
     end
 
+    it 'should not be valid when the gene sequence does not match the alignment' do
+      gene = load_gene
+      align = load_align
+
+      gene.dna[10..10] = 'AAAAAA'
+      gene.save!
+
+      @align.valid?.should_not == true
+      @align.errors.length.should == 1
+      @align.errors.to_a.first == 'Alignment sequence should match gene sequence'
+    end
   end
 
   describe 'Alignment find yeast gene name' do
