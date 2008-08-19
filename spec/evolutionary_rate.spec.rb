@@ -12,7 +12,7 @@ describe EvolutionaryRate do
   end
 
   # Make private methods public for testing
-  EvolutionaryRate.class_eval do
+  EvolutionaryRate.instance_eval do
     public :create_tmp_dir, :del_tmp_dir
     public :generate_alignment_file, :generate_tree_file
     public :use_tmp_dir, :unuse_tmp_dir
@@ -43,7 +43,7 @@ describe EvolutionaryRate do
       @evo_rate.create_tmp_dir
       @evo_rate.generate_tree_file
       File.exists?(@evo_rate.tmp_dir + '/tree').should == true
-      File.open(@evo_rate.tmp_dir + '/tree').read.strip.should == '((FYAL037W,PYAL037W)BYAL037W)'
+      File.open(@evo_rate.tmp_dir + '/tree').read.strip.should == '(((FYDL177C,PYDL177C)MYDL177C)BYDL177C)'
       File.delete(@evo_rate.tmp_dir + '/tree')
       Dir.delete(@evo_rate.tmp_dir)
     end
@@ -88,43 +88,43 @@ describe EvolutionaryRate do
     it 'should return expected gene rate' do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
-      er.gene_rate.should be_close(1.75346, 0.0001)
+      er.gene_rate.should be_close(0.76386, 0.0001)
     end
 
     it 'should return expected tree length' do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
-      er.tree_length.should == 0.55773
+      er.tree_length.should == 0.41890
     end
 
     it 'should return expected number of site wise rates' do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
-      er.site_rates.size.should == 263
+      er.site_rates.size.should == 202
     end
 
     it 'the first site rate should have the expected results' do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
-      position = er.site_rates[1]
-      position[:rate].should == 0.710
-      position[:data].should == "MMM"
+      position = er.site_rates[0]
+      position[:rate].should == 1
+      position[:data].should == "***M"
     end
 
     it 'the 100th site rate should have the expected results' do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
-      position = er.site_rates[100]
-      position[:rate].should == 1.334
-      position[:data].should == "GGS"
+      position = er.site_rates[99]
+      position[:rate].should == 1.779
+      position[:data].should == "SLLL"
     end
 
     it 'the last site rate should have the expected results' do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
-      position = er.site_rates[262]
-      position[:rate].should == 0.844
-      position[:data].should == "FFF"
+      position = er.site_rates.last
+      position[:rate].should == 1.752
+      position[:data].should == "PHPP"
    end
 
   end
