@@ -3,8 +3,8 @@ class CreateGeneMutationsTable < ActiveRecord::Migration
   def self.up
     create_table :gene_mutations do |t|
       t.integer :alignment_id
-      t.float   :rate
-      t.float   :tree_length
+      t.float   :alpha
+      t.float   :estimated_rate
       t.string  :dataset
     end
     add_index(:gene_mutations,:alignment_id)
