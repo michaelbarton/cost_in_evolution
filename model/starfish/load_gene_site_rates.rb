@@ -7,6 +7,10 @@ end
 
 client do |align|
   er = EvolutionaryRate.new(align).run
-  GeneMutation.create(:alignment_id => align.id, :rate => er.gene_rate, :tree_length => er.tree_length)
+  GeneMutation.create(
+    :alignment_id => align.id, 
+    :rate         => er.gene_rate, 
+    :tree_length  => er.tree_length,
+    :dataset      => 'Barton2009')
   SiteMutation.create_from_rates(er.site_rates,align)
 end
