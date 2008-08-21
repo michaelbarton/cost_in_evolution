@@ -16,6 +16,7 @@ require 'statarray'
 require 'validatable'
 require 'bio'
 require 'bio/appl/paml/codeml'
+require 'fastercsv'
 
 class Needle::Registry
   include Singleton
