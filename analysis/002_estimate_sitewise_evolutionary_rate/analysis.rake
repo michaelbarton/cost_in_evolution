@@ -1,8 +1,13 @@
 namespace '002' do
 
-  desc 'Clears evolutionary rate data'
-  task :clear_evo_rate_data do
-    EvolutionaryRate.delete_all
+  desc 'Clears gene mutation rate data'
+  task :clear_estimated_gene_mutation_rate do
+    GeneMutation.destroy_all "dataset = 'Barton2009'"
+  end
+
+  desc 'Clears site mutation rate data'
+  task :clear_estimated_site_mutation_rate do
+    SiteMutation.destroy_all
   end
 
   desc 'Runs evolutionary rate analysis on alignments'
