@@ -5,8 +5,9 @@ class CreateGeneMutationsTable < ActiveRecord::Migration
       t.integer :alignment_id
       t.float   :rate
       t.float   :tree_length
+      t.string  :dataset
     end
-    add_index(:gene_mutations,:alignment_id,:unique => true)
+    add_index(:gene_mutations,:alignment_id)
   end
 
   def self.down
