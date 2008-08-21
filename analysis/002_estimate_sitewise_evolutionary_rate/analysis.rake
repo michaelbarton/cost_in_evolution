@@ -37,4 +37,28 @@ namespace '002' do
     end
   end
 
+  desc 'Clears all Wall2005 gene mutation rate data'
+  task :clear_wall_data do
+    GeneMutation.destroy_all "dataset = 'Wall2005'"
+  end
+
+  desc 'Loads Wall2005 evolutionary rate estimations'
+  task :load_wall_rates do
+    data = PROJECT_ROOT + "/data/wall_data.csv"
+    FasterCSV.foreach(data, :headers => true) do |row|
+      gene = Gene.find_by_name(row['ORF'])
+      if gene
+        alignment = gene.alignments.first
+        if alignment
+          GeneMutation.create(
+	    :alignment_id   => alignment.id,
+	    :alpha          => nil,
+	    :estimated_rate => row['dS'].to_f,
+	    :dataset        => 'Wall2005'
+	 )
+        end
+      end
+    end
+  end
+
 end
