@@ -6,6 +6,8 @@ class Alignment < ActiveRecord::Base
   has_many   :gene_mutations
   has_many   :alignment_codons
 
+  acts_as_summary :length
+
   validates_presence_of :gene_id,   :alignment, :gene_count, :length,
     :level => 1
 
@@ -128,23 +130,4 @@ class Alignment < ActiveRecord::Base
     entry.strip.split("\n").first.split(/\s+/)[0]
   end
 
-  #
-  # Database summary methods
-  #
-
-  def self.longest
-    Alignment.all.collect{|x| x.length}.max
-  end
-
-  def self.shortest
-    Alignment.all.collect{|x| x.length}.min
-  end
-
-  def self.mean
-    Alignment.all.map{|x| x.length}.to_statarray.mean
-  end
-
-  def self.standard_deviation
-    Alignment.all.map{|x| x.length}.to_statarray.stddev
-  end
 end
