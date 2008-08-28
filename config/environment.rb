@@ -17,6 +17,7 @@ require 'validatable'
 require 'bio'
 require 'bio/appl/paml/codeml'
 require 'fastercsv'
+require 'rustat'
 require 'rustat/acts_as_summary'
 
 class Needle::Registry
