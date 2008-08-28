@@ -1,4 +1,4 @@
-Dir.glob(File.dirname(__FILE__) + '/../vendor/*/lib') {|dir| $: << File.expand_path(dir)}
+Dir.glob(File.dirname(__FILE__) + '/../vendor/*/*/lib') {|dir| $: << File.expand_path(dir)}
 
 require 'erb'
 require 'yaml'
@@ -17,6 +17,7 @@ require 'validatable'
 require 'bio'
 require 'bio/appl/paml/codeml'
 require 'fastercsv'
+require 'rustat/acts_as_summary'
 
 class Needle::Registry
   include Singleton
