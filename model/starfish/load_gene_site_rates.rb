@@ -11,6 +11,7 @@ client do |align|
     :alignment_id    => align.id, 
     :alpha           => er.gene_rate, 
     :estimated_rate  => er.tree_length,
+    :tree            => er.tree,
     :dataset         => 'Barton2009')
   SiteMutation.create_from_rates(er.site_rates,align)
 end
