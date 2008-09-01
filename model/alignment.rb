@@ -53,7 +53,7 @@ class Alignment < ActiveRecord::Base
 
   def tree
     species = sequence_hash.keys
-    "(((#{species.detect{|x| x[/^F/]}},#{species.detect{|x| x[/^P/]}})#{species.detect{|x| x[/^M/]}})#{species.detect{|x| x[/^B/]}})"
+    "((#{species.detect{|x| x[/^F/]}},#{species.detect{|x| x[/^P/]}})#{species.detect{|x| x[/^M/]}},#{species.detect{|x| x[/^B/]}})"
   end
 
   def each
