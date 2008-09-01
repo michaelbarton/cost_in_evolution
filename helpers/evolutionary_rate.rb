@@ -2,7 +2,7 @@ require 'pathname'
 
 class EvolutionaryRate
 
-  attr_accessor :gene_rate, :site_rates, :tree_length
+  attr_accessor :gene_rate, :site_rates, :tree_length, :tree
 
   def run
 
@@ -42,6 +42,7 @@ class EvolutionaryRate
 
     self.gene_rate = report.alpha
     self.tree_length = report.tree_length
+    self.tree = report.tree
     self.site_rates = Bio::PAML::Codeml::Rates.new(File.open(@tmp_dir + "/rates").read)
 
     unuse_tmp_dir
