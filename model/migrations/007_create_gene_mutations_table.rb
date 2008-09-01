@@ -5,6 +5,7 @@ class CreateGeneMutationsTable < ActiveRecord::Migration
       t.integer :alignment_id
       t.float   :alpha
       t.float   :estimated_rate
+      t.string   :tree
       t.string  :dataset
     end
     add_index(:gene_mutations,:alignment_id)
