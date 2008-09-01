@@ -30,7 +30,7 @@ describe Alignment do
     end
 
     it 'should have the correct tree' do
-      @align.tree.should == "(((FYDL177C,PYDL177C)MYDL177C)BYDL177C)"
+      @align.tree.should == "((FYDL177C,PYDL177C)MYDL177C,BYDL177C)"
     end
 
     it 'should contain the correct alignment' do

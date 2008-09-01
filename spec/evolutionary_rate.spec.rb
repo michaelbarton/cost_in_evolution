@@ -43,7 +43,7 @@ describe EvolutionaryRate do
       @evo_rate.create_tmp_dir
       @evo_rate.generate_tree_file
       File.exists?(@evo_rate.tmp_dir + '/tree').should == true
-      File.open(@evo_rate.tmp_dir + '/tree').read.strip.should == '(((FYDL177C,PYDL177C)MYDL177C)BYDL177C)'
+      File.open(@evo_rate.tmp_dir + '/tree').read.strip.should == '((FYDL177C,PYDL177C)MYDL177C,BYDL177C)'
       File.delete(@evo_rate.tmp_dir + '/tree')
       Dir.delete(@evo_rate.tmp_dir)
     end
@@ -95,6 +95,12 @@ describe EvolutionaryRate do
       er = EvolutionaryRate.new(Alignment.first)
       er.run
       er.tree_length.should be_close(0.41890,0.0001)
+    end
+
+    it 'should return expected tree' do
+      er = EvolutionaryRate.new(Alignment.first)
+      er.run
+      er.tree.should == "((FYDL177C: 0.089768, PYDL177C: 0.044688): 0.021206, MYDL177C: 0.096521, BYDL177C: 0.166725);"
     end
 
     it 'should return expected number of site wise rates' do
