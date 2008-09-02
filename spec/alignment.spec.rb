@@ -2,15 +2,18 @@ require File.dirname(__FILE__) + '/helper.rb'
 
 describe Alignment do
 
+  before(:all) do
+    fixtures :genes
+  end
+
   after(:each) do
-    clear_all_tables
+    Alignment.delete_all
   end
 
   describe 'Creating a valid record' do
 
     before(:each) do
-      load_gene
-      @align = load_align
+      @align = Alignment.create_from_alignment(File.open(ALIGN).read)
     end
 
     it 'should be valid' do
@@ -22,6 +25,7 @@ describe Alignment do
     end
 
     it 'should have the correct length' do
+      Alignment.all.length
       @align.length.should == 606
     end
 
@@ -115,6 +119,7 @@ describe Alignment do
       @align.valid?.should_not == true
       @align.errors.length.should == 1
       @align.errors.to_a.first.should == [:gene, ["Alignment sequence should match gene sequence"]]
+      gene.destroy
     end
   end
 
@@ -145,8 +150,7 @@ describe Alignment do
   describe 'Alignment to string' do
 
     before do
-      load_gene
-      @align = load_align
+      @align = Alignment.create_from_alignment(File.open(ALIGN).read)
     end
 
     it 'should return the alignment in string format' do
