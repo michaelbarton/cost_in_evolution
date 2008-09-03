@@ -2,6 +2,17 @@ require 'pathname'
 
 class EvolutionaryRate
 
+  def self.estimate_for(align)
+    er = EvolutionaryRate.new(align).run
+    GeneMutation.create(
+      :alignment_id    => align.id,
+      :alpha           => er.gene_rate,
+      :estimated_rate  => er.tree_length,
+      :tree            => er.tree,
+      :dataset         => 'Barton2009')
+    SiteMutation.create_from_rates(er.site_rates,align)
+  end
+
   attr_accessor :gene_rate, :site_rates, :tree_length, :tree
 
   def run
