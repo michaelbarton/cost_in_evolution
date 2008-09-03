@@ -122,7 +122,6 @@ describe RindRunner do
     it 'the tenth site rate should have the expected results' do
       er = RindRunner.new(Alignment.first)
       er.run
-      p er.site_rates
       position = er.site_rates[10]
       position.size.should == 1
       position['L'].should_not == nil
@@ -132,7 +131,6 @@ describe RindRunner do
     it 'the hundredth site rate should have the expected results' do
       er = RindRunner.new(Alignment.first)
       er.run
-      p er.site_rates
       position = er.site_rates[100]
       position.size.should == 2
       position['H'].should_not == nil
