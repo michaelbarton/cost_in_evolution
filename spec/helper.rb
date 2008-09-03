@@ -24,6 +24,10 @@ def load_align_codons
   AlignmentCodon.create_from_alignment(Alignment.first)
 end
 
+def estimate_rates
+  EvolutionaryRate.estimate_for(Alignment.first)
+end
+
 def clear_all_tables
   [Gene,Alignment,AlignmentCodon,SiteMutation,GeneMutation].each do |table|
     table.delete_all
