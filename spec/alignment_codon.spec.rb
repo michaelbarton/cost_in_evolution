@@ -73,12 +73,12 @@ describe AlignmentCodon do
 
   describe 'Creating a set of alignment codon records' do
 
-    before(:each) do
+    before(:all) do
       AlignmentCodon.delete_all
       AlignmentCodon.create_from_alignment(Alignment.first)
     end
 
-    after(:each) do
+    after(:all) do
       AlignmentCodon.delete_all
     end
 
