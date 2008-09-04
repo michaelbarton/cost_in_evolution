@@ -9,7 +9,6 @@ Needle::Registry.instance.register(:logger) do
    Logger.new(Needle::Registry.instance.config['log']['testing']) 
 end
 
-
 public 
 
 GENE = File.expand_path(File.dirname(__FILE__) + '/data/ydl177c.fasta.txt')
@@ -18,10 +17,6 @@ ALIGN = File.expand_path(File.dirname(__FILE__) + '/data/ydl177c.alignment.txt')
 def fixtures(*args)
   dir = File.join(File.dirname(__FILE__),'fixtures')
   args.each{|x| Fixtures.create_fixtures(dir,x.to_s) }
-end
-
-def estimate_rates
-  EvolutionaryRate.estimate_for(Alignment.first)
 end
 
 def clear_all_tables
