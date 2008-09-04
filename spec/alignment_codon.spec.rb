@@ -3,26 +3,23 @@ require File.dirname(__FILE__) + '/helper.rb'
 describe AlignmentCodon do
 
   def test_alignment_codon(ac,position,codons,amino_acids,gaps)
-    ac.should_not == nil
+    ac.should_not be_nil
     ac.start_position.should == position
     ac.codons.should == codons
     ac.amino_acids.should == amino_acids
     ac.gaps.should == gaps
   end 
 
-  before(:each) do
-    clear_all_tables
-  end
-
-  after(:each) do
-    clear_all_tables
-  end
+  fixtures :genes, :alignments
 
   describe 'Creating a single record' do
 
-    before(:each) do
-      load_gene
-      load_align
+    after do
+      AlignmentCodon.delete_all
+    end
+
+    before do
+      AlignmentCodon.delete_all
       @ac = AlignmentCodon.new
       @ac.alignment_id = Alignment.first.id
       @ac.start_position = 0
@@ -78,9 +75,12 @@ describe AlignmentCodon do
   describe 'Creating a set of alignment codon records' do
 
     before(:each) do
-      load_gene
-      load_align
-      load_align_codons
+      AlignmentCodon.delete_all
+      AlignmentCodon.create_from_alignment(Alignment.first)
+    end
+
+    after(:each) do
+      AlignmentCodon.delete_all
     end
 
     it 'should create the expected number of records' do
