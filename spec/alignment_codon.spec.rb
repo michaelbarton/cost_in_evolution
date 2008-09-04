@@ -61,6 +61,14 @@ describe AlignmentCodon do
       Factory.build(:alignment_codon, :amino_acids => ['G','X','X']).valid?.should == false
     end
 
+    it 'using the correct amino acids, but in the wrong order should be invalid' do
+      Factory.build(:alignment_codon, :amino_acids => ['M','X','X','X']).valid?.should == false
+    end
+
+    it 'using correct codons, but in the wrong order should be invalid' do
+      Factory.build(:alignment_codon, :codons => ['---','---','ATG','---']).valid?.should == false
+    end
+
     it 'setting gaps incorrectly should cause it to be invalid' do
       Factory.build(:alignment_codon, :gaps => false).valid?.should == false
     end
