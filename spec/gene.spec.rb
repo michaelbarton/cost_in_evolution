@@ -12,9 +12,9 @@ describe Gene do
 
   describe 'creating a valid gene' do
 
-   def load_gene
-     Gene.create_from_flatfile( Bio::FlatFile.auto(GENE).next_entry )
-   end
+    def load_gene
+      Gene.create_from_flatfile( Bio::FlatFile.auto(GENE).next_entry )
+    end
 
     it 'should be valid when created with correct data' do
       gene = Gene.new
