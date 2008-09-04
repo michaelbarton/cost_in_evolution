@@ -1,5 +1,9 @@
 class SiteMutation < ActiveRecord::Base
+  include Validatable
   belongs_to :alignment_codon
+
+  validates_true_for :alignment_codon_id,
+    :logic => lambda { self.alignment_codon != nil}
 
   def self.create_from_rates(rate_data,alignment)
 
