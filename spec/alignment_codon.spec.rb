@@ -14,11 +14,11 @@ describe AlignmentCodon do
 
   describe 'Creating a single record' do
 
-    after(:all) do
+    after(:each) do
       AlignmentCodon.delete_all
     end
 
-    before(:all) do
+    before(:each) do
       AlignmentCodon.delete_all
     end
 
@@ -63,6 +63,11 @@ describe AlignmentCodon do
 
     it 'setting gaps incorrectly should cause it to be invalid' do
       Factory.build(:alignment_codon, :gaps => false).valid?.should == false
+    end
+
+    it 'saving two alignment codons with the same alignment and start position should raise' do
+      Factory(:alignment_codon)
+      lambda { Factory(:alignment_codon) }.should raise_error
     end
   end
 
