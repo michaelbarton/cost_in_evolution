@@ -2,6 +2,12 @@ require 'pathname'
 
 class RindRunner
 
+  def self.estimate_for(align)
+    rr = RindRunner.new(align).run
+    AminoAcidFrequency.create_from_frequencies(rr.site_rates,align)
+  end
+
+
   attr_accessor :site_rates
 
   def run
