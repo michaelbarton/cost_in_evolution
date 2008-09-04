@@ -14,61 +14,55 @@ describe AlignmentCodon do
 
   describe 'Creating a single record' do
 
-    after do
+    after(:all) do
       AlignmentCodon.delete_all
     end
 
-    before do
+    before(:all) do
       AlignmentCodon.delete_all
-      @ac = AlignmentCodon.new
-      @ac.alignment_id = Alignment.first.id
-      @ac.start_position = 0
-      @ac.codons = ['---','---','---','ATG']
-      @ac.amino_acids = ['X','X','X','M']
-      @ac.gaps = true
     end
 
     it 'codons method should return an array' do
-      @ac.codons.should == ['---','---','---','ATG']
+      Factory.build(:alignment_codon).codons.should == ['---','---','---','ATG']
     end
 
     it 'codons should match those expected in the alignment' do
-      @ac.codons.should == @ac.alignment.to_a[@ac.start_position]
+      align_codon = Factory.build(:alignment_codon)
+      align_codon.codons.should == align_codon.alignment.to_a[align_codon.start_position]
     end
 
     it 'translated codons should match expected amino acids' do
-      @ac.codons.inject(Array.new) { |array,codon|
+      align_codon = Factory.build(:alignment_codon)
+      align_codon.codons.inject(Array.new) { |array,codon|
         array << Bio::Sequence::NA.new(codon).translate
-      }.should == @ac.amino_acids
+      }.should == align_codon.amino_acids
     end
 
     it 'should be valid' do
-      @ac.valid?.should == true
+      Factory.build(:alignment_codon).valid?.should == true
     end
 
     it 'should save' do
-      @ac.save
+      Factory(:alignment_codon)
       AlignmentCodon.all.length.should == 1
     end
 
     it 'using an incorrect position should cause it to be invalid' do
-      @ac.start_position = 2
-      @ac.valid?.should == false
+      Factory.build(:alignment_codon, :start_position => 2).valid?.should == false
     end
 
     it 'using an incorrect alignment id should cause it to be invalid' do
-      @ac.alignment_id = Alignment.first.id + 1
-      @ac.valid?.should == false
+      align_codon = Factory.build(:alignment_codon)
+      align_codon.alignment_id += 1
+      align_codon.valid?.should == false
     end
 
     it 'using an incorrect amino acid arrays should cause it to be invalid' do
-      @ac.amino_acids = ['G','X','X']
-      @ac.valid?.should == false
+      Factory.build(:alignment_codon, :amino_acids => ['G','X','X']).valid?.should == false
     end
 
     it 'setting gaps incorrectly should cause it to be invalid' do
-      @ac.gaps = false
-      @ac.valid?.should == false
+      Factory.build(:alignment_codon, :gaps => false).valid?.should == false
     end
   end
 
