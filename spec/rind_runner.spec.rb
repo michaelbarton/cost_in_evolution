@@ -2,15 +2,8 @@ require File.dirname(__FILE__) + '/helper.rb'
 
 describe RindRunner do
 
-  before(:each) do
-    load_gene
-    load_align
-    load_align_codons
-    estimate_rates
-  end
-
-  after(:each) do
-    clear_all_tables
+  before(:all) do
+    fixtures :genes, :alignments, :alignment_codons, :gene_mutations, :site_mutations
   end
 
   # Make private methods public for testing
@@ -56,7 +49,7 @@ describe RindRunner do
       rr.generate_tree_file
       File.exists?(rr.tmp_dir + '/treefile').should == true
       File.open(rr.tmp_dir + '/treefile').read.strip.should ==
-        '((FYDL177C: 0.089768, PYDL177C: 0.044687): 0.021206, MYDL177C: 0.096521, BYDL177C: 0.166724);'
+        '((FYDL177C: 0.089768, PYDL177C: 0.044688): 0.021206, MYDL177C: 0.096521, BYDL177C: 0.166724);'
       File.delete(rr.tmp_dir + '/treefile')
       Dir.delete(rr.tmp_dir)
     end
