@@ -4,6 +4,7 @@ class AlignmentCodon < ActiveRecord::Base
 
   belongs_to :alignment
   has_one    :site_mutation
+  has_many   :amino_acid_frequencies
 
   validates_presence_of :alignment_id, :start_position, :codons, :amino_acids, :gaps
 

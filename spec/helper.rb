@@ -28,6 +28,15 @@ def fixtures(*args)
   end
 end
 
+def estimate_rates
+  EvolutionaryRate.estimate_for(Alignment.first)
+end
+
+def load_amino_acids
+  dir = File.dirname(__FILE__) + '/../data'
+  Fixtures.create_fixtures(dir,'amino_acids')
+end
+
 def clear_all_tables
   [Gene,Alignment,AlignmentCodon,SiteMutation,GeneMutation].each do |table|
     table.delete_all
