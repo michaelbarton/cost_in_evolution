@@ -1,0 +1,7 @@
+1:
+  id: 1
+  alignment_id: 1
+  alpha: 0.76386
+  estimated_rate: 0.41891
+  tree: "((FYDL177C: 0.089768, PYDL177C: 0.044688): 0.021206, MYDL177C: 0.096521, BYDL177C: 0.166724);"
+  dataset: Barton2009
