@@ -2,16 +2,8 @@ require File.dirname(__FILE__) + '/helper.rb'
 
 describe AminoAcidFrequency do
 
-  before(:each) do
-    load_gene
-    load_align
-    load_align_codons
-    load_amino_acids
-    estimate_rates
-  end
-
-  after(:each) do
-    clear_all_tables
+  before(:all) do
+    fixtures :genes, :alignments, :alignment_codons, :amino_acids, :gene_mutations, :site_mutations
   end
 
   describe 'loading site mutation rates' do
@@ -25,7 +17,7 @@ describe AminoAcidFrequency do
 
   describe 'the loaded results' do
 
-    before(:each) do
+    before(:all) do
       rr = RindRunner.new(Alignment.first).run
       AminoAcidFrequency.create_from_frequencies(rr.site_rates,Alignment.first)
     end
