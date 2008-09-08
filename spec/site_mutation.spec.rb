@@ -2,7 +2,9 @@ require File.dirname(__FILE__) + '/helper.rb'
 
 describe SiteMutation do
 
-  fixtures :genes, :alignments, :alignment_codons
+ before(:all) do
+   fixtures :genes, :alignments, :alignment_codons
+ end
 
   describe 'saving a site mutation rate' do
   

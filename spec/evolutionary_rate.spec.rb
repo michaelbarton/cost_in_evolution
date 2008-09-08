@@ -2,7 +2,9 @@ require File.dirname(__FILE__) + '/helper.rb'
 
 describe EvolutionaryRate do
 
-  fixtures :genes, :alignments
+  before(:all) do
+    fixtures :genes, :alignments
+  end
 
   # Make private methods public for testing
   EvolutionaryRate.instance_eval do

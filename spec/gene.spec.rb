@@ -2,6 +2,10 @@ require File.dirname(__FILE__) + '/helper.rb'
 
 describe Gene do
 
+ before(:all) do
+   fixtures
+ end
+
   describe 'creating a valid gene' do
 
     it 'should be valid when created with correct data' do

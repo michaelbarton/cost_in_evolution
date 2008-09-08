@@ -10,7 +10,9 @@ describe AlignmentCodon do
     ac.gaps.should == gaps
   end 
 
-  fixtures :genes, :alignments
+  before(:all) do
+    fixtures :genes, :alignments
+  end
 
   describe 'Creating a single record' do
 

@@ -2,7 +2,9 @@ require File.dirname(__FILE__) + '/helper.rb'
 
 describe Alignment do
 
-  fixtures :genes
+  before(:all) do
+    fixtures :genes
+  end
 
   describe 'Creating an alignment from file' do
 
