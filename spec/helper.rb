@@ -29,7 +29,5 @@ def fixtures(*args)
 end
 
 def clear_all_tables
-  [Gene,Alignment,AlignmentCodon,SiteMutation,GeneMutation].each do |table|
-    table.delete_all
-  end
+  ObjectSpace.each_object(Class){|x| x.delete_all if x.superclass == ActiveRecord::Base}
 end
