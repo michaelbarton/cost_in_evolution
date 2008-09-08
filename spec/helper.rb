@@ -15,8 +15,17 @@ GENE = File.expand_path(File.dirname(__FILE__) + '/data/ydl177c.fasta.txt')
 ALIGN = File.expand_path(File.dirname(__FILE__) + '/data/ydl177c.alignment.txt')
 
 def fixtures(*args)
-  dir = File.join(File.dirname(__FILE__),'fixtures')
-  args.each{|x| Fixtures.create_fixtures(dir,x.to_s) }
+  clear_all_tables
+  args.each do |table|
+    file = File.join(File.dirname(__FILE__),'fixtures',"#{table}.yml")
+    entries = YAML.load(File.open(file).read)
+
+    entries.each do |key, entry|
+      ActiveRecord::Base.connection.insert(
+        "INSERT INTO #{table} (#{entry.keys * ','}) VALUES (#{entry.values.map{|x| "'#{x}'"} * ','});"
+      )
+    end
+  end
 end
 
 def clear_all_tables
