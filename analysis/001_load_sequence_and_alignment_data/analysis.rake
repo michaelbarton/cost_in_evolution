@@ -51,6 +51,18 @@ namespace '001' do
     16.times { p.call }
   end
 
+  desc 'Spits gene and alignment data to the r/data directory'
+  task :spit_alignment_gene_data do
+    target = File.join(File.dirname(__FILE__),'r','data','gene_alignment.csv')
+    data = Alignment.all(:include => :gene).map do |align| 
+      [align.gene.name, align.gene.dna.length, align.length]
+    end
+    FasterCSV.open(target,'w') do |csv|
+      csv << ['name','gene length','alignment length']
+      data.each { |x| csv << x }
+    end
+  end
+
   desc 'Clears all data, and repeats milestone 001 analysis'
   task :analysis_rebuild => [
     'load_sequence_data',
