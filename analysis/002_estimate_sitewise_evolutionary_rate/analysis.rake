@@ -62,4 +62,18 @@ namespace '002' do
     end
   end
 
+  desc 'Generate codeml estimated rate summary'
+  task :estimated_codeml_rate_summary do
+    File.open(File.join(File.dirname(__FILE__),'summary','codeml_estimated_rates.yml'),'w') do |out|
+      YAML.dump(GeneMutation.summary_of_codeml_estimated_rates,out)
+    end
+  end
+
+  desc 'Generate wall estimated rate summary'
+  task :estimated_wall_rate_summary do
+    File.open(File.join(File.dirname(__FILE__),'summary','wall_estimated_rates.yml'),'w') do |out|
+      YAML.dump(GeneMutation.summary_of_wall_estimated_rates,out)
+    end
+  end
+
 end
