@@ -45,7 +45,8 @@ module Rustat
             methods.inject(Array.new) do |array,method|
               new_method = method.gsub('observation',name.to_s)
               define_method(new_method) do
-                Rustat.send method, self.all.select(&filter).map(&var).map(&transform)
+                data = self.all(options[:active_record]).select(&filter).map(&var).map(&transform)
+                Rustat.send method, data
               end
 
               # Add to an array so that the acts_as_summary method returns

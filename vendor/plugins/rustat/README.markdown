@@ -49,9 +49,9 @@ Rustat::ActsAsSummary can be used to tag all these methods onto an ActiveRecord:
     # specific summaries
     class User < ActiveRecord::Base
       acts_as_summary :timestamp,
-        :select => lambda {|user| user.premium?},
-        :map    => lambda {|time| Time.now - time},
-        :name   => :premium_user_subscription_time
+        :active_record => {:conditions => {premium => true}}
+        :map           => lambda {|time| Time.now - time},
+        :name          => :premium_user_subscription_time
     end
 
     User.median_premium_user_subscription_time
@@ -64,7 +64,7 @@ Not on Rubyforge at present
 
 (The MIT License)
 
-Copyright (c) 2008 Michael D. Barton full name
+Copyright (c) 2008 Michael D. Barton
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

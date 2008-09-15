@@ -1,4 +1,9 @@
 module Rustat
+
+  def self.number_of_observations(array)
+    array.size
+  end
+
   def self.biggest_observation(array)
     array.max
   end
@@ -40,5 +45,17 @@ module Rustat
     mean = self.mean_observation(array)
     sum_squares = array.inject(0) {|sum,x| sum + (x.to_f - mean)**2}
     Math.sqrt(sum_squares/(array.size-1))
+  end
+
+  def self.summary_of_observations(array)
+    {
+      :mean               => self.mean_observation(array),
+      :median             => self.median_observation(array),
+      :mode               => self.mode_observations(array),
+      :biggest            => self.biggest_observation(array),
+      :smallest           => self.smallest_observation(array),
+      :standard_deviation => self.standard_deviation_of_observations(array),
+      :number             => self.number_of_observations(array)
+    }
   end
 end
