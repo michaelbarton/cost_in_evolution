@@ -76,4 +76,13 @@ namespace '002' do
     end
   end
 
+  desc 'Writes gene mutation data to file'
+  task :write_gene_mutation_data do
+    mutations = GeneMutation.all :include => {:alignment => :gene}
+    FasterCSV.open(File.join(File.dirname(__FILE__),'r','data','gene_mutations.csv'),'w') do |csv|
+      csv << ['gene','rate','dataset']
+      mutations.each {|m| csv << [m.alignment.gene.name,m.estimated_rate,m.dataset] }
+    end
+  end
+
 end
