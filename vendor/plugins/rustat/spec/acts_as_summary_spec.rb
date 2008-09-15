@@ -25,7 +25,7 @@ def expected_results(model,name,expects)
 
   it 'should return the expected mode values' do
     model.should respond_to("mode_#{name}s")
-    model.send("mode_#{name}s").sort.should == expects[:mode].sort
+    model.send("mode_#{name}s").should == expects[:mode]
   end
 
   it 'should return the expected standard deviation value' do
@@ -44,7 +44,7 @@ def expected_results(model,name,expects)
     summary[:number].should == expects[:number]
     summary[:median].should == expects[:median]
     summary[:mean].should == expects[:mean]
-    summary[:mode].sort.should == expects[:mode].sort
+    summary[:mode].should == expects[:mode]
     summary[:smallest].should == expects[:smallest]
     summary[:number].should == expects[:number]
     summary[:standard_deviation].should be_close(expects[:sd],0.001)

@@ -38,7 +38,12 @@ module Rustat
       hash
     end
     max_freq = freq.values.max
-    freq.keys.select{|x| freq[x] == max_freq}
+    modes = freq.keys.select{|x| freq[x] == max_freq}
+    if modes.size == 1
+      modes.first
+    else
+      modes.sort
+    end
   end
 
   def self.standard_deviation_of_observations(array)
