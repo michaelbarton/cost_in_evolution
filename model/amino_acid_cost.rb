@@ -3,5 +3,5 @@ class AminoAcidCost < ActiveRecord::Base
 
   belongs_to :amino_acid
 
-  validates_presence_of :amino_acid_id, :type, :estimate
+  validates_presence_of :amino_acid_id, :name, :estimate
 end
