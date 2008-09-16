@@ -40,7 +40,7 @@ namespace '003' do
         amino_acid = AminoAcid.find_by_short(row['amino_acid'])
           a = AminoAcidCost.new
           a.amino_acid_id = amino_acid.id
-          a.type          = cost_type
+          a.name          = cost_type
           a.estimate      = row['estimate']
           a.save!
       end
