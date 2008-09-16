@@ -47,4 +47,14 @@ namespace '003' do
     end
   end
 
+  desc 'Prints amino acid cost data'
+  task :print_cost_data do
+    FasterCSV.open(File.join(File.dirname(__FILE__),'r','data','costs.csv'),'w') do |csv|
+      csv << ['amino_acid','type','cost']
+      AminoAcidCost.all(:include => :amino_acid).each do |cost|
+        csv << [cost.amino_acid.name,cost.name,cost.estimate]
+      end
+    end
+  end
+
 end
