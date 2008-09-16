@@ -6,3 +6,4 @@ config.yml
 data/*.gz
 log/*
 www/site/*.html
+analysis/*/r/plots/*
