@@ -27,5 +27,24 @@ namespace '003' do
     16.times { p.call }
   end
 
+  desc 'Clears all amino acid cost data'
+  task :clear_amino_acid_costs do
+    AminoAcidCost.delete_all
+  end
+
+  desc 'Loads all amino acid cost data'
+  task :load_amino_acid_costs => :clear_amino_acid_costs do
+    Dir.glob(File.join(PROJECT_ROOT,'data','amino_acid_costs','*.csv')) do |file|
+      cost_type = File.basename(file).split('.').first
+      FasterCSV.open(file,:headers => :true).each do |row|
+        amino_acid = AminoAcid.find_by_short(row['amino_acid'])
+          a = AminoAcidCost.new
+          a.amino_acid_id = amino_acid.id
+          a.type          = cost_type
+          a.estimate      = row['estimate']
+          a.save!
+      end
+    end
+  end
 
 end
