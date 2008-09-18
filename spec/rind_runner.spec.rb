@@ -94,7 +94,7 @@ describe RindRunner do
     it 'should return expected number of site wise rates' do
       er = RindRunner.new(Alignment.first)
       er.run
-      er.site_rates.should_not == nil
+      er.site_rates.should_not be_nil
     end
 
     it 'should return expected number of site wise rates' do
@@ -115,21 +115,21 @@ describe RindRunner do
     it 'the tenth site rate should have the expected results' do
       er = RindRunner.new(Alignment.first)
       er.run
-      position = er.site_rates[10]
+      position = er.site_rates[9]
       position.size.should == 1
-      position['L'].should_not == nil
-      position['L'].should == [1.0,0.0]
+      position['T'].should_not be_nil
+      position['T'].should == [1.0,0.0]
     end
 
     it 'the hundredth site rate should have the expected results' do
       er = RindRunner.new(Alignment.first)
       er.run
-      position = er.site_rates[100]
+      position = er.site_rates[99]
       position.size.should == 2
-      position['H'].should_not == nil
-      position['H'].should == [1.0,0.0]
-      position['N'].should_not == nil
-      position['N'].should == [2.951,0.371]
+      position['S'].should_not be_nil
+      position['S'].should == [1.0,0.0]
+      position['L'].should_not be_nil
+      position['L'].should == [2.813,0.681]
     end
 
   end
