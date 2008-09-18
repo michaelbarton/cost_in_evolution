@@ -261,6 +261,7 @@ module Bio
     #  # end
   end
 
+  autoload :Rind,        'bio/appl/rind/counts'
   ### Utilities
 
   autoload :SiRNA,          'bio/util/sirna'

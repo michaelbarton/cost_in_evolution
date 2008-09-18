@@ -33,8 +33,8 @@ module Bio::PAML
     #
     # site_rates = Bio::PAML::Codeml::Rates.new(File.open(@tmp_dir + "/rates").read)
     # site_rate.first[:freq] # => Number of times that column appears
-    # site_rate.[5][:rate] # => Estimated rate of evolution
-    # site_rate.last[:data] # => The content of the column, as a string
+    # site_rate[5][:rate] # => Estimated rate of evolution
+    # site_rate.last[:data] # => The content of the data column, as a string
     #
     # # This class delegates to an array, so will respond to all array methods
     # site_rates.max {|x,y| x[:rate] <=> y[:rate] } # => Fastest evolving column
