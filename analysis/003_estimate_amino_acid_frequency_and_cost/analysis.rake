@@ -22,6 +22,17 @@ namespace '003' do
     Fixtures.create_fixtures(directory,'conditions')
   end
 
+  desc 'Clears cost types'
+  task :clear_cost_types do
+    CostType.delete_all
+  end
+
+  desc 'Loads cost types'
+  task :load_cost_types => :clear_cost_types do
+    directory = File.join(PROJECT_ROOT,'data')
+    Fixtures.create_fixtures(directory,'cost_types')
+  end
+
   desc 'Clears amino acid frequency data'
   task :clear_amino_acid_frequency do
     AminoAcidFrequency.delete_all
