@@ -1,0 +1,12 @@
+absolute:
+  id: 1
+  abbrv: abs
+  name: absolute flux balance analysis estimation
+relative:
+  id: 2
+  abbrv: rel
+  name: relative flux balance analysis estimation
+weight:
+  id: 3
+  abbrv: wei
+  name: molecular weight
