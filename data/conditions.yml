@@ -1,0 +1,20 @@
+unspecified:
+  id: 1
+  abbrv: none
+  name: unspecified
+carbon:
+  id: 2
+  abbrv: car
+  name: carbon limited
+nitrogen:
+  id: 3
+  abbrv: nit
+  name: nitrogen limited
+phosphorus:
+  id: 4
+  abbrv: phos
+  name: phosphorus limited
+sulphur:
+  id: 5
+  abbrv: sul
+  name: sulphur limited

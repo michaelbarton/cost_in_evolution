@@ -11,6 +11,17 @@ namespace '003' do
     Fixtures.create_fixtures(directory,'amino_acids')
   end
 
+  desc 'Clears conditions'
+  task :clear_conditions do
+    Condition.delete_all
+  end
+
+  desc 'Loads conditions'
+  task :load_conditions => :clear_conditions do
+    directory = File.join(PROJECT_ROOT,'data')
+    Fixtures.create_fixtures(directory,'conditions')
+  end
+
   desc 'Clears amino acid frequency data'
   task :clear_amino_acid_frequency do
     AminoAcidFrequency.delete_all
