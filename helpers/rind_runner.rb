@@ -27,14 +27,13 @@ class RindRunner
     end
 
     if File.exists?('counts')
-      self.site_rates = RindRunner.parse_rates(File.open('counts').read)
+      self.site_rates = Bio::Rind::Counts.new(File.open('counts').read)
       unuse_tmp_dir
       return self
     else
       unuse_tmp_dir
       throw RuntimeError, "Rind ouput file 'counts' not found"
     end
-
 
   end
 
@@ -87,30 +86,6 @@ class RindRunner
       string << "#{id}  #{Bio::Sequence::NA.new(seq).translate}\n"
     end
     string
-  end
-
-  def self.parse_rates(counts)
-    frequencies = Hash.new
-
-    File.open('counts') do |file|
-      header = file.readline.split(/\s+/)
-      while not file.eof?
-        position = file.readline[/\d+/,0].to_i
-
-        entries = file.readline.
-          split(/\s(?=\d+\.\d+\s+\+\-\s+\d+\.\d+)/).
-          map{|x| x.strip.split(/\s+\+\-\s+/)}.
-          zip(header).
-          inject(Hash.new) do |hash, entry|
-            unless entry.first.first == '0.000'
-              hash[entry.last] = entry.first.map{|x| x.to_f}
-            end
-            hash
-          end
-        frequencies[position] = entries
-      end
-    end
-    frequencies
   end
   
 end

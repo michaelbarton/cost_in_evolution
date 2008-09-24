@@ -4,7 +4,7 @@ class AminoAcidFrequency < ActiveRecord::Base
 
   def self.create_from_frequencies(freq,alignment)
 
-    freq.each do |position,hash|
+    freq.each_with_index do |hash,position|
       codon = AlignmentCodon.find_by_alignment_id_and_start_position(alignment.id,position*3)
       hash.each do |amino_acid, rates|
         unless codon.amino_acids.include? amino_acid

@@ -1,80 +1,100 @@
 alanine:
+  id: 1
   name: alanine
   abbrv: A
   short: ala
 arginine:
+  id: 2
   name: arginine
   abbrv: R
   short: arg
 asparagine:
+  id: 3
   name: asparagine
   abbrv: N
   short: asn
 aspartic_acid:
+  id: 4
   name: aspartic acid
   abbrv: D
   short: asp
 cysteine:
+  id: 5
   name: cysteine
   abbrv: C
   short: cys
 glutamine:
+  id: 6
   name: glutamine
   abbrv: Q
   short: gln
 glutamic_acid:
+  id: 7
   name: glutamic acid
   abbrv: E
   short: glu
 glycine:
+  id: 8
   name: glycine
   abbrv: G
   short: gly
 histidine:
+  id: 9
   name: histidine
   abbrv: H
   short: his
 isoleucine:
+  id: 10
   name: isoleucine
   abbrv: I
   short: ile
 leucine:
+  id: 11
   name: leucine
   abbrv: L
   short: leu
 lysine:
+  id: 12
   name: lysine
   abbrv: K
   short: lys
 methionine:
+  id: 13
   name: methionine
   abbrv: M
   short: met
 phenylalanine:
+  id: 14
   name: phenylalanine
   abbrv: F
   short: phe
 proline:
+  id: 15
   name: proline
   abbrv: P
   short: pro
 serine:
+  id: 16
   name: serine
   abbrv: S
   short: ser
 threonine:
+  id: 17
   name: threonine
   abbrv: T
   short: thr
 tryptophan:
+  id: 18
   name: tryptophan
   abbrv: W
   short: trp
 tyrosine:
+  id: 19
   name: tyrosine
   abbrv: Y
   short: tyr
 valine:
+  id: 20
   name: valine
   abbrv: V
   short: val

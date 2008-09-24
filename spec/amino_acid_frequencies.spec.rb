@@ -30,7 +30,7 @@ describe AminoAcidFrequency do
       freq.amino_acid.short.should == 'met'
     end
 
-    it 'should store the 100th entries correctly' do
+    it 'should store the 101st entries correctly' do
       freq = AlignmentCodon.find_by_start_position(100*3).amino_acid_frequencies
       freq.should_not be_nil
       freq.size.should == 2
@@ -49,6 +49,27 @@ describe AminoAcidFrequency do
       acid.should_not be_nil
       acid.error.should == 0.371
       acid.frequency.should == 2.951
+    end
+
+    it 'should store the sixty eighth entries correctly' do
+      freq = AlignmentCodon.find_by_start_position(67*3).amino_acid_frequencies
+      freq.should_not be_nil
+      freq.size.should == 2
+      acid = AminoAcidFrequency.first :conditions => {
+        :alignment_codon_id => AlignmentCodon.find_by_start_position(67*3).id,
+	:amino_acid_id      => AminoAcid.find_by_abbrv('F').id
+      }
+      acid.should_not be_nil
+      acid.frequency.should == 1.994
+      acid.error.should == 0.136
+
+      acid = AminoAcidFrequency.first :conditions => {
+        :alignment_codon_id => AlignmentCodon.find_by_start_position(67*3).id,
+	:amino_acid_id      => AminoAcid.find_by_abbrv('S').id
+      }
+      acid.should_not be_nil
+      acid.frequency.should == 1.998
+      acid.error.should == 0.072
     end
 
     it 'should store the last entries correctly' do
