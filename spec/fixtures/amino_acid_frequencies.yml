@@ -1,0 +1,1518 @@
+4406274:
+  id: 4406274
+  alignment_codon_id: 1
+  amino_acid_id: 13
+  frequency: 2.945
+  error: 1.081
+4406275:
+  id: 4406275
+  alignment_codon_id: 2
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406276:
+  id: 4406276
+  alignment_codon_id: 3
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406277:
+  id: 4406277
+  alignment_codon_id: 4
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406278:
+  id: 4406278
+  alignment_codon_id: 5
+  amino_acid_id: 16
+  frequency: 1.0
+  error: 0.0
+4406279:
+  id: 4406279
+  alignment_codon_id: 5
+  amino_acid_id: 17
+  frequency: 2.177
+  error: 0.933
+4406280:
+  id: 4406280
+  alignment_codon_id: 6
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406281:
+  id: 4406281
+  alignment_codon_id: 7
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406282:
+  id: 4406282
+  alignment_codon_id: 8
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406283:
+  id: 4406283
+  alignment_codon_id: 9
+  amino_acid_id: 15
+  frequency: 2.945
+  error: 1.081
+4406284:
+  id: 4406284
+  alignment_codon_id: 10
+  amino_acid_id: 16
+  frequency: 2.177
+  error: 0.933
+4406285:
+  id: 4406285
+  alignment_codon_id: 10
+  amino_acid_id: 17
+  frequency: 1.0
+  error: 0.0
+4406286:
+  id: 4406286
+  alignment_codon_id: 11
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406287:
+  id: 4406287
+  alignment_codon_id: 12
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406289:
+  id: 4406289
+  alignment_codon_id: 13
+  amino_acid_id: 10
+  frequency: 2.177
+  error: 0.933
+4406288:
+  id: 4406288
+  alignment_codon_id: 13
+  amino_acid_id: 20
+  frequency: 1.0
+  error: 0.0
+4406290:
+  id: 4406290
+  alignment_codon_id: 14
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406291:
+  id: 4406291
+  alignment_codon_id: 15
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406293:
+  id: 4406293
+  alignment_codon_id: 16
+  amino_acid_id: 10
+  frequency: 2.26
+  error: 0.863
+4406292:
+  id: 4406292
+  alignment_codon_id: 16
+  amino_acid_id: 14
+  frequency: 1.0
+  error: 0.0
+4406294:
+  id: 4406294
+  alignment_codon_id: 17
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406295:
+  id: 4406295
+  alignment_codon_id: 18
+  amino_acid_id: 1
+  frequency: 2.26
+  error: 0.863
+4406296:
+  id: 4406296
+  alignment_codon_id: 18
+  amino_acid_id: 17
+  frequency: 1.0
+  error: 0.0
+4406297:
+  id: 4406297
+  alignment_codon_id: 19
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406299:
+  id: 4406299
+  alignment_codon_id: 20
+  amino_acid_id: 1
+  frequency: 1.0
+  error: 0.0
+4406298:
+  id: 4406298
+  alignment_codon_id: 20
+  amino_acid_id: 20
+  frequency: 2.26
+  error: 0.863
+4406300:
+  id: 4406300
+  alignment_codon_id: 21
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406301:
+  id: 4406301
+  alignment_codon_id: 22
+  amino_acid_id: 11
+  frequency: 1.0
+  error: 0.0
+4406302:
+  id: 4406302
+  alignment_codon_id: 22
+  amino_acid_id: 16
+  frequency: 2.26
+  error: 0.863
+4406303:
+  id: 4406303
+  alignment_codon_id: 23
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406304:
+  id: 4406304
+  alignment_codon_id: 24
+  amino_acid_id: 1
+  frequency: 1.0
+  error: 0.0
+4406305:
+  id: 4406305
+  alignment_codon_id: 24
+  amino_acid_id: 2
+  frequency: 1.0
+  error: 0.0
+4406306:
+  id: 4406306
+  alignment_codon_id: 24
+  amino_acid_id: 16
+  frequency: 1.963
+  error: 0.326
+4406307:
+  id: 4406307
+  alignment_codon_id: 25
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406308:
+  id: 4406308
+  alignment_codon_id: 26
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406309:
+  id: 4406309
+  alignment_codon_id: 27
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406310:
+  id: 4406310
+  alignment_codon_id: 28
+  amino_acid_id: 3
+  frequency: 1.0
+  error: 0.0
+4406311:
+  id: 4406311
+  alignment_codon_id: 28
+  amino_acid_id: 16
+  frequency: 2.26
+  error: 0.863
+4406312:
+  id: 4406312
+  alignment_codon_id: 29
+  amino_acid_id: 19
+  frequency: 2.945
+  error: 1.081
+4406313:
+  id: 4406313
+  alignment_codon_id: 30
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406314:
+  id: 4406314
+  alignment_codon_id: 31
+  amino_acid_id: 15
+  frequency: 2.945
+  error: 1.081
+4406315:
+  id: 4406315
+  alignment_codon_id: 32
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406316:
+  id: 4406316
+  alignment_codon_id: 33
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406317:
+  id: 4406317
+  alignment_codon_id: 34
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406318:
+  id: 4406318
+  alignment_codon_id: 35
+  amino_acid_id: 16
+  frequency: 2.26
+  error: 0.863
+4406319:
+  id: 4406319
+  alignment_codon_id: 35
+  amino_acid_id: 17
+  frequency: 1.0
+  error: 0.0
+4406320:
+  id: 4406320
+  alignment_codon_id: 36
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406321:
+  id: 4406321
+  alignment_codon_id: 37
+  amino_acid_id: 15
+  frequency: 2.945
+  error: 1.081
+4406322:
+  id: 4406322
+  alignment_codon_id: 38
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406323:
+  id: 4406323
+  alignment_codon_id: 39
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406324:
+  id: 4406324
+  alignment_codon_id: 40
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406325:
+  id: 4406325
+  alignment_codon_id: 41
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406326:
+  id: 4406326
+  alignment_codon_id: 42
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406327:
+  id: 4406327
+  alignment_codon_id: 43
+  amino_acid_id: 5
+  frequency: 2.945
+  error: 1.081
+4406328:
+  id: 4406328
+  alignment_codon_id: 44
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406329:
+  id: 4406329
+  alignment_codon_id: 45
+  amino_acid_id: 19
+  frequency: 2.945
+  error: 1.081
+4406330:
+  id: 4406330
+  alignment_codon_id: 46
+  amino_acid_id: 19
+  frequency: 2.945
+  error: 1.081
+4406331:
+  id: 4406331
+  alignment_codon_id: 47
+  amino_acid_id: 4
+  frequency: 2.945
+  error: 1.081
+4406332:
+  id: 4406332
+  alignment_codon_id: 48
+  amino_acid_id: 13
+  frequency: 2.945
+  error: 1.081
+4406334:
+  id: 4406334
+  alignment_codon_id: 49
+  amino_acid_id: 1
+  frequency: 2.822
+  error: 0.668
+4406333:
+  id: 4406333
+  alignment_codon_id: 49
+  amino_acid_id: 20
+  frequency: 1.0
+  error: 0.0
+4406335:
+  id: 4406335
+  alignment_codon_id: 50
+  amino_acid_id: 16
+  frequency: 1.0
+  error: 0.0
+4406336:
+  id: 4406336
+  alignment_codon_id: 50
+  amino_acid_id: 17
+  frequency: 2.177
+  error: 0.933
+4406337:
+  id: 4406337
+  alignment_codon_id: 51
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406338:
+  id: 4406338
+  alignment_codon_id: 52
+  amino_acid_id: 4
+  frequency: 2.177
+  error: 0.933
+4406339:
+  id: 4406339
+  alignment_codon_id: 52
+  amino_acid_id: 7
+  frequency: 1.0
+  error: 0.0
+4406340:
+  id: 4406340
+  alignment_codon_id: 53
+  amino_acid_id: 4
+  frequency: 2.945
+  error: 1.081
+4406341:
+  id: 4406341
+  alignment_codon_id: 54
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406342:
+  id: 4406342
+  alignment_codon_id: 55
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406343:
+  id: 4406343
+  alignment_codon_id: 56
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406344:
+  id: 4406344
+  alignment_codon_id: 57
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406345:
+  id: 4406345
+  alignment_codon_id: 58
+  amino_acid_id: 8
+  frequency: 2.945
+  error: 1.081
+4406346:
+  id: 4406346
+  alignment_codon_id: 59
+  amino_acid_id: 19
+  frequency: 2.945
+  error: 1.081
+4406347:
+  id: 4406347
+  alignment_codon_id: 60
+  amino_acid_id: 6
+  frequency: 2.945
+  error: 1.081
+4406348:
+  id: 4406348
+  alignment_codon_id: 61
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406349:
+  id: 4406349
+  alignment_codon_id: 62
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406350:
+  id: 4406350
+  alignment_codon_id: 63
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406351:
+  id: 4406351
+  alignment_codon_id: 64
+  amino_acid_id: 8
+  frequency: 2.945
+  error: 1.081
+4406352:
+  id: 4406352
+  alignment_codon_id: 65
+  amino_acid_id: 8
+  frequency: 2.945
+  error: 1.081
+4406353:
+  id: 4406353
+  alignment_codon_id: 66
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406354:
+  id: 4406354
+  alignment_codon_id: 67
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406355:
+  id: 4406355
+  alignment_codon_id: 68
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406356:
+  id: 4406356
+  alignment_codon_id: 69
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406357:
+  id: 4406357
+  alignment_codon_id: 70
+  amino_acid_id: 4
+  frequency: 2.945
+  error: 1.081
+4406358:
+  id: 4406358
+  alignment_codon_id: 71
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406359:
+  id: 4406359
+  alignment_codon_id: 72
+  amino_acid_id: 4
+  frequency: 2.945
+  error: 1.081
+4406360:
+  id: 4406360
+  alignment_codon_id: 73
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406361:
+  id: 4406361
+  alignment_codon_id: 74
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406362:
+  id: 4406362
+  alignment_codon_id: 75
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406363:
+  id: 4406363
+  alignment_codon_id: 76
+  amino_acid_id: 15
+  frequency: 2.945
+  error: 1.081
+4406364:
+  id: 4406364
+  alignment_codon_id: 77
+  amino_acid_id: 4
+  frequency: 2.945
+  error: 1.081
+4406365:
+  id: 4406365
+  alignment_codon_id: 78
+  amino_acid_id: 8
+  frequency: 2.945
+  error: 1.081
+4406366:
+  id: 4406366
+  alignment_codon_id: 79
+  amino_acid_id: 1
+  frequency: 1.982
+  error: 0.232
+4406367:
+  id: 4406367
+  alignment_codon_id: 79
+  amino_acid_id: 16
+  frequency: 1.987
+  error: 0.197
+4406368:
+  id: 4406368
+  alignment_codon_id: 80
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406369:
+  id: 4406369
+  alignment_codon_id: 81
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406370:
+  id: 4406370
+  alignment_codon_id: 82
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406371:
+  id: 4406371
+  alignment_codon_id: 83
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406372:
+  id: 4406372
+  alignment_codon_id: 84
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406374:
+  id: 4406374
+  alignment_codon_id: 85
+  amino_acid_id: 2
+  frequency: 1.0
+  error: 0.0
+4406373:
+  id: 4406373
+  alignment_codon_id: 85
+  amino_acid_id: 12
+  frequency: 2.177
+  error: 0.933
+4406375:
+  id: 4406375
+  alignment_codon_id: 86
+  amino_acid_id: 6
+  frequency: 2.945
+  error: 1.081
+4406376:
+  id: 4406376
+  alignment_codon_id: 87
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406377:
+  id: 4406377
+  alignment_codon_id: 88
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406378:
+  id: 4406378
+  alignment_codon_id: 89
+  amino_acid_id: 19
+  frequency: 2.945
+  error: 1.081
+4406379:
+  id: 4406379
+  alignment_codon_id: 90
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406380:
+  id: 4406380
+  alignment_codon_id: 91
+  amino_acid_id: 4
+  frequency: 2.945
+  error: 1.081
+4406381:
+  id: 4406381
+  alignment_codon_id: 92
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406382:
+  id: 4406382
+  alignment_codon_id: 93
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406383:
+  id: 4406383
+  alignment_codon_id: 94
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406384:
+  id: 4406384
+  alignment_codon_id: 95
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406385:
+  id: 4406385
+  alignment_codon_id: 96
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406386:
+  id: 4406386
+  alignment_codon_id: 97
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406387:
+  id: 4406387
+  alignment_codon_id: 98
+  amino_acid_id: 8
+  frequency: 2.945
+  error: 1.081
+4406388:
+  id: 4406388
+  alignment_codon_id: 99
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406389:
+  id: 4406389
+  alignment_codon_id: 100
+  amino_acid_id: 8
+  frequency: 2.945
+  error: 1.081
+4406391:
+  id: 4406391
+  alignment_codon_id: 101
+  amino_acid_id: 6
+  frequency: 1.0
+  error: 0.0
+4406390:
+  id: 4406390
+  alignment_codon_id: 101
+  amino_acid_id: 12
+  frequency: 2.177
+  error: 0.933
+4406392:
+  id: 4406392
+  alignment_codon_id: 102
+  amino_acid_id: 19
+  frequency: 2.945
+  error: 1.081
+4406393:
+  id: 4406393
+  alignment_codon_id: 103
+  amino_acid_id: 16
+  frequency: 1.0
+  error: 0.0
+4406394:
+  id: 4406394
+  alignment_codon_id: 103
+  amino_acid_id: 17
+  frequency: 2.177
+  error: 0.933
+4406395:
+  id: 4406395
+  alignment_codon_id: 104
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406396:
+  id: 4406396
+  alignment_codon_id: 105
+  amino_acid_id: 5
+  frequency: 2.945
+  error: 1.081
+4406397:
+  id: 4406397
+  alignment_codon_id: 106
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406398:
+  id: 4406398
+  alignment_codon_id: 107
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406399:
+  id: 4406399
+  alignment_codon_id: 108
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406400:
+  id: 4406400
+  alignment_codon_id: 109
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406401:
+  id: 4406401
+  alignment_codon_id: 110
+  amino_acid_id: 19
+  frequency: 2.945
+  error: 1.081
+4406402:
+  id: 4406402
+  alignment_codon_id: 111
+  amino_acid_id: 8
+  frequency: 2.945
+  error: 1.081
+4406403:
+  id: 4406403
+  alignment_codon_id: 112
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406404:
+  id: 4406404
+  alignment_codon_id: 113
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406405:
+  id: 4406405
+  alignment_codon_id: 114
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406406:
+  id: 4406406
+  alignment_codon_id: 115
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406407:
+  id: 4406407
+  alignment_codon_id: 116
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406408:
+  id: 4406408
+  alignment_codon_id: 117
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406409:
+  id: 4406409
+  alignment_codon_id: 118
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406411:
+  id: 4406411
+  alignment_codon_id: 119
+  amino_acid_id: 10
+  frequency: 2.26
+  error: 0.863
+4406410:
+  id: 4406410
+  alignment_codon_id: 119
+  amino_acid_id: 20
+  frequency: 1.0
+  error: 0.0
+4406412:
+  id: 4406412
+  alignment_codon_id: 120
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406413:
+  id: 4406413
+  alignment_codon_id: 121
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406414:
+  id: 4406414
+  alignment_codon_id: 122
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406415:
+  id: 4406415
+  alignment_codon_id: 123
+  amino_acid_id: 12
+  frequency: 2.177
+  error: 0.933
+4406416:
+  id: 4406416
+  alignment_codon_id: 123
+  amino_acid_id: 13
+  frequency: 1.0
+  error: 0.0
+4406417:
+  id: 4406417
+  alignment_codon_id: 124
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406418:
+  id: 4406418
+  alignment_codon_id: 125
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406419:
+  id: 4406419
+  alignment_codon_id: 126
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406420:
+  id: 4406420
+  alignment_codon_id: 127
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406421:
+  id: 4406421
+  alignment_codon_id: 128
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406422:
+  id: 4406422
+  alignment_codon_id: 129
+  amino_acid_id: 4
+  frequency: 2.26
+  error: 0.863
+4406423:
+  id: 4406423
+  alignment_codon_id: 129
+  amino_acid_id: 7
+  frequency: 1.0
+  error: 0.0
+4406424:
+  id: 4406424
+  alignment_codon_id: 130
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406425:
+  id: 4406425
+  alignment_codon_id: 131
+  amino_acid_id: 1
+  frequency: 1.0
+  error: 0.0
+4406427:
+  id: 4406427
+  alignment_codon_id: 131
+  amino_acid_id: 9
+  frequency: 1.0
+  error: 0.0
+4406426:
+  id: 4406426
+  alignment_codon_id: 131
+  amino_acid_id: 15
+  frequency: 1.992
+  error: 0.151
+4406428:
+  id: 4406428
+  alignment_codon_id: 132
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406429:
+  id: 4406429
+  alignment_codon_id: 133
+  amino_acid_id: 1
+  frequency: 1.349
+  error: 0.826
+4406430:
+  id: 4406430
+  alignment_codon_id: 133
+  amino_acid_id: 16
+  frequency: 1.0
+  error: 0.0
+4406431:
+  id: 4406431
+  alignment_codon_id: 133
+  amino_acid_id: 17
+  frequency: 1.0
+  error: 0.0
+4406433:
+  id: 4406433
+  alignment_codon_id: 134
+  amino_acid_id: 4
+  frequency: 1.349
+  error: 0.826
+4406434:
+  id: 4406434
+  alignment_codon_id: 134
+  amino_acid_id: 7
+  frequency: 1.0
+  error: 0.0
+4406432:
+  id: 4406432
+  alignment_codon_id: 134
+  amino_acid_id: 12
+  frequency: 1.0
+  error: 0.0
+4406436:
+  id: 4406436
+  alignment_codon_id: 135
+  amino_acid_id: 10
+  frequency: 1.0
+  error: 0.0
+4406435:
+  id: 4406435
+  alignment_codon_id: 135
+  amino_acid_id: 20
+  frequency: 2.177
+  error: 0.933
+4406437:
+  id: 4406437
+  alignment_codon_id: 136
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406438:
+  id: 4406438
+  alignment_codon_id: 137
+  amino_acid_id: 3
+  frequency: 2.946
+  error: 0.388
+4406439:
+  id: 4406439
+  alignment_codon_id: 137
+  amino_acid_id: 16
+  frequency: 1.0
+  error: 0.0
+4406440:
+  id: 4406440
+  alignment_codon_id: 138
+  amino_acid_id: 4
+  frequency: 2.945
+  error: 1.081
+4406441:
+  id: 4406441
+  alignment_codon_id: 139
+  amino_acid_id: 4
+  frequency: 2.945
+  error: 1.081
+4406442:
+  id: 4406442
+  alignment_codon_id: 140
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406443:
+  id: 4406443
+  alignment_codon_id: 141
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406444:
+  id: 4406444
+  alignment_codon_id: 142
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406445:
+  id: 4406445
+  alignment_codon_id: 143
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406446:
+  id: 4406446
+  alignment_codon_id: 144
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406447:
+  id: 4406447
+  alignment_codon_id: 145
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406448:
+  id: 4406448
+  alignment_codon_id: 146
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406449:
+  id: 4406449
+  alignment_codon_id: 147
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406450:
+  id: 4406450
+  alignment_codon_id: 148
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406451:
+  id: 4406451
+  alignment_codon_id: 149
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406452:
+  id: 4406452
+  alignment_codon_id: 150
+  amino_acid_id: 4
+  frequency: 2.945
+  error: 1.081
+4406453:
+  id: 4406453
+  alignment_codon_id: 151
+  amino_acid_id: 2
+  frequency: 2.945
+  error: 1.081
+4406454:
+  id: 4406454
+  alignment_codon_id: 152
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406455:
+  id: 4406455
+  alignment_codon_id: 153
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406456:
+  id: 4406456
+  alignment_codon_id: 154
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406458:
+  id: 4406458
+  alignment_codon_id: 155
+  amino_acid_id: 2
+  frequency: 1.0
+  error: 0.0
+4406457:
+  id: 4406457
+  alignment_codon_id: 155
+  amino_acid_id: 12
+  frequency: 2.177
+  error: 0.933
+4406459:
+  id: 4406459
+  alignment_codon_id: 156
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406460:
+  id: 4406460
+  alignment_codon_id: 157
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406461:
+  id: 4406461
+  alignment_codon_id: 158
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406462:
+  id: 4406462
+  alignment_codon_id: 159
+  amino_acid_id: 1
+  frequency: 1.987
+  error: 0.193
+4406463:
+  id: 4406463
+  alignment_codon_id: 159
+  amino_acid_id: 17
+  frequency: 1.228
+  error: 0.727
+4406464:
+  id: 4406464
+  alignment_codon_id: 160
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406465:
+  id: 4406465
+  alignment_codon_id: 161
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406466:
+  id: 4406466
+  alignment_codon_id: 162
+  amino_acid_id: 19
+  frequency: 2.945
+  error: 1.081
+4406467:
+  id: 4406467
+  alignment_codon_id: 163
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406468:
+  id: 4406468
+  alignment_codon_id: 164
+  amino_acid_id: 2
+  frequency: 2.945
+  error: 1.081
+4406469:
+  id: 4406469
+  alignment_codon_id: 165
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406470:
+  id: 4406470
+  alignment_codon_id: 166
+  amino_acid_id: 2
+  frequency: 2.945
+  error: 1.081
+4406471:
+  id: 4406471
+  alignment_codon_id: 167
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406472:
+  id: 4406472
+  alignment_codon_id: 168
+  amino_acid_id: 18
+  frequency: 2.945
+  error: 1.081
+4406473:
+  id: 4406473
+  alignment_codon_id: 169
+  amino_acid_id: 2
+  frequency: 2.945
+  error: 1.081
+4406474:
+  id: 4406474
+  alignment_codon_id: 170
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406475:
+  id: 4406475
+  alignment_codon_id: 171
+  amino_acid_id: 13
+  frequency: 2.945
+  error: 1.081
+4406476:
+  id: 4406476
+  alignment_codon_id: 172
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406477:
+  id: 4406477
+  alignment_codon_id: 173
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406478:
+  id: 4406478
+  alignment_codon_id: 174
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406479:
+  id: 4406479
+  alignment_codon_id: 175
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406480:
+  id: 4406480
+  alignment_codon_id: 176
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406481:
+  id: 4406481
+  alignment_codon_id: 177
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406482:
+  id: 4406482
+  alignment_codon_id: 178
+  amino_acid_id: 7
+  frequency: 2.945
+  error: 1.081
+4406483:
+  id: 4406483
+  alignment_codon_id: 179
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406484:
+  id: 4406484
+  alignment_codon_id: 180
+  amino_acid_id: 2
+  frequency: 2.945
+  error: 1.081
+4406485:
+  id: 4406485
+  alignment_codon_id: 181
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406486:
+  id: 4406486
+  alignment_codon_id: 182
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406487:
+  id: 4406487
+  alignment_codon_id: 183
+  amino_acid_id: 18
+  frequency: 2.945
+  error: 1.081
+4406488:
+  id: 4406488
+  alignment_codon_id: 184
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406489:
+  id: 4406489
+  alignment_codon_id: 185
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406490:
+  id: 4406490
+  alignment_codon_id: 186
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406491:
+  id: 4406491
+  alignment_codon_id: 187
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406492:
+  id: 4406492
+  alignment_codon_id: 188
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406494:
+  id: 4406494
+  alignment_codon_id: 189
+  amino_acid_id: 10
+  frequency: 1.0
+  error: 0.0
+4406493:
+  id: 4406493
+  alignment_codon_id: 189
+  amino_acid_id: 13
+  frequency: 2.822
+  error: 0.668
+4406496:
+  id: 4406496
+  alignment_codon_id: 190
+  amino_acid_id: 10
+  frequency: 2.177
+  error: 0.933
+4406495:
+  id: 4406495
+  alignment_codon_id: 190
+  amino_acid_id: 20
+  frequency: 1.0
+  error: 0.0
+4406498:
+  id: 4406498
+  alignment_codon_id: 191
+  amino_acid_id: 10
+  frequency: 2.177
+  error: 0.933
+4406497:
+  id: 4406497
+  alignment_codon_id: 191
+  amino_acid_id: 20
+  frequency: 1.0
+  error: 0.0
+4406500:
+  id: 4406500
+  alignment_codon_id: 192
+  amino_acid_id: 10
+  frequency: 2.177
+  error: 0.933
+4406499:
+  id: 4406499
+  alignment_codon_id: 192
+  amino_acid_id: 20
+  frequency: 1.0
+  error: 0.0
+4406502:
+  id: 4406502
+  alignment_codon_id: 193
+  amino_acid_id: 1
+  frequency: 2.177
+  error: 0.933
+4406501:
+  id: 4406501
+  alignment_codon_id: 193
+  amino_acid_id: 20
+  frequency: 1.0
+  error: 0.0
+4406504:
+  id: 4406504
+  alignment_codon_id: 194
+  amino_acid_id: 10
+  frequency: 1.987
+  error: 0.193
+4406503:
+  id: 4406503
+  alignment_codon_id: 194
+  amino_acid_id: 20
+  frequency: 1.228
+  error: 0.727
+4406505:
+  id: 4406505
+  alignment_codon_id: 195
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406506:
+  id: 4406506
+  alignment_codon_id: 196
+  amino_acid_id: 16
+  frequency: 2.945
+  error: 1.081
+4406508:
+  id: 4406508
+  alignment_codon_id: 197
+  amino_acid_id: 10
+  frequency: 1.228
+  error: 0.727
+4406507:
+  id: 4406507
+  alignment_codon_id: 197
+  amino_acid_id: 20
+  frequency: 1.987
+  error: 0.193
+4406509:
+  id: 4406509
+  alignment_codon_id: 198
+  amino_acid_id: 1
+  frequency: 2.945
+  error: 1.081
+4406510:
+  id: 4406510
+  alignment_codon_id: 199
+  amino_acid_id: 6
+  frequency: 2.945
+  error: 1.081
+4406511:
+  id: 4406511
+  alignment_codon_id: 200
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
+4406512:
+  id: 4406512
+  alignment_codon_id: 201
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406513:
+  id: 4406513
+  alignment_codon_id: 202
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406514:
+  id: 4406514
+  alignment_codon_id: 203
+  amino_acid_id: 10
+  frequency: 2.945
+  error: 1.081
+4406515:
+  id: 4406515
+  alignment_codon_id: 204
+  amino_acid_id: 6
+  frequency: 2.945
+  error: 1.081
+4406516:
+  id: 4406516
+  alignment_codon_id: 205
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406517:
+  id: 4406517
+  alignment_codon_id: 206
+  amino_acid_id: 11
+  frequency: 2.945
+  error: 1.081
+4406518:
+  id: 4406518
+  alignment_codon_id: 207
+  amino_acid_id: 14
+  frequency: 2.945
+  error: 1.081
+4406519:
+  id: 4406519
+  alignment_codon_id: 208
+  amino_acid_id: 17
+  frequency: 2.945
+  error: 1.081
+4406520:
+  id: 4406520
+  alignment_codon_id: 209
+  amino_acid_id: 8
+  frequency: 2.945
+  error: 1.081
+4406521:
+  id: 4406521
+  alignment_codon_id: 210
+  amino_acid_id: 2
+  frequency: 2.945
+  error: 1.081
+4406522:
+  id: 4406522
+  alignment_codon_id: 211
+  amino_acid_id: 6
+  frequency: 2.945
+  error: 1.081
+4406523:
+  id: 4406523
+  alignment_codon_id: 212
+  amino_acid_id: 12
+  frequency: 2.945
+  error: 1.081
+4406524:
+  id: 4406524
+  alignment_codon_id: 213
+  amino_acid_id: 3
+  frequency: 2.945
+  error: 1.081
+4406525:
+  id: 4406525
+  alignment_codon_id: 214
+  amino_acid_id: 19
+  frequency: 2.945
+  error: 1.081
+4406526:
+  id: 4406526
+  alignment_codon_id: 215
+  amino_acid_id: 20
+  frequency: 2.945
+  error: 1.081
