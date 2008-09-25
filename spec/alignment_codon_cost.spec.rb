@@ -44,16 +44,18 @@ describe AlignmentCodonCost do
       AlignmentCodonCost.first.variance.should be_nil
     end
     
-    it 'should calculate the expected cost for codon 35' do
-      cost = AlignmentCodon.find(35).alignment_codon_costs.first
-      cost.mean.should be_close(109.3945, 0.01)
-      cost.variance.should == 98
+    it 'should calculate the expected cost for codon 174' do
+      cost = AlignmentCodon.find_by_start_position(174).
+        alignment_codon_costs.select{|x| x.cost_type.abbrv == 'wei'}.first
+      cost.mean.should be_close(118.0876, 0.01)
+      cost.variance.should == 8
     end
 
-    it 'should calculate the expected cost for codon 59' do
-      cost = AlignmentCodon.find(59).alignment_codon_costs.first
-      cost.mean.should be_close(109.3945, 0.01)
-      cost.variance.should == 98
+    it 'should calculate the expected cost for codon 201' do
+      cost = AlignmentCodon.find_by_start_position(201).
+        alignment_codon_costs.select{|x| x.cost_type.abbrv == 'wei'}.first
+      cost.mean.should be_close(135.1199, 0.01)
+      cost.variance.should be_close( 1806.005,0.01)
     end
   end
 
