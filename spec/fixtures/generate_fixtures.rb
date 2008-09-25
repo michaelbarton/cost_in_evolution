@@ -1,7 +1,7 @@
 require 'pathname'
-require Pathname.new(File.join(File.join(File.dirname(__FILE__),'..','config','environment.rb'))).cleanpath.to_s
+require Pathname.new(File.join(File.join(File.dirname(__FILE__),'..','..','config','environment.rb'))).cleanpath.to_s
 
-FIXTURES_DIR = Pathname.new(File.join(File.join(File.dirname(__FILE__),'..','spec','fixtures'))).cleanpath.to_s
+FIXTURES_DIR = Pathname.new(File.join(File.join(File.dirname(__FILE__)))).cleanpath.to_s
 
 def dump_models(models)
   hash = models.inject(Hash.new) do |hash,model|
