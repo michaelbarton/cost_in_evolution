@@ -77,4 +77,21 @@ namespace '003' do
     end
   end
 
+
+  desc 'Clears alignment codon cost data'
+  task :clear_alignment_codon_costs do
+    AlignmentCodonCost.delete_all
+  end
+
+  desc 'Loads alignment codon cost data'
+  task :load_alignment_codon_costs => :clear_alignment_codon_costs do
+    starfish = %x|which starfish|.strip
+    loader = PROJECT_ROOT + '/model/starfish/load_alignment_codon_costs.rb'
+    p = lambda{ system( "qsub -cwd -j y -V #{starfish} #{loader}") }
+
+    p.call
+    sleep(120)
+    16.times { p.call }
+  end
+
 end
