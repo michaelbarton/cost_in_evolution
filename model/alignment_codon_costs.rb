@@ -1,7 +1,7 @@
 class AlignmentCodonCost < ActiveRecord::Base
   belongs_to :alignment_codon
-  has_one :condition
-  has_one :cost_type
+  belongs_to :condition
+  belongs_to :cost_type
 
   def self.create_from_codon(codon)
  
