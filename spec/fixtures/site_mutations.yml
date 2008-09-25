@@ -1,1010 +1,809 @@
-1:
-  id: 1
-  alignment_codon_id: 1
-  rate: 1.0
-
-2:
-  id: 2
-  alignment_codon_id: 2
-  rate: 1.0
-
-3:
-  id: 3
-  alignment_codon_id: 3
-  rate: 1.0
-
-4:
-  id: 4
-  alignment_codon_id: 4
-  rate: 1.0
-
-5:
-  id: 5
-  alignment_codon_id: 5
-  rate: 1.0
-
-6:
-  id: 6
-  alignment_codon_id: 6
-  rate: 1.0
-
-7:
-  id: 7
-  alignment_codon_id: 7
-  rate: 1.0
-
-8:
-  id: 8
-  alignment_codon_id: 8
-  rate: 1.0
-
-9:
-  id: 9
-  alignment_codon_id: 9
-  rate: 1.0
-
-10:
-  id: 10
-  alignment_codon_id: 10
-  rate: 1.0
-
-11:
-  id: 11
-  alignment_codon_id: 11
-  rate: 1.0
-
-12:
-  id: 12
-  alignment_codon_id: 12
-  rate: 1.0
-
-13:
-  id: 13
-  alignment_codon_id: 13
-  rate: 1.0
-
-14:
-  id: 14
-  alignment_codon_id: 14
-  rate: 1.0
-
-15:
-  id: 15
-  alignment_codon_id: 15
-  rate: 1.0
-
-16:
-  id: 16
-  alignment_codon_id: 16
-  rate: 1.0
-
-17:
-  id: 17
-  alignment_codon_id: 17
-  rate: 1.0
-
-18:
-  id: 18
-  alignment_codon_id: 18
-  rate: 1.0
-
-19:
-  id: 19
-  alignment_codon_id: 19
-  rate: 1.0
-
-20:
-  id: 20
-  alignment_codon_id: 20
-  rate: 1.0
-
-21:
-  id: 21
-  alignment_codon_id: 21
-  rate: 1.0
-
-22:
-  id: 22
-  alignment_codon_id: 22
-  rate: 1.0
-
-23:
-  id: 23
-  alignment_codon_id: 23
-  rate: 1.0
-
-24:
-  id: 24
-  alignment_codon_id: 24
-  rate: 1.0
-
-25:
-  id: 25
-  alignment_codon_id: 25
-  rate: 1.0
-
-26:
-  id: 26
-  alignment_codon_id: 26
-  rate: 1.0
-
-27:
-  id: 27
-  alignment_codon_id: 27
-  rate: 1.0
-
-28:
-  id: 28
-  alignment_codon_id: 28
-  rate: 1.0
-
-29:
-  id: 29
-  alignment_codon_id: 29
-  rate: 0.638
-
-30:
-  id: 30
-  alignment_codon_id: 30
-  rate: 1.473
-
-31:
-  id: 31
-  alignment_codon_id: 31
-  rate: 0.645
-
-32:
-  id: 32
-  alignment_codon_id: 32
+--- 
+206515: 
+  rate: 0.779
+  id: 206515
+  alignment_codon_id: 207520
+206108: 
   rate: 0.624
-
-33:
-  id: 33
-  alignment_codon_id: 33
-  rate: 0.709
-
-34:
-  id: 34
-  alignment_codon_id: 34
-  rate: 0.828
-
-35:
-  id: 35
-  alignment_codon_id: 35
-  rate: 1.51
-
-36:
-  id: 36
-  alignment_codon_id: 36
-  rate: 0.779
-
-37:
-  id: 37
-  alignment_codon_id: 37
-  rate: 0.709
-
-38:
-  id: 38
-  alignment_codon_id: 38
-  rate: 1.534
-
-39:
-  id: 39
-  alignment_codon_id: 39
-  rate: 1.539
-
-40:
-  id: 40
-  alignment_codon_id: 40
-  rate: 0.861
-
-41:
-  id: 41
-  alignment_codon_id: 41
-  rate: 0.624
-
-42:
-  id: 42
-  alignment_codon_id: 42
-  rate: 0.654
-
-43:
-  id: 43
-  alignment_codon_id: 43
-  rate: 0.629
-
-44:
-  id: 44
-  alignment_codon_id: 44
-  rate: 0.654
-
-45:
-  id: 45
-  alignment_codon_id: 45
-  rate: 0.709
-
-46:
-  id: 46
-  alignment_codon_id: 46
-  rate: 0.779
-
-47:
-  id: 47
-  alignment_codon_id: 47
-  rate: 2.233
-
-48:
-  id: 48
-  alignment_codon_id: 48
-  rate: 0.662
-
-49:
-  id: 49
-  alignment_codon_id: 49
-  rate: 0.651
-
-50:
-  id: 50
-  alignment_codon_id: 50
-  rate: 0.645
-
-51:
-  id: 51
-  alignment_codon_id: 51
-  rate: 0.629
-
-52:
-  id: 52
-  alignment_codon_id: 52
-  rate: 0.645
-
-53:
-  id: 53
-  alignment_codon_id: 53
-  rate: 0.813
-
-54:
-  id: 54
-  alignment_codon_id: 54
-  rate: 0.598
-
-55:
-  id: 55
-  alignment_codon_id: 55
-  rate: 0.681
-
-56:
-  id: 56
-  alignment_codon_id: 56
-  rate: 0.651
-
-57:
-  id: 57
-  alignment_codon_id: 57
-  rate: 0.845
-
-58:
-  id: 58
-  alignment_codon_id: 58
-  rate: 0.845
-
-59:
-  id: 59
-  alignment_codon_id: 59
-  rate: 1.553
-
-60:
-  id: 60
-  alignment_codon_id: 60
-  rate: 0.779
-
-61:
-  id: 61
-  alignment_codon_id: 61
-  rate: 1.47
-
-62:
-  id: 62
-  alignment_codon_id: 62
-  rate: 1.472
-
-63:
-  id: 63
-  alignment_codon_id: 63
-  rate: 0.598
-
-64:
-  id: 64
-  alignment_codon_id: 64
-  rate: 0.645
-
-65:
-  id: 65
-  alignment_codon_id: 65
-  rate: 0.662
-
-66:
-  id: 66
-  alignment_codon_id: 66
-  rate: 0.671
-
-67:
-  id: 67
-  alignment_codon_id: 67
-  rate: 1.716
-
-68:
-  id: 68
-  alignment_codon_id: 68
-  rate: 2.387
-
-69:
-  id: 69
-  alignment_codon_id: 69
-  rate: 1.539
-
-70:
-  id: 70
-  alignment_codon_id: 70
-  rate: 0.779
-
-71:
-  id: 71
-  alignment_codon_id: 71
-  rate: 1.426
-
-72:
-  id: 72
-  alignment_codon_id: 72
-  rate: 1.509
-
-73:
-  id: 73
-  alignment_codon_id: 73
-  rate: 0.779
-
-74:
-  id: 74
-  alignment_codon_id: 74
-  rate: 1.653
-
-75:
-  id: 75
-  alignment_codon_id: 75
-  rate: 0.598
-
-76:
-  id: 76
-  alignment_codon_id: 76
-  rate: 1.463
-
-77:
-  id: 77
-  alignment_codon_id: 77
-  rate: 0.624
-
-78:
-  id: 78
-  alignment_codon_id: 78
-  rate: 0.645
-
-79:
-  id: 79
-  alignment_codon_id: 79
-  rate: 1.481
-
-80:
-  id: 80
-  alignment_codon_id: 80
-  rate: 0.709
-
-81:
-  id: 81
-  alignment_codon_id: 81
-  rate: 0.629
-
-82:
-  id: 82
-  alignment_codon_id: 82
-  rate: 0.645
-
-83:
-  id: 83
-  alignment_codon_id: 83
-  rate: 0.681
-
-84:
-  id: 84
-  alignment_codon_id: 84
-  rate: 0.629
-
-85:
-  id: 85
-  alignment_codon_id: 85
-  rate: 0.664
-
-86:
-  id: 86
-  alignment_codon_id: 86
-  rate: 0.638
-
-87:
-  id: 87
-  alignment_codon_id: 87
-  rate: 0.664
-
-88:
-  id: 88
-  alignment_codon_id: 88
-  rate: 0.638
-
-89:
-  id: 89
-  alignment_codon_id: 89
-  rate: 0.769
-
-90:
-  id: 90
-  alignment_codon_id: 90
-  rate: 0.681
-
-91:
-  id: 91
-  alignment_codon_id: 91
-  rate: 0.861
-
-92:
-  id: 92
-  alignment_codon_id: 92
-  rate: 0.651
-
-93:
-  id: 93
-  alignment_codon_id: 93
-  rate: 0.647
-
-94:
-  id: 94
-  alignment_codon_id: 94
-  rate: 0.681
-
-95:
-  id: 95
-  alignment_codon_id: 95
-  rate: 0.654
-
-96:
-  id: 96
-  alignment_codon_id: 96
-  rate: 2.233
-
-97:
-  id: 97
-  alignment_codon_id: 97
-  rate: 2.257
-
-98:
-  id: 98
-  alignment_codon_id: 98
-  rate: 1.463
-
-99:
-  id: 99
-  alignment_codon_id: 99
-  rate: 2.198
-
-100:
-  id: 100
-  alignment_codon_id: 100
-  rate: 1.779
-
-101:
-  id: 101
-  alignment_codon_id: 101
-  rate: 1.462
-
-102:
-  id: 102
-  alignment_codon_id: 102
-  rate: 2.403
-
-103:
-  id: 103
-  alignment_codon_id: 103
-  rate: 0.598
-
-104:
-  id: 104
-  alignment_codon_id: 104
-  rate: 1.0
-
-105:
-  id: 105
-  alignment_codon_id: 105
-  rate: 1.0
-
-106:
-  id: 106
-  alignment_codon_id: 106
-  rate: 1.0
-
-107:
-  id: 107
-  alignment_codon_id: 107
-  rate: 0.598
-
-108:
-  id: 108
-  alignment_codon_id: 108
-  rate: 1.646
-
-109:
-  id: 109
-  alignment_codon_id: 109
-  rate: 0.598
-
-110:
-  id: 110
-  alignment_codon_id: 110
-  rate: 0.645
-
-111:
-  id: 111
-  alignment_codon_id: 111
-  rate: 0.645
-
-112:
-  id: 112
-  alignment_codon_id: 112
-  rate: 0.645
-
-113:
-  id: 113
-  alignment_codon_id: 113
-  rate: 2.221
-
-114:
-  id: 114
-  alignment_codon_id: 114
-  rate: 2.262
-
-115:
-  id: 115
-  alignment_codon_id: 115
-  rate: 0.645
-
-116:
-  id: 116
-  alignment_codon_id: 116
-  rate: 2.357
-
-117:
-  id: 117
-  alignment_codon_id: 117
-  rate: 1.475
-
-118:
-  id: 118
-  alignment_codon_id: 118
-  rate: 0.645
-
-119:
-  id: 119
-  alignment_codon_id: 119
-  rate: 2.237
-
-120:
-  id: 120
-  alignment_codon_id: 120
-  rate: 1.464
-
-121:
-  id: 121
-  alignment_codon_id: 121
-  rate: 1.464
-
-122:
-  id: 122
-  alignment_codon_id: 122
-  rate: 2.289
-
-123:
-  id: 123
-  alignment_codon_id: 123
-  rate: 1.0
-
-124:
-  id: 124
-  alignment_codon_id: 124
-  rate: 0.664
-
-125:
-  id: 125
-  alignment_codon_id: 125
-  rate: 2.305
-
-126:
-  id: 126
-  alignment_codon_id: 126
-  rate: 1.485
-
-127:
-  id: 127
-  alignment_codon_id: 127
-  rate: 0.645
-
-128:
-  id: 128
-  alignment_codon_id: 128
-  rate: 1.476
-
-129:
-  id: 129
-  alignment_codon_id: 129
+  id: 206108
+  alignment_codon_id: 207100
+206071: 
   rate: 2.27
-
-130:
-  id: 130
-  alignment_codon_id: 130
-  rate: 2.247
-
-131:
-  id: 131
-  alignment_codon_id: 131
-  rate: 2.243
-
-132:
-  id: 132
-  alignment_codon_id: 132
-  rate: 1.519
-
-133:
-  id: 133
-  alignment_codon_id: 133
-  rate: 1.621
-
-134:
-  id: 134
-  alignment_codon_id: 134
+  id: 206071
+  alignment_codon_id: 207070
+205368: 
+  rate: 1.0
+  id: 205368
+  alignment_codon_id: 206335
+205738: 
   rate: 0.598
-
-135:
-  id: 135
-  alignment_codon_id: 135
-  rate: 0.802
-
-136:
-  id: 136
-  alignment_codon_id: 136
+  id: 205738
+  alignment_codon_id: 206724
+205553: 
+  rate: 0.654
+  id: 205553
+  alignment_codon_id: 206517
+205590: 
   rate: 0.645
-
-137:
-  id: 137
-  alignment_codon_id: 137
-  rate: 0.624
-
-138:
-  id: 138
-  alignment_codon_id: 138
-  rate: 1.539
-
-139:
-  id: 139
-  alignment_codon_id: 139
-  rate: 0.654
-
-140:
-  id: 140
-  alignment_codon_id: 140
-  rate: 0.598
-
-141:
-  id: 141
-  alignment_codon_id: 141
+  id: 205590
+  alignment_codon_id: 206551
+206386: 
   rate: 0.828
-
-142:
-  id: 142
-  alignment_codon_id: 142
-  rate: 1.771
-
-143:
-  id: 143
-  alignment_codon_id: 143
-  rate: 0.681
-
-144:
-  id: 144
-  alignment_codon_id: 144
-  rate: 0.662
-
-145:
-  id: 145
-  alignment_codon_id: 145
-  rate: 0.845
-
-146:
-  id: 146
-  alignment_codon_id: 146
+  id: 206386
+  alignment_codon_id: 207347
+206201: 
+  rate: 0.779
+  id: 206201
+  alignment_codon_id: 207258
+206127: 
   rate: 0.828
-
-147:
-  id: 147
-  alignment_codon_id: 147
-  rate: 0.654
-
-148:
-  id: 148
-  alignment_codon_id: 148
-  rate: 0.681
-
-149:
-  id: 149
-  alignment_codon_id: 149
-  rate: 1.762
-
-150:
-  id: 150
-  alignment_codon_id: 150
-  rate: 0.681
-
-151:
-  id: 151
-  alignment_codon_id: 151
-  rate: 0.828
-
-152:
-  id: 152
-  alignment_codon_id: 152
-  rate: 0.598
-
-153:
-  id: 153
-  alignment_codon_id: 153
-  rate: 0.651
-
-154:
-  id: 154
-  alignment_codon_id: 154
+  id: 206127
+  alignment_codon_id: 207124
+206016: 
+  rate: 0.645
+  id: 206016
+  alignment_codon_id: 206999
+205498: 
   rate: 0.779
-
-155:
-  id: 155
-  alignment_codon_id: 155
-  rate: 0.779
-
-156:
-  id: 156
-  alignment_codon_id: 156
-  rate: 0.647
-
-157:
-  id: 157
-  alignment_codon_id: 157
-  rate: 0.779
-
-158:
-  id: 158
-  alignment_codon_id: 158
-  rate: 0.779
-
-159:
-  id: 159
-  alignment_codon_id: 159
-  rate: 0.654
-
-160:
-  id: 160
-  alignment_codon_id: 160
-  rate: 0.651
-
-161:
-  id: 161
-  alignment_codon_id: 161
-  rate: 0.681
-
-162:
-  id: 162
-  alignment_codon_id: 162
-  rate: 0.624
-
-163:
-  id: 163
-  alignment_codon_id: 163
-  rate: 0.671
-
-164:
-  id: 164
-  alignment_codon_id: 164
-  rate: 0.813
-
-165:
-  id: 165
-  alignment_codon_id: 165
-  rate: 0.624
-
-166:
-  id: 166
-  alignment_codon_id: 166
-  rate: 1.581
-
-167:
-  id: 167
-  alignment_codon_id: 167
-  rate: 0.779
-
-168:
-  id: 168
-  alignment_codon_id: 168
-  rate: 0.709
-
-169:
-  id: 169
-  alignment_codon_id: 169
-  rate: 0.671
-
-170:
-  id: 170
-  alignment_codon_id: 170
-  rate: 0.709
-
-171:
-  id: 171
-  alignment_codon_id: 171
-  rate: 0.647
-
-172:
-  id: 172
-  alignment_codon_id: 172
-  rate: 0.651
-
-173:
-  id: 173
-  alignment_codon_id: 173
-  rate: 0.861
-
-174:
-  id: 174
-  alignment_codon_id: 174
-  rate: 0.769
-
-175:
-  id: 175
-  alignment_codon_id: 175
-  rate: 0.828
-
-176:
-  id: 176
-  alignment_codon_id: 176
-  rate: 0.828
-
-177:
-  id: 177
-  alignment_codon_id: 177
-  rate: 0.647
-
-178:
-  id: 178
-  alignment_codon_id: 178
-  rate: 0.802
-
-179:
-  id: 179
-  alignment_codon_id: 179
-  rate: 0.779
-
-180:
-  id: 180
-  alignment_codon_id: 180
-  rate: 0.828
-
-181:
-  id: 181
-  alignment_codon_id: 181
-  rate: 0.629
-
-182:
-  id: 182
-  alignment_codon_id: 182
-  rate: 0.629
-
-183:
-  id: 183
-  alignment_codon_id: 183
-  rate: 0.651
-
-184:
-  id: 184
-  alignment_codon_id: 184
-  rate: 0.813
-
-185:
-  id: 185
-  alignment_codon_id: 185
-  rate: 0.651
-
-186:
-  id: 186
-  alignment_codon_id: 186
-  rate: 0.664
-
-187:
-  id: 187
-  alignment_codon_id: 187
-  rate: 0.671
-
-188:
-  id: 188
-  alignment_codon_id: 188
-  rate: 0.629
-
-189:
-  id: 189
-  alignment_codon_id: 189
-  rate: 0.647
-
-190:
-  id: 190
-  alignment_codon_id: 190
-  rate: 0.845
-
-191:
-  id: 191
-  alignment_codon_id: 191
-  rate: 0.681
-
-192:
-  id: 192
-  alignment_codon_id: 192
-  rate: 0.709
-
-193:
-  id: 193
-  alignment_codon_id: 193
-  rate: 0.654
-
-194:
-  id: 194
-  alignment_codon_id: 194
+  id: 205498
+  alignment_codon_id: 206475
+205905: 
+  rate: 1.779
+  id: 205905
+  alignment_codon_id: 206863
+205979: 
+  rate: 0.645
+  id: 205979
+  alignment_codon_id: 206916
+206479: 
   rate: 1.494
-
-195:
-  id: 195
-  alignment_codon_id: 195
-  rate: 0.779
-
-196:
-  id: 196
-  alignment_codon_id: 196
+  id: 206479
+  alignment_codon_id: 207479
+206257: 
+  rate: 0.671
+  id: 206257
+  alignment_codon_id: 207308
+206146: 
+  rate: 0.845
+  id: 206146
+  alignment_codon_id: 207144
+205480: 
+  rate: 0.709
+  id: 205480
+  alignment_codon_id: 206420
+206424: 
+  rate: 0.651
+  id: 206424
+  alignment_codon_id: 207382
+206276: 
+  rate: 0.769
+  id: 206276
+  alignment_codon_id: 207335
+206165: 
+  rate: 1.762
+  id: 206165
+  alignment_codon_id: 207163
+205758: 
   rate: 0.645
-
-197:
-  id: 197
-  alignment_codon_id: 197
+  id: 205758
+  alignment_codon_id: 206741
+206221: 
+  rate: 0.681
+  id: 206221
+  alignment_codon_id: 207272
+206184: 
+  rate: 0.651
+  id: 206184
+  alignment_codon_id: 207243
+205999: 
   rate: 0.645
-
-198:
-  id: 198
-  alignment_codon_id: 198
+  id: 205999
+  alignment_codon_id: 206980
+205444: 
+  rate: 1.0
+  id: 205444
+  alignment_codon_id: 206391
+205518: 
+  rate: 1.539
+  id: 205518
+  alignment_codon_id: 206491
+205962: 
+  rate: 0.598
+  id: 205962
+  alignment_codon_id: 206903
+206240: 
+  rate: 0.624
+  id: 206240
+  alignment_codon_id: 207288
+205833: 
+  rate: 0.769
+  id: 205833
+  alignment_codon_id: 206800
+205944: 
+  rate: 1.0
+  id: 205944
+  alignment_codon_id: 206890
+205611: 
+  rate: 0.598
+  id: 205611
+  alignment_codon_id: 206572
+205685: 
+  rate: 1.716
+  id: 205685
+  alignment_codon_id: 206639
+205352: 
+  rate: 1.0
+  id: 205352
+  alignment_codon_id: 206330
+206444: 
+  rate: 0.671
+  id: 206444
+  alignment_codon_id: 207397
+206037: 
+  rate: 2.289
+  id: 206037
+  alignment_codon_id: 207027
+205408: 
+  rate: 1.0
+  id: 205408
+  alignment_codon_id: 206366
+205778: 
+  rate: 0.629
+  id: 205778
+  alignment_codon_id: 206758
+205852: 
+  rate: 0.651
+  id: 205852
+  alignment_codon_id: 206820
+205926: 
+  rate: 0.598
+  id: 205926
+  alignment_codon_id: 206877
+206500: 
   rate: 0.828
-
-199:
-  id: 199
-  alignment_codon_id: 199
-  rate: 1.784
-
-200:
-  id: 200
-  alignment_codon_id: 200
-  rate: 1.749
-
-201:
-  id: 201
-  alignment_codon_id: 201
-  rate: 0.779
-
-202:
-  id: 202
-  alignment_codon_id: 202
+  id: 206500
+  alignment_codon_id: 207500
+206056: 
+  rate: 1.485
+  id: 206056
+  alignment_codon_id: 207050
+205575: 
+  rate: 2.233
+  id: 205575
+  alignment_codon_id: 206534
+205279: 
+  rate: 1.0
+  id: 205279
+  alignment_codon_id: 206269
+205316: 
+  rate: 1.0
+  id: 205316
+  alignment_codon_id: 206302
+206112: 
+  rate: 1.539
+  id: 206112
+  alignment_codon_id: 207108
+206075: 
+  rate: 2.247
+  id: 206075
+  alignment_codon_id: 207072
+205668: 
+  rate: 0.645
+  id: 205668
+  alignment_codon_id: 206624
+206464: 
+  rate: 0.681
+  id: 206464
+  alignment_codon_id: 207466
+206131: 
+  rate: 1.771
+  id: 206131
+  alignment_codon_id: 207128
+206094: 
+  rate: 0.598
+  id: 206094
+  alignment_codon_id: 207087
+205465: 
+  rate: 0.645
+  id: 205465
+  alignment_codon_id: 206409
+205872: 
+  rate: 0.654
+  id: 205872
+  alignment_codon_id: 206839
+205391: 
+  rate: 1.0
+  id: 205391
+  alignment_codon_id: 206355
+205798: 
+  rate: 0.629
+  id: 205798
+  alignment_codon_id: 206772
+206520: 
   rate: 1.752
-
+  id: 206520
+  alignment_codon_id: 207527
+206409: 
+  rate: 0.828
+  id: 206409
+  alignment_codon_id: 207368
+206261: 
+  rate: 0.709
+  id: 206261
+  alignment_codon_id: 207313
+205595: 
+  rate: 0.629
+  id: 205595
+  alignment_codon_id: 206555
+205262: 
+  rate: 1.0
+  id: 205262
+  alignment_codon_id: 206259
+205632: 
+  rate: 0.845
+  id: 205632
+  alignment_codon_id: 206592
+205706: 
+  rate: 0.779
+  id: 205706
+  alignment_codon_id: 206650
+206391: 
+  rate: 0.647
+  id: 206391
+  alignment_codon_id: 207352
+206021: 
+  rate: 2.237
+  id: 206021
+  alignment_codon_id: 207003
+205540: 
+  rate: 0.654
+  id: 205540
+  alignment_codon_id: 206508
+205651: 
+  rate: 1.47
+  id: 205651
+  alignment_codon_id: 206608
+205429: 
+  rate: 1.0
+  id: 205429
+  alignment_codon_id: 206381
+206484: 
+  rate: 0.779
+  id: 206484
+  alignment_codon_id: 207484
+206225: 
+  rate: 0.624
+  id: 206225
+  alignment_codon_id: 207275
+206188: 
+  rate: 0.779
+  id: 206188
+  alignment_codon_id: 207249
+206151: 
+  rate: 0.828
+  id: 206151
+  alignment_codon_id: 207149
+206040: 
+  rate: 1.0
+  id: 206040
+  alignment_codon_id: 207031
+205892: 
+  rate: 1.463
+  id: 205892
+  alignment_codon_id: 206855
+205300: 
+  rate: 1.0
+  id: 205300
+  alignment_codon_id: 206284
+205337: 
+  rate: 1.0
+  id: 205337
+  alignment_codon_id: 206318
+205374: 
+  rate: 1.0
+  id: 205374
+  alignment_codon_id: 206345
+205744: 
+  rate: 1.463
+  id: 205744
+  alignment_codon_id: 206727
+205818: 
+  rate: 0.664
+  id: 205818
+  alignment_codon_id: 206790
+206429: 
+  rate: 0.813
+  id: 206429
+  alignment_codon_id: 207387
+206207: 
+  rate: 0.779
+  id: 206207
+  alignment_codon_id: 207262
+206170: 
+  rate: 0.681
+  id: 206170
+  alignment_codon_id: 207165
+205726: 
+  rate: 0.779
+  id: 205726
+  alignment_codon_id: 206662
+205560: 
+  rate: 0.709
+  id: 205560
+  alignment_codon_id: 206523
+205486: 
+  rate: 0.828
+  id: 205486
+  alignment_codon_id: 206423
+206245: 
+  rate: 1.581
+  id: 206245
+  alignment_codon_id: 207292
+205616: 
+  rate: 0.681
+  id: 205616
+  alignment_codon_id: 206576
+205986: 
+  rate: 2.221
+  id: 205986
+  alignment_codon_id: 206968
+205912: 
+  rate: 1.462
+  id: 205912
+  alignment_codon_id: 206870
+206449: 
+  rate: 0.629
+  id: 206449
+  alignment_codon_id: 207401
+206079: 
+  rate: 2.243
+  id: 206079
+  alignment_codon_id: 207077
+205968: 
+  rate: 0.645
+  id: 205968
+  alignment_codon_id: 206908
+206098: 
+  rate: 0.802
+  id: 206098
+  alignment_codon_id: 207093
+206061: 
+  rate: 0.645
+  id: 206061
+  alignment_codon_id: 207053
+205765: 
+  rate: 1.481
+  id: 205765
+  alignment_codon_id: 206747
+205247: 
+  rate: 1.0
+  id: 205247
+  alignment_codon_id: 206249
+206265: 
+  rate: 0.647
+  id: 206265
+  alignment_codon_id: 207318
+206191: 
+  rate: 0.779
+  id: 206191
+  alignment_codon_id: 207251
+206117: 
+  rate: 0.654
+  id: 206117
+  alignment_codon_id: 207113
+206006: 
+  rate: 2.357
+  id: 206006
+  alignment_codon_id: 206986
+205673: 
+  rate: 0.662
+  id: 205673
+  alignment_codon_id: 206628
+205414: 
+  rate: 1.0
+  id: 205414
+  alignment_codon_id: 206372
+205784: 
+  rate: 0.645
+  id: 205784
+  alignment_codon_id: 206762
+205858: 
+  rate: 0.647
+  id: 205858
+  alignment_codon_id: 206826
+205932: 
+  rate: 1.0
+  id: 205932
+  alignment_codon_id: 206882
+206506: 
+  rate: 1.784
+  id: 206506
+  alignment_codon_id: 207508
+206469: 
+  rate: 0.709
+  id: 206469
+  alignment_codon_id: 207471
+206136: 
+  rate: 0.681
+  id: 206136
+  alignment_codon_id: 207132
+205692: 
+  rate: 2.387
+  id: 205692
+  alignment_codon_id: 206643
+205840: 
+  rate: 0.681
+  id: 205840
+  alignment_codon_id: 206806
+205507: 
+  rate: 0.709
+  id: 205507
+  alignment_codon_id: 206480
+205951: 
+  rate: 0.598
+  id: 205951
+  alignment_codon_id: 206895
+205285: 
+  rate: 1.0
+  id: 205285
+  alignment_codon_id: 206272
+206414: 
+  rate: 0.629
+  id: 206414
+  alignment_codon_id: 207375
+205526: 
+  rate: 0.861
+  id: 205526
+  alignment_codon_id: 206497
+206396: 
+  rate: 0.802
+  id: 206396
+  alignment_codon_id: 207359
+206026: 
+  rate: 1.464
+  id: 206026
+  alignment_codon_id: 207013
+205804: 
+  rate: 0.664
+  id: 205804
+  alignment_codon_id: 206776
+205878: 
+  rate: 2.233
+  id: 205878
+  alignment_codon_id: 206845
+205582: 
+  rate: 0.662
+  id: 205582
+  alignment_codon_id: 206537
+206489: 
+  rate: 0.645
+  id: 206489
+  alignment_codon_id: 207490
+206230: 
+  rate: 0.671
+  id: 206230
+  alignment_codon_id: 207280
+206156: 
+  rate: 0.654
+  id: 206156
+  alignment_codon_id: 207152
+205712: 
+  rate: 1.426
+  id: 205712
+  alignment_codon_id: 206654
+205453: 
+  rate: 0.638
+  id: 205453
+  alignment_codon_id: 206397
+205601: 
+  rate: 0.645
+  id: 205601
+  alignment_codon_id: 206561
+205638: 
+  rate: 1.553
+  id: 205638
+  alignment_codon_id: 206600
+206434: 
+  rate: 0.651
+  id: 206434
+  alignment_codon_id: 207391
+206212: 
+  rate: 0.654
+  id: 206212
+  alignment_codon_id: 207266
+206175: 
+  rate: 0.828
+  id: 206175
+  alignment_codon_id: 207234
+205398: 
+  rate: 1.0
+  id: 205398
+  alignment_codon_id: 206362
+205657: 
+  rate: 1.472
+  id: 205657
+  alignment_codon_id: 206614
+205324: 
+  rate: 1.0
+  id: 205324
+  alignment_codon_id: 206308
+205361: 
+  rate: 1.0
+  id: 205361
+  alignment_codon_id: 206333
+206379: 
+  rate: 0.828
+  id: 206379
+  alignment_codon_id: 207341
+206268: 
+  rate: 0.651
+  id: 206268
+  alignment_codon_id: 207324
+206046: 
+  rate: 0.664
+  id: 206046
+  alignment_codon_id: 207038
+206250: 
+  rate: 0.779
+  id: 206250
+  alignment_codon_id: 207298
+205473: 
+  rate: 0.624
+  id: 205473
+  alignment_codon_id: 206412
+205547: 
+  rate: 0.629
+  id: 205547
+  alignment_codon_id: 206513
+206454: 
+  rate: 0.647
+  id: 206454
+  alignment_codon_id: 207456
+206084: 
+  rate: 1.519
+  id: 206084
+  alignment_codon_id: 207081
+205825: 
+  rate: 0.638
+  id: 205825
+  alignment_codon_id: 206795
+205270: 
+  rate: 1.0
+  id: 205270
+  alignment_codon_id: 206263
+205381: 
+  rate: 1.0
+  id: 205381
+  alignment_codon_id: 206350
+205751: 
+  rate: 0.624
+  id: 205751
+  alignment_codon_id: 206736
+206510: 
+  rate: 1.749
+  id: 206510
+  alignment_codon_id: 207516
+206103: 
+  rate: 0.645
+  id: 206103
+  alignment_codon_id: 207097
+206066: 
+  rate: 1.476
+  id: 206066
+  alignment_codon_id: 207066
+205585: 
+  rate: 0.651
+  id: 205585
+  alignment_codon_id: 206546
+205733: 
+  rate: 1.653
+  id: 205733
+  alignment_codon_id: 206665
+205437: 
+  rate: 1.0
+  id: 205437
+  alignment_codon_id: 206386
+206122: 
+  rate: 0.598
+  id: 206122
+  alignment_codon_id: 207119
+206011: 
+  rate: 1.475
+  id: 206011
+  alignment_codon_id: 206993
+205900: 
+  rate: 2.198
+  id: 205900
+  alignment_codon_id: 206859
+205567: 
+  rate: 0.779
+  id: 205567
+  alignment_codon_id: 206529
+205974: 
+  rate: 0.645
+  id: 205974
+  alignment_codon_id: 206913
+205345: 
+  rate: 1.0
+  id: 205345
+  alignment_codon_id: 206325
+206474: 
+  rate: 0.654
+  id: 206474
+  alignment_codon_id: 207477
+206141: 
+  rate: 0.662
+  id: 206141
+  alignment_codon_id: 207137
+205919: 
+  rate: 2.403
+  id: 205919
+  alignment_codon_id: 206872
+205956: 
+  rate: 1.646
+  id: 205956
+  alignment_codon_id: 206900
+205623: 
+  rate: 0.651
+  id: 205623
+  alignment_codon_id: 206582
+205771: 
+  rate: 0.709
+  id: 205771
+  alignment_codon_id: 206752
+206197: 
+  rate: 0.647
+  id: 206197
+  alignment_codon_id: 207255
+205938: 
+  rate: 1.0
+  id: 205938
+  alignment_codon_id: 206887
+205605: 
+  rate: 0.813
+  id: 205605
+  alignment_codon_id: 206566
+205679: 
+  rate: 0.671
+  id: 205679
+  alignment_codon_id: 206635
+205494: 
+  rate: 1.51
+  id: 205494
+  alignment_codon_id: 206428
+206253: 
+  rate: 0.709
+  id: 206253
+  alignment_codon_id: 207301
+206031: 
+  rate: 1.464
+  id: 206031
+  alignment_codon_id: 207019
+205994: 
+  rate: 2.262
+  id: 205994
+  alignment_codon_id: 206973
+205846: 
+  rate: 0.861
+  id: 205846
+  alignment_codon_id: 206812
+206420: 
+  rate: 0.629
+  id: 206420
+  alignment_codon_id: 207378
+206272: 
+  rate: 0.861
+  id: 206272
+  alignment_codon_id: 207330
+206235: 
+  rate: 0.813
+  id: 206235
+  alignment_codon_id: 207283
+206161: 
+  rate: 0.681
+  id: 206161
+  alignment_codon_id: 207158
+205310: 
+  rate: 1.0
+  id: 205310
+  alignment_codon_id: 206300
+205791: 
+  rate: 0.681
+  id: 205791
+  alignment_codon_id: 206766
+205458: 
+  rate: 1.473
+  id: 205458
+  alignment_codon_id: 206404
+205865: 
+  rate: 0.681
+  id: 205865
+  alignment_codon_id: 206830
+206439: 
+  rate: 0.664
+  id: 206439
+  alignment_codon_id: 207393
+206402: 
+  rate: 0.779
+  id: 206402
+  alignment_codon_id: 207364
+206217: 
+  rate: 0.651
+  id: 206217
+  alignment_codon_id: 207270
+206180: 
+  rate: 0.598
+  id: 206180
+  alignment_codon_id: 207237
+205255: 
+  rate: 1.0
+  id: 205255
+  alignment_codon_id: 206255
+205292: 
+  rate: 1.0
+  id: 205292
+  alignment_codon_id: 206279
+205699: 
+  rate: 1.539
+  id: 205699
+  alignment_codon_id: 206646
+205514: 
+  rate: 1.534
+  id: 205514
+  alignment_codon_id: 206486
+206495: 
+  rate: 0.645
+  id: 206495
+  alignment_codon_id: 207496
+206051: 
+  rate: 2.305
+  id: 206051
+  alignment_codon_id: 207042
+205237: 
+  rate: 1.0
+  id: 205237
+  alignment_codon_id: 206246
+205644: 
+  rate: 0.779
+  id: 205644
+  alignment_codon_id: 206603
+205422: 
+  rate: 1.0
+  id: 205422
+  alignment_codon_id: 206377
+205533: 
+  rate: 0.624
+  id: 205533
+  alignment_codon_id: 206502
+205626: 
+  rate: 0.845
+  id: 205626
+  alignment_codon_id: 206589
+205663: 
+  rate: 0.598
+  id: 205663
+  alignment_codon_id: 206617
+205330: 
+  rate: 1.0
+  id: 205330
+  alignment_codon_id: 206312
+205811: 
+  rate: 0.638
+  id: 205811
+  alignment_codon_id: 206787
+205885: 
+  rate: 2.257
+  id: 205885
+  alignment_codon_id: 206850
+206459: 
+  rate: 0.845
+  id: 206459
+  alignment_codon_id: 207461
+206089: 
+  rate: 1.621
+  id: 206089
+  alignment_codon_id: 207084
+205719: 
+  rate: 1.509
+  id: 205719
+  alignment_codon_id: 206658

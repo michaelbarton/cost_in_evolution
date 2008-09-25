@@ -1,1616 +1,1415 @@
-1:
-  id: 1
-  alignment_id: 1
-  start_position: 0
-  codons: ---,---,---,ATG
-  amino_acids: X,X,X,M
-  gaps: 1
-
-2:
-  id: 2
-  alignment_id: 1
-  start_position: 3
-  codons: ---,---,---,CAT
-  amino_acids: X,X,X,H
-  gaps: 1
-
-3:
-  id: 3
-  alignment_id: 1
-  start_position: 6
-  codons: ---,---,---,CAC
-  amino_acids: X,X,X,H
-  gaps: 1
-
-4:
-  id: 4
-  alignment_id: 1
-  start_position: 9
-  codons: ---,---,---,TTA
-  amino_acids: X,X,X,L
-  gaps: 1
-
-5:
-  id: 5
-  alignment_id: 1
-  start_position: 12
-  codons: ---,---,---,TCA
-  amino_acids: X,X,X,S
-  gaps: 1
-
-6:
-  id: 6
-  alignment_id: 1
-  start_position: 15
-  codons: ---,---,---,CCT
-  amino_acids: X,X,X,P
-  gaps: 1
-
-7:
-  id: 7
-  alignment_id: 1
-  start_position: 18
-  codons: ---,---,---,ATA
-  amino_acids: X,X,X,I
-  gaps: 1
-
-8:
-  id: 8
-  alignment_id: 1
-  start_position: 21
-  codons: ---,---,---,AAA
-  amino_acids: X,X,X,K
-  gaps: 1
-
-9:
-  id: 9
-  alignment_id: 1
-  start_position: 24
-  codons: ---,---,---,AAG
-  amino_acids: X,X,X,K
-  gaps: 1
-
-10:
-  id: 10
-  alignment_id: 1
-  start_position: 27
-  codons: ---,---,---,ACA
-  amino_acids: X,X,X,T
-  gaps: 1
-
-11:
-  id: 11
-  alignment_id: 1
-  start_position: 30
-  codons: ---,---,---,TTA
-  amino_acids: X,X,X,L
-  gaps: 1
-
-12:
-  id: 12
-  alignment_id: 1
-  start_position: 33
-  codons: ---,---,---,TAT
-  amino_acids: X,X,X,Y
-  gaps: 1
-
-13:
-  id: 13
-  alignment_id: 1
-  start_position: 36
-  codons: ---,---,---,AAA
-  amino_acids: X,X,X,K
-  gaps: 1
-
-14:
-  id: 14
-  alignment_id: 1
-  start_position: 39
-  codons: ---,---,---,GCC
-  amino_acids: X,X,X,A
-  gaps: 1
-
-15:
-  id: 15
-  alignment_id: 1
-  start_position: 42
-  codons: ---,---,---,CTA
-  amino_acids: X,X,X,L
-  gaps: 1
-
-16:
-  id: 16
-  alignment_id: 1
-  start_position: 45
-  codons: ---,---,---,GAC
-  amino_acids: X,X,X,D
-  gaps: 1
-
-17:
-  id: 17
-  alignment_id: 1
-  start_position: 48
-  codons: ---,---,---,AGG
-  amino_acids: X,X,X,R
-  gaps: 1
-
-18:
-  id: 18
-  alignment_id: 1
-  start_position: 51
-  codons: ---,---,---,AAC
-  amino_acids: X,X,X,N
-  gaps: 1
-
-19:
-  id: 19
-  alignment_id: 1
-  start_position: 54
-  codons: ---,---,---,CAA
-  amino_acids: X,X,X,Q
-  gaps: 1
-
-20:
-  id: 20
-  alignment_id: 1
-  start_position: 57
-  codons: ---,---,---,TGT
-  amino_acids: X,X,X,C
-  gaps: 1
-
-21:
-  id: 21
-  alignment_id: 1
-  start_position: 60
-  codons: ---,---,---,TTG
-  amino_acids: X,X,X,L
-  gaps: 1
-
-22:
-  id: 22
-  alignment_id: 1
-  start_position: 63
-  codons: ---,---,---,ACA
-  amino_acids: X,X,X,T
-  gaps: 1
-
-23:
-  id: 23
-  alignment_id: 1
-  start_position: 66
-  codons: ---,---,---,TCA
-  amino_acids: X,X,X,S
-  gaps: 1
-
-24:
-  id: 24
-  alignment_id: 1
-  start_position: 69
-  codons: ---,---,---,GTA
-  amino_acids: X,X,X,V
-  gaps: 1
-
-25:
-  id: 25
-  alignment_id: 1
-  start_position: 72
-  codons: ---,---,---,TTT
-  amino_acids: X,X,X,F
-  gaps: 1
-
-26:
-  id: 26
-  alignment_id: 1
-  start_position: 75
-  codons: ---,---,---,TGT
-  amino_acids: X,X,X,C
-  gaps: 1
-
-27:
-  id: 27
-  alignment_id: 1
-  start_position: 78
-  codons: ---,---,---,GAA
-  amino_acids: X,X,X,E
-  gaps: 1
-
-28:
-  id: 28
-  alignment_id: 1
-  start_position: 81
-  codons: ---,---,---,GAA
-  amino_acids: X,X,X,E
-  gaps: 1
-
-29:
-  id: 29
-  alignment_id: 1
-  start_position: 84
-  codons: ATG,ATG,ATG,ATG
-  amino_acids: M,M,M,M
-  gaps: 0
-
-30:
-  id: 30
-  alignment_id: 1
-  start_position: 87
-  codons: AGC,AGT,AGT,AAT
-  amino_acids: S,S,S,N
-  gaps: 0
-
-31:
-  id: 31
-  alignment_id: 1
-  start_position: 90
-  codons: AAG,AAG,AAG,AAG
-  amino_acids: K,K,K,K
-  gaps: 0
-
-32:
-  id: 32
-  alignment_id: 1
-  start_position: 93
-  codons: AAT,AAT,AAT,AAT
-  amino_acids: N,N,N,N
-  gaps: 0
-
-33:
-  id: 33
-  alignment_id: 1
-  start_position: 96
-  codons: GTG,GTT,GTT,GTT
-  amino_acids: V,V,V,V
-  gaps: 0
-
-34:
-  id: 34
-  alignment_id: 1
-  start_position: 99
-  codons: GGG,GGA,GGT,GGC
-  amino_acids: G,G,G,G
-  gaps: 0
-
-35:
-  id: 35
-  alignment_id: 1
-  start_position: 102
-  codons: AAA,AGA,AAG,AAA
-  amino_acids: K,R,K,K
-  gaps: 0
-
-36:
-  id: 36
-  alignment_id: 1
-  start_position: 105
-  codons: TTA,CTA,CTA,CTA
-  amino_acids: L,L,L,L
-  gaps: 0
-
-37:
-  id: 37
-  alignment_id: 1
-  start_position: 108
-  codons: GTA,GTG,GTG,GTG
-  amino_acids: V,V,V,V
-  gaps: 0
-
-38:
-  id: 38
-  alignment_id: 1
-  start_position: 111
-  codons: AAA,AAA,AAA,AGA
-  amino_acids: K,K,K,R
-  gaps: 0
-
-39:
-  id: 39
-  alignment_id: 1
-  start_position: 114
-  codons: GTC,ATA,ATA,ATA
-  amino_acids: V,I,I,I
-  gaps: 0
-
-40:
-  id: 40
-  alignment_id: 1
-  start_position: 117
-  codons: TGG,TGG,TGG,TGG
-  amino_acids: W,W,W,W
-  gaps: 0
-
-41:
-  id: 41
-  alignment_id: 1
-  start_position: 120
-  codons: AAC,AAT,AAT,AAT
-  amino_acids: N,N,N,N
-  gaps: 0
-
-42:
-  id: 42
-  alignment_id: 1
-  start_position: 123
-  codons: GAA,GAG,GAA,GAA
-  amino_acids: E,E,E,E
-  gaps: 0
-
-43:
-  id: 43
-  alignment_id: 1
-  start_position: 126
-  codons: TCA,TCT,TCA,TCA
-  amino_acids: S,S,S,S
-  gaps: 0
-
-44:
-  id: 44
-  alignment_id: 1
-  start_position: 129
-  codons: GAA,GAA,GAA,GAA
-  amino_acids: E,E,E,E
-  gaps: 0
-
-45:
-  id: 45
-  alignment_id: 1
-  start_position: 132
-  codons: GTC,GTT,GTT,GTT
-  amino_acids: V,V,V,V
-  gaps: 0
-
-46:
-  id: 46
-  alignment_id: 1
-  start_position: 135
-  codons: TTA,TTA,TTA,TTA
-  amino_acids: L,L,L,L
-  gaps: 0
-
-47:
-  id: 47
-  alignment_id: 1
-  start_position: 138
-  codons: GTT,ATC,GTT,ATT
-  amino_acids: V,I,V,I
-  gaps: 0
-
-48:
-  id: 48
-  alignment_id: 1
-  start_position: 141
-  codons: GAT,GAT,GAT,GAT
-  amino_acids: D,D,D,D
-  gaps: 0
-
-49:
-  id: 49
-  alignment_id: 1
-  start_position: 144
-  codons: AGA,AGG,AGA,AGA
-  amino_acids: R,R,R,R
-  gaps: 0
-
-50:
-  id: 50
-  alignment_id: 1
-  start_position: 147
-  codons: AAA,AAA,AAA,AAA
-  amino_acids: K,K,K,K
-  gaps: 0
-
-51:
-  id: 51
-  alignment_id: 1
-  start_position: 150
-  codons: TCG,TCG,TCG,TCA
-  amino_acids: S,S,S,S
-  gaps: 0
-
-52:
-  id: 52
-  alignment_id: 1
-  start_position: 153
-  codons: AAA,AAA,AAA,AAA
-  amino_acids: K,K,K,K
-  gaps: 0
-
-53:
-  id: 53
-  alignment_id: 1
-  start_position: 156
-  codons: TTT,TTT,TTT,TTT
-  amino_acids: F,F,F,F
-  gaps: 0
-
-54:
-  id: 54
-  alignment_id: 1
-  start_position: 159
-  codons: CAA,CAA,CAA,CAA
-  amino_acids: Q,Q,Q,Q
-  gaps: 0
-
-55:
-  id: 55
-  alignment_id: 1
-  start_position: 162
-  codons: GCA,GCT,GCA,GCA
-  amino_acids: A,A,A,A
-  gaps: 0
-
-56:
-  id: 56
-  alignment_id: 1
-  start_position: 165
-  codons: AGA,AGG,AGA,AGA
-  amino_acids: R,R,R,R
-  gaps: 0
-
-57:
-  id: 57
-  alignment_id: 1
-  start_position: 168
-  codons: TGT,TGT,TGT,TGT
-  amino_acids: C,C,C,C
-  gaps: 0
-
-58:
-  id: 58
-  alignment_id: 1
-  start_position: 171
-  codons: TGC,TGT,TGC,TGC
-  amino_acids: C,C,C,C
-  gaps: 0
-
-59:
-  id: 59
-  alignment_id: 1
-  start_position: 174
-  codons: ACT,ACA,CCA,ACA
-  amino_acids: T,T,P,T
-  gaps: 0
-
-60:
-  id: 60
-  alignment_id: 1
-  start_position: 177
-  codons: TTA,TTA,TTA,TTA
-  amino_acids: L,L,L,L
-  gaps: 0
-
-61:
-  id: 61
-  alignment_id: 1
-  start_position: 180
-  codons: CGA,CAG,CAA,CAG
-  amino_acids: R,Q,Q,Q
-  gaps: 0
-
-62:
-  id: 62
-  alignment_id: 1
-  start_position: 183
-  codons: AAT,GAT,AAT,AAT
-  amino_acids: N,D,N,N
-  gaps: 0
-
-63:
-  id: 63
-  alignment_id: 1
-  start_position: 186
-  codons: CAG,CAG,CAA,CAG
-  amino_acids: Q,Q,Q,Q
-  gaps: 0
-
-64:
-  id: 64
-  alignment_id: 1
-  start_position: 189
-  codons: AAG,AAA,AAG,AAG
-  amino_acids: K,K,K,K
-  gaps: 0
-
-65:
-  id: 65
-  alignment_id: 1
-  start_position: 192
-  codons: GAC,GAT,GAT,GAT
-  amino_acids: D,D,D,D
-  gaps: 0
-
-66:
-  id: 66
-  alignment_id: 1
-  start_position: 195
-  codons: ATT,ATA,ATA,ATA
-  amino_acids: I,I,I,I
-  gaps: 0
-
-67:
-  id: 67
-  alignment_id: 1
-  start_position: 198
-  codons: TCC,CCT,CCC,CCC
-  amino_acids: S,P,P,P
-  gaps: 0
-
-68:
-  id: 68
-  alignment_id: 1
-  start_position: 201
-  codons: TCT,TTC,TCC,TTC
-  amino_acids: S,F,S,F
-  gaps: 0
-
-69:
-  id: 69
-  alignment_id: 1
-  start_position: 204
-  codons: GTA,ATC,ATA,ATA
-  amino_acids: V,I,I,I
-  gaps: 0
-
-70:
-  id: 70
-  alignment_id: 1
-  start_position: 207
-  codons: CTA,CTA,CTC,CTT
-  amino_acids: L,L,L,L
-  gaps: 0
-
-71:
-  id: 71
-  alignment_id: 1
-  start_position: 210
-  codons: GAA,CAA,CAA,CAG
-  amino_acids: E,Q,Q,Q
-  gaps: 0
-
-72:
-  id: 72
-  alignment_id: 1
-  start_position: 213
-  codons: GAA,GAC,GAA,GAA
-  amino_acids: E,D,E,E
-  gaps: 0
-
-73:
-  id: 73
-  alignment_id: 1
-  start_position: 216
-  codons: TTA,TTG,CTA,TTA
-  amino_acids: L,L,L,L
-  gaps: 0
-
-74:
-  id: 74
-  alignment_id: 1
-  start_position: 219
-  codons: GTC,GTT,ACG,ACT
-  amino_acids: V,V,T,T
-  gaps: 0
-
-75:
-  id: 75
-  alignment_id: 1
-  start_position: 222
-  codons: CAG,CAA,CAA,CAA
-  amino_acids: Q,Q,Q,Q
-  gaps: 0
-
-76:
-  id: 76
-  alignment_id: 1
-  start_position: 225
-  codons: AGC,AAC,AAC,AAC
-  amino_acids: S,N,N,N
-  gaps: 0
-
-77:
-  id: 77
-  alignment_id: 1
-  start_position: 228
-  codons: AAT,AAT,AAC,AAT
-  amino_acids: N,N,N,N
-  gaps: 0
-
-78:
-  id: 78
-  alignment_id: 1
-  start_position: 231
-  codons: AAA,AAG,AAA,AAA
-  amino_acids: K,K,K,K
-  gaps: 0
-
-79:
-  id: 79
-  alignment_id: 1
-  start_position: 234
-  codons: AGT,GCC,AGC,AGC
-  amino_acids: S,A,S,S
-  gaps: 0
-
-80:
-  id: 80
-  alignment_id: 1
-  start_position: 237
-  codons: GTT,GTT,GTC,GTT
-  amino_acids: V,V,V,V
-  gaps: 0
-
-81:
-  id: 81
-  alignment_id: 1
-  start_position: 240
-  codons: TCA,TCA,TCC,TCT
-  amino_acids: S,S,S,S
-  gaps: 0
-
-82:
-  id: 82
-  alignment_id: 1
-  start_position: 243
-  codons: AAG,AAG,AAG,AAG
-  amino_acids: K,K,K,K
-  gaps: 0
-
-83:
-  id: 83
-  alignment_id: 1
-  start_position: 246
-  codons: GCC,GCA,GCA,GCA
-  amino_acids: A,A,A,A
-  gaps: 0
-
-84:
-  id: 84
-  alignment_id: 1
-  start_position: 249
-  codons: TCC,TCC,TCC,TCC
-  amino_acids: S,S,S,S
-  gaps: 0
-
-85:
-  id: 85
-  alignment_id: 1
-  start_position: 252
-  codons: CAC,CAC,CAC,CAC
-  amino_acids: H,H,H,H
-  gaps: 0
-
-86:
-  id: 86
-  alignment_id: 1
-  start_position: 255
-  codons: ATG,ATG,ATG,ATG
-  amino_acids: M,M,M,M
-  gaps: 0
-
-87:
-  id: 87
-  alignment_id: 1
-  start_position: 258
-  codons: CAC,CAC,CAC,CAC
-  amino_acids: H,H,H,H
-  gaps: 0
-
-88:
-  id: 88
-  alignment_id: 1
-  start_position: 261
-  codons: ATG,ATG,ATG,ATG
-  amino_acids: M,M,M,M
-  gaps: 0
-
-89:
-  id: 89
-  alignment_id: 1
-  start_position: 264
-  codons: TAT,TAT,TAT,TAT
-  amino_acids: Y,Y,Y,Y
-  gaps: 0
-
-90:
-  id: 90
-  alignment_id: 1
-  start_position: 267
-  codons: GCT,GCC,GCC,GCC
-  amino_acids: A,A,A,A
-  gaps: 0
-
-91:
-  id: 91
-  alignment_id: 1
-  start_position: 270
-  codons: TGG,TGG,TGG,TGG
-  amino_acids: W,W,W,W
-  gaps: 0
-
-92:
-  id: 92
-  alignment_id: 1
-  start_position: 273
-  codons: AGG,AGA,AGA,AGA
-  amino_acids: R,R,R,R
-  gaps: 0
-
-93:
-  id: 93
-  alignment_id: 1
-  start_position: 276
-  codons: ACG,ACA,ACG,ACG
-  amino_acids: T,T,T,T
-  gaps: 0
-
-94:
-  id: 94
-  alignment_id: 1
-  start_position: 279
-  codons: GCC,GCA,GCC,GCC
-  amino_acids: A,A,A,A
-  gaps: 0
-
-95:
-  id: 95
-  alignment_id: 1
-  start_position: 282
-  codons: GAA,GAA,GAG,GAA
-  amino_acids: E,E,E,E
-  gaps: 0
-
-96:
-  id: 96
-  alignment_id: 1
-  start_position: 285
-  codons: GTA,ATA,GTA,ATA
-  amino_acids: V,I,V,I
-  gaps: 0
-
-97:
-  id: 97
-  alignment_id: 1
-  start_position: 288
-  codons: CCT,GCA,TCA,TCG
-  amino_acids: P,A,S,S
-  gaps: 0
-
-98:
-  id: 98
-  alignment_id: 1
-  start_position: 291
-  codons: AGT,AAT,AAT,AAC
-  amino_acids: S,N,N,N
-  gaps: 0
-
-99:
-  id: 99
-  alignment_id: 1
-  start_position: 294
-  codons: GAT,GAG,AAT,GAT
-  amino_acids: D,E,N,D
-  gaps: 0
-
-100:
-  id: 100
-  alignment_id: 1
-  start_position: 297
-  codons: TCG,TTG,TTG,TTG
-  amino_acids: S,L,L,L
-  gaps: 0
-
-101:
-  id: 101
-  alignment_id: 1
-  start_position: 300
-  codons: AAT,AAC,CAC,AAC
-  amino_acids: N,N,H,N
-  gaps: 0
-
-102:
-  id: 102
-  alignment_id: 1
-  start_position: 303
-  codons: TCA,TTT,TTA,TTT
-  amino_acids: S,F,L,F
-  gaps: 0
-
-103:
-  id: 103
-  alignment_id: 1
-  start_position: 306
-  codons: CAG,CAG,CAA,CAG
-  amino_acids: Q,Q,Q,Q
-  gaps: 0
-
-104:
-  id: 104
-  alignment_id: 1
-  start_position: 309
-  codons: CAT,---,---,---
-  amino_acids: H,X,X,X
-  gaps: 1
-
-105:
-  id: 105
-  alignment_id: 1
-  start_position: 312
-  codons: GGC,---,---,---
-  amino_acids: G,X,X,X
-  gaps: 1
-
-106:
-  id: 106
-  alignment_id: 1
-  start_position: 315
-  codons: AAT,---,---,---
-  amino_acids: N,X,X,X
-  gaps: 1
-
-107:
-  id: 107
-  alignment_id: 1
-  start_position: 318
-  codons: CAA,CAA,CAA,CAA
-  amino_acids: Q,Q,Q,Q
-  gaps: 0
-
-108:
-  id: 108
-  alignment_id: 1
-  start_position: 321
-  codons: GAC,GAC,GAG,GAG
-  amino_acids: D,D,E,E
-  gaps: 0
-
-109:
-  id: 109
-  alignment_id: 1
-  start_position: 324
-  codons: CAG,CAG,CAG,CAG
-  amino_acids: Q,Q,Q,Q
-  gaps: 0
-
-110:
-  id: 110
-  alignment_id: 1
-  start_position: 327
-  codons: AAA,AAA,AAA,AAA
-  amino_acids: K,K,K,K
-  gaps: 0
-
-111:
-  id: 111
-  alignment_id: 1
-  start_position: 330
-  codons: AAG,AAG,AAG,AAG
-  amino_acids: K,K,K,K
-  gaps: 0
-
-112:
-  id: 112
-  alignment_id: 1
-  start_position: 333
-  codons: AAA,AAG,AAG,AAG
-  amino_acids: K,K,K,K
-  gaps: 0
-
-113:
-  id: 113
-  alignment_id: 1
-  start_position: 336
-  codons: AAT,AGC,GGC,AGC
-  amino_acids: N,S,G,S
-  gaps: 0
-
-114:
-  id: 114
-  alignment_id: 1
-  start_position: 339
-  codons: GGT,AGC,AAT,AGT
-  amino_acids: G,S,N,S
-  gaps: 0
-
-115:
-  id: 115
-  alignment_id: 1
-  start_position: 342
-  codons: AAA,AAG,AAA,AAA
-  amino_acids: K,K,K,K
-  gaps: 0
-
-116:
-  id: 116
-  alignment_id: 1
-  start_position: 345
-  codons: AAT,AAC,GCA,ACT
-  amino_acids: N,N,A,T
-  gaps: 0
-
-117:
-  id: 117
-  alignment_id: 1
-  start_position: 348
-  codons: CAC,AAC,AAT,AAT
-  amino_acids: H,N,N,N
-  gaps: 0
-
-118:
-  id: 118
-  alignment_id: 1
-  start_position: 351
-  codons: AAG,AAG,AAG,AAG
-  amino_acids: K,K,K,K
-  gaps: 0
-
-119:
-  id: 119
-  alignment_id: 1
-  start_position: 354
-  codons: AAT,AAA,AGT,AGT
-  amino_acids: N,K,S,S
-  gaps: 0
-
-120:
-  id: 120
-  alignment_id: 1
-  start_position: 357
-  codons: AAT,AGT,AAT,AAT
-  amino_acids: N,S,N,N
-  gaps: 0
-
-121:
-  id: 121
-  alignment_id: 1
-  start_position: 360
-  codons: AAT,AGC,AAT,AAT
-  amino_acids: N,S,N,N
-  gaps: 0
-
-122:
-  id: 122
-  alignment_id: 1
-  start_position: 363
-  codons: AAC,AAC,AGT,AGG
-  amino_acids: N,N,S,R
-  gaps: 0
-
-123:
-  id: 123
-  alignment_id: 1
-  start_position: 366
-  codons: AAT,---,---,---
-  amino_acids: N,X,X,X
-  gaps: 1
-
-124:
-  id: 124
-  alignment_id: 1
-  start_position: 369
-  codons: CAT,CAT,CAT,CAT
-  amino_acids: H,H,H,H
-  gaps: 0
-
-125:
-  id: 125
-  alignment_id: 1
-  start_position: 372
-  codons: GGC,GCT,GTT,GCT
-  amino_acids: G,A,V,A
-  gaps: 0
-
-126:
-  id: 126
-  alignment_id: 1
-  start_position: 375
-  codons: AAC,AAT,AAC,GAC
-  amino_acids: N,N,N,D
-  gaps: 0
-
-127:
-  id: 127
-  alignment_id: 1
-  start_position: 378
-  codons: AAG,AAG,AAG,AAG
-  amino_acids: K,K,K,K
-  gaps: 0
-
-128:
-  id: 128
-  alignment_id: 1
-  start_position: 381
-  codons: ACA,TCA,TCA,TCA
-  amino_acids: T,S,S,S
-  gaps: 0
-
-129:
-  id: 129
-  alignment_id: 1
-  start_position: 384
-  codons: ACG,AAA,AGG,AAA
-  amino_acids: T,K,R,K
-  gaps: 0
-
-130:
-  id: 130
-  alignment_id: 1
-  start_position: 387
-  codons: AAG,ATG,AAC,AAG
-  amino_acids: K,M,N,K
-  gaps: 0
-
-131:
-  id: 131
-  alignment_id: 1
-  start_position: 390
-  codons: ATA,GTA,ATA,GTA
-  amino_acids: I,V,I,V
-  gaps: 0
-
-132:
-  id: 132
-  alignment_id: 1
-  start_position: 393
-  codons: ACG,ATA,ACG,ACG
-  amino_acids: T,I,T,T
-  gaps: 0
-
-133:
-  id: 133
-  alignment_id: 1
-  start_position: 396
-  codons: GTT,GTA,GTG,ATG
-  amino_acids: V,V,V,M
-  gaps: 0
-
-134:
-  id: 134
-  alignment_id: 1
-  start_position: 399
-  codons: CAA,CAG,CAG,CAA
-  amino_acids: Q,Q,Q,Q
-  gaps: 0
-
-135:
-  id: 135
-  alignment_id: 1
-  start_position: 402
-  codons: CCG,CCA,CCA,CCA
-  amino_acids: P,P,P,P
-  gaps: 0
-
-136:
-  id: 136
-  alignment_id: 1
-  start_position: 405
-  codons: AAG,AAA,AAG,AAG
-  amino_acids: K,K,K,K
-  gaps: 0
-
-137:
-  id: 137
-  alignment_id: 1
-  start_position: 408
-  codons: AAT,AAT,AAC,AAC
-  amino_acids: N,N,N,N
-  gaps: 0
-
-138:
-  id: 138
-  alignment_id: 1
-  start_position: 411
-  codons: GTT,ATT,ATT,ATT
-  amino_acids: V,I,I,I
-  gaps: 0
-
-139:
-  id: 139
-  alignment_id: 1
-  start_position: 414
-  codons: GAA,GAA,GAG,GAG
-  amino_acids: E,E,E,E
-  gaps: 0
-
-140:
-  id: 140
-  alignment_id: 1
-  start_position: 417
-  codons: CAA,CAA,CAA,CAA
-  amino_acids: Q,Q,Q,Q
-  gaps: 0
-
-141:
-  id: 141
-  alignment_id: 1
-  start_position: 420
-  codons: GGC,GGA,GGA,GGA
-  amino_acids: G,G,G,G
-  gaps: 0
-
-142:
-  id: 142
-  alignment_id: 1
-  start_position: 423
-  codons: TGT,TCT,TGT,TGT
-  amino_acids: C,S,C,C
-  gaps: 0
-
-143:
-  id: 143
-  alignment_id: 1
-  start_position: 426
-  codons: GCT,GCT,GCT,GCT
-  amino_acids: A,A,A,A
-  gaps: 0
-
-144:
-  id: 144
-  alignment_id: 1
-  start_position: 429
-  codons: GAC,GAC,GAC,GAC
-  amino_acids: D,D,D,D
-  gaps: 0
-
-145:
-  id: 145
-  alignment_id: 1
-  start_position: 432
-  codons: TGT,TGT,TGT,TGC
-  amino_acids: C,C,C,C
-  gaps: 0
-
-146:
-  id: 146
-  alignment_id: 1
-  start_position: 435
-  codons: GGT,GGT,GGC,GGC
-  amino_acids: G,G,G,G
-  gaps: 0
-
-147:
-  id: 147
-  alignment_id: 1
-  start_position: 438
+--- 
+207477: 
+  gaps: false
+  alignment_id: 444
+  id: 207477
   codons: GAG,GAA,GAA,GAA
-  amino_acids: E,E,E,E
-  gaps: 0
-
-148:
-  id: 148
-  alignment_id: 1
-  start_position: 441
-  codons: GCC,GCC,GCT,GCT
-  amino_acids: A,A,A,A
-  gaps: 0
-
-149:
-  id: 149
-  alignment_id: 1
-  start_position: 444
-  codons: GCT,GGT,GGT,GGT
-  amino_acids: A,G,G,G
-  gaps: 0
-
-150:
-  id: 150
-  alignment_id: 1
-  start_position: 447
-  codons: GCT,GCT,GCT,GCT
-  amino_acids: A,A,A,A
-  gaps: 0
-
-151:
-  id: 151
-  alignment_id: 1
-  start_position: 450
-  codons: GGA,GGA,GGA,GGG
-  amino_acids: G,G,G,G
-  gaps: 0
-
-152:
-  id: 152
-  alignment_id: 1
-  start_position: 453
-  codons: CAG,CAA,CAG,CAA
-  amino_acids: Q,Q,Q,Q
-  gaps: 0
-
-153:
-  id: 153
-  alignment_id: 1
-  start_position: 456
-  codons: CGC,CGT,CGT,CGT
-  amino_acids: R,R,R,R
-  gaps: 0
-
-154:
-  id: 154
-  alignment_id: 1
-  start_position: 459
-  codons: TTA,TTG,TTA,TTA
-  amino_acids: L,L,L,L
-  gaps: 0
-
-155:
-  id: 155
-  alignment_id: 1
-  start_position: 462
-  codons: TTG,TTG,TTG,TTG
-  amino_acids: L,L,L,L
-  gaps: 0
-
-156:
-  id: 156
-  alignment_id: 1
-  start_position: 465
-  codons: ACT,ACT,ACC,ACT
-  amino_acids: T,T,T,T
-  gaps: 0
-
-157:
-  id: 157
-  alignment_id: 1
-  start_position: 468
-  codons: TTG,TTA,TTA,TTG
-  amino_acids: L,L,L,L
-  gaps: 0
-
-158:
-  id: 158
-  alignment_id: 1
-  start_position: 471
-  codons: CTT,CTT,CTT,CTT
-  amino_acids: L,L,L,L
-  gaps: 0
-
-159:
-  id: 159
-  alignment_id: 1
-  start_position: 474
-  codons: GAG,GAG,GAA,GAG
-  amino_acids: E,E,E,E
-  gaps: 0
-
-160:
-  id: 160
-  alignment_id: 1
-  start_position: 477
-  codons: AGA,AGA,AGA,AGA
-  amino_acids: R,R,R,R
-  gaps: 0
-
-161:
-  id: 161
-  alignment_id: 1
-  start_position: 480
-  codons: GCT,GCA,GCA,GCA
-  amino_acids: A,A,A,A
-  gaps: 0
-
-162:
-  id: 162
-  alignment_id: 1
-  start_position: 483
-  codons: AAT,AAT,AAC,AAC
-  amino_acids: N,N,N,N
-  gaps: 0
-
-163:
-  id: 163
-  alignment_id: 1
-  start_position: 486
-  codons: ATC,ATA,ATA,ATA
-  amino_acids: I,I,I,I
-  gaps: 0
-
-164:
-  id: 164
-  alignment_id: 1
-  start_position: 489
-  codons: TTC,TTT,TTC,TTC
-  amino_acids: F,F,F,F
-  gaps: 0
-
-165:
-  id: 165
-  alignment_id: 1
-  start_position: 492
-  codons: AAC,AAC,AAC,AAC
-  amino_acids: N,N,N,N
-  gaps: 0
-
-166:
-  id: 166
-  alignment_id: 1
-  start_position: 495
-  codons: ATC,GTT,GTC,GTC
-  amino_acids: I,V,V,V
-  gaps: 0
-
-167:
-  id: 167
-  alignment_id: 1
-  start_position: 498
-  codons: CTA,CTA,TTG,CTA
-  amino_acids: L,L,L,L
-  gaps: 0
-
-168:
-  id: 168
-  alignment_id: 1
-  start_position: 501
-  codons: GTA,GTA,GTA,GTA
-  amino_acids: V,V,V,V
-  gaps: 0
-
-169:
-  id: 169
-  alignment_id: 1
-  start_position: 504
-  codons: ATA,ATA,ATA,ATA
-  amino_acids: I,I,I,I
-  gaps: 0
-
-170:
-  id: 170
-  alignment_id: 1
-  start_position: 507
-  codons: GTG,GTG,GTG,GTG
-  amino_acids: V,V,V,V
-  gaps: 0
-
-171:
-  id: 171
-  alignment_id: 1
-  start_position: 510
-  codons: ACT,ACG,ACC,ACC
-  amino_acids: T,T,T,T
-  gaps: 0
-
-172:
-  id: 172
-  alignment_id: 1
-  start_position: 513
-  codons: AGA,CGA,AGA,AGA
-  amino_acids: R,R,R,R
-  gaps: 0
-
-173:
-  id: 173
-  alignment_id: 1
-  start_position: 516
-  codons: TGG,TGG,TGG,TGG
-  amino_acids: W,W,W,W
-  gaps: 0
-
-174:
-  id: 174
-  alignment_id: 1
-  start_position: 519
-  codons: TAC,TAT,TAT,TAC
-  amino_acids: Y,Y,Y,Y
-  gaps: 0
-
-175:
-  id: 175
-  alignment_id: 1
-  start_position: 522
-  codons: GGG,GGT,GGT,GGT
-  amino_acids: G,G,G,G
-  gaps: 0
-
-176:
-  id: 176
-  alignment_id: 1
-  start_position: 525
-  codons: GGT,GGC,GGC,GGC
-  amino_acids: G,G,G,G
-  gaps: 0
-
-177:
-  id: 177
-  alignment_id: 1
-  start_position: 528
-  codons: ACA,ACA,ACG,ACG
-  amino_acids: T,T,T,T
-  gaps: 0
-
-178:
-  id: 178
-  alignment_id: 1
-  start_position: 531
-  codons: CCT,CCT,CCT,CCT
-  amino_acids: P,P,P,P
-  gaps: 0
-
-179:
-  id: 179
-  alignment_id: 1
-  start_position: 534
-  codons: TTG,CTG,TTG,TTG
-  amino_acids: L,L,L,L
-  gaps: 0
-
-180:
-  id: 180
-  alignment_id: 1
-  start_position: 537
-  codons: GGC,GGT,GGC,GGC
-  amino_acids: G,G,G,G
-  gaps: 0
-
-181:
-  id: 181
-  alignment_id: 1
-  start_position: 540
-  codons: TCG,TCA,TCA,TCA
-  amino_acids: S,S,S,S
-  gaps: 0
-
-182:
-  id: 182
-  alignment_id: 1
-  start_position: 543
-  codons: TCT,TCT,TCA,TCA
-  amino_acids: S,S,S,S
-  gaps: 0
-
-183:
-  id: 183
-  alignment_id: 1
-  start_position: 546
-  codons: AGA,AGA,AGA,AGA
-  amino_acids: R,R,R,R
-  gaps: 0
-
-184:
-  id: 184
-  alignment_id: 1
-  start_position: 549
-  codons: TTC,TTC,TTC,TTC
-  amino_acids: F,F,F,F
-  gaps: 0
-
-185:
-  id: 185
-  alignment_id: 1
-  start_position: 552
-  codons: AGA,AGA,AGA,AGA
-  amino_acids: R,R,R,R
-  gaps: 0
-
-186:
-  id: 186
-  alignment_id: 1
-  start_position: 555
-  codons: CAT,CAT,CAC,CAC
-  amino_acids: H,H,H,H
-  gaps: 0
-
-187:
-  id: 187
-  alignment_id: 1
-  start_position: 558
-  codons: ATC,ATT,ATT,ATT
-  amino_acids: I,I,I,I
-  gaps: 0
-
-188:
-  id: 188
-  alignment_id: 1
-  start_position: 561
-  codons: TCA,TCC,TCA,TCA
-  amino_acids: S,S,S,S
-  gaps: 0
-
-189:
-  id: 189
-  alignment_id: 1
-  start_position: 564
-  codons: ACC,ACT,ACA,ACT
-  amino_acids: T,T,T,T
-  gaps: 0
-
-190:
-  id: 190
-  alignment_id: 1
-  start_position: 567
-  codons: TGT,TGC,TGT,TGT
-  amino_acids: C,C,C,C
-  gaps: 0
-
-191:
-  id: 191
-  alignment_id: 1
-  start_position: 570
-  codons: GCA,GCA,GCA,GCC
-  amino_acids: A,A,A,A
-  gaps: 0
-
-192:
-  id: 192
-  alignment_id: 1
-  start_position: 573
-  codons: GTG,GTG,GTG,GTG
-  amino_acids: V,V,V,V
-  gaps: 0
-
-193:
-  id: 193
-  alignment_id: 1
   start_position: 576
-  codons: GAG,GAA,GAA,GAA
   amino_acids: E,E,E,E
-  gaps: 0
-
-194:
-  id: 194
-  alignment_id: 1
-  start_position: 579
-  codons: AGT,ACT,ACC,ACT
-  amino_acids: S,T,T,T
-  gaps: 0
-
-195:
-  id: 195
-  alignment_id: 1
-  start_position: 582
-  codons: TTG,TTG,TTA,TTG
-  amino_acids: L,L,L,L
-  gaps: 0
-
-196:
-  id: 196
-  alignment_id: 1
-  start_position: 585
-  codons: AAA,AAG,AAG,AAG
-  amino_acids: K,K,K,K
-  gaps: 0
-
-197:
-  id: 197
-  alignment_id: 1
-  start_position: 588
+207292: 
+  gaps: false
+  alignment_id: 444
+  id: 207292
+  codons: ATC,GTT,GTC,GTC
+  start_position: 495
+  amino_acids: I,V,V,V
+207255: 
+  gaps: false
+  alignment_id: 444
+  id: 207255
+  codons: ACT,ACT,ACC,ACT
+  start_position: 465
+  amino_acids: T,T,T,T
+207144: 
+  gaps: false
+  alignment_id: 444
+  id: 207144
+  codons: TGT,TGT,TGT,TGC
+  start_position: 432
+  amino_acids: C,C,C,C
+207070: 
+  gaps: false
+  alignment_id: 444
+  id: 207070
+  codons: ACG,AAA,AGG,AAA
+  start_position: 384
+  amino_acids: T,K,R,K
+206404: 
+  gaps: false
+  alignment_id: 444
+  id: 206404
+  codons: AGC,AGT,AGT,AAT
+  start_position: 87
+  amino_acids: S,S,S,N
+206589: 
+  gaps: false
+  alignment_id: 444
+  id: 206589
+  codons: TGT,TGT,TGT,TGT
+  start_position: 168
+  amino_acids: C,C,C,C
+206330: 
+  gaps: true
+  alignment_id: 444
+  id: 206330
+  codons: ---,---,---,GAC
+  start_position: 45
+  amino_acids: X,X,X,D
+207496: 
+  gaps: false
+  alignment_id: 444
+  id: 207496
   codons: AAG,AAG,AAG,AAG
+  start_position: 588
   amino_acids: K,K,K,K
-  gaps: 0
-
-198:
-  id: 198
-  alignment_id: 1
-  start_position: 591
-  codons: GGC,GGA,GGT,GGT
+207237: 
+  gaps: false
+  alignment_id: 444
+  id: 207237
+  codons: CAG,CAA,CAG,CAA
+  start_position: 453
+  amino_acids: Q,Q,Q,Q
+207163: 
+  gaps: false
+  alignment_id: 444
+  id: 207163
+  codons: GCT,GGT,GGT,GGT
+  start_position: 444
+  amino_acids: A,G,G,G
+206386: 
+  gaps: true
+  alignment_id: 444
+  id: 206386
+  codons: ---,---,---,GAA
+  start_position: 78
+  amino_acids: X,X,X,E
+206423: 
+  gaps: false
+  alignment_id: 444
+  id: 206423
+  codons: GGG,GGA,GGT,GGC
+  start_position: 99
   amino_acids: G,G,G,G
-  gaps: 0
-
-199:
-  id: 199
-  alignment_id: 1
-  start_position: 594
-  codons: GGA,GGA,GGA,GAA
-  amino_acids: G,G,G,E
-  gaps: 0
-
-200:
-  id: 200
-  alignment_id: 1
-  start_position: 597
+206830: 
+  gaps: false
+  alignment_id: 444
+  id: 206830
+  codons: GCC,GCA,GCC,GCC
+  start_position: 279
+  amino_acids: A,A,A,A
+206497: 
+  gaps: false
+  alignment_id: 444
+  id: 206497
+  codons: TGG,TGG,TGG,TGG
+  start_position: 117
+  amino_acids: W,W,W,W
+206534: 
+  gaps: false
+  alignment_id: 444
+  id: 206534
+  codons: GTT,ATC,GTT,ATT
+  start_position: 138
+  amino_acids: V,I,V,I
+206608: 
+  gaps: false
+  alignment_id: 444
+  id: 206608
+  codons: CGA,CAG,CAA,CAG
+  start_position: 180
+  amino_acids: R,Q,Q,Q
+206312: 
+  gaps: true
+  alignment_id: 444
+  id: 206312
+  codons: ---,---,---,AAA
+  start_position: 36
+  amino_acids: X,X,X,K
+207330: 
+  gaps: false
+  alignment_id: 444
+  id: 207330
+  codons: TGG,TGG,TGG,TGG
+  start_position: 516
+  amino_acids: W,W,W,W
+207108: 
+  gaps: false
+  alignment_id: 444
+  id: 207108
+  codons: GTT,ATT,ATT,ATT
+  start_position: 411
+  amino_acids: V,I,I,I
+206812: 
+  gaps: false
+  alignment_id: 444
+  id: 206812
+  codons: TGG,TGG,TGG,TGG
+  start_position: 270
+  amino_acids: W,W,W,W
+207275: 
+  gaps: false
+  alignment_id: 444
+  id: 207275
+  codons: AAT,AAT,AAC,AAC
+  start_position: 483
+  amino_acids: N,N,N,N
+207053: 
+  gaps: false
+  alignment_id: 444
+  id: 207053
+  codons: AAG,AAG,AAG,AAG
+  start_position: 378
+  amino_acids: K,K,K,K
+206572: 
+  gaps: false
+  alignment_id: 444
+  id: 206572
+  codons: CAA,CAA,CAA,CAA
+  start_position: 159
+  amino_acids: Q,Q,Q,Q
+206646: 
+  gaps: false
+  alignment_id: 444
+  id: 206646
+  codons: GTA,ATC,ATA,ATA
+  start_position: 204
+  amino_acids: V,I,I,I
+206350: 
+  gaps: true
+  alignment_id: 444
+  id: 206350
+  codons: ---,---,---,TGT
+  start_position: 57
+  amino_acids: X,X,X,C
+207516: 
+  gaps: false
+  alignment_id: 444
+  id: 207516
   codons: TTT,TAT,TTT,TTT
+  start_position: 597
   amino_acids: F,Y,F,F
-  gaps: 0
-
-201:
-  id: 201
-  alignment_id: 1
-  start_position: 600
-  codons: CTG,CTT,CTT,CTT
+207479: 
+  gaps: false
+  alignment_id: 444
+  id: 207479
+  codons: AGT,ACT,ACC,ACT
+  start_position: 579
+  amino_acids: S,T,T,T
+207368: 
+  gaps: false
+  alignment_id: 444
+  id: 207368
+  codons: GGC,GGT,GGC,GGC
+  start_position: 537
+  amino_acids: G,G,G,G
+207072: 
+  gaps: false
+  alignment_id: 444
+  id: 207072
+  codons: AAG,ATG,AAC,AAG
+  start_position: 387
+  amino_acids: K,M,N,K
+206776: 
+  gaps: false
+  alignment_id: 444
+  id: 206776
+  codons: CAC,CAC,CAC,CAC
+  start_position: 252
+  amino_acids: H,H,H,H
+206480: 
+  gaps: false
+  alignment_id: 444
+  id: 206480
+  codons: GTA,GTG,GTG,GTG
+  start_position: 108
+  amino_acids: V,V,V,V
+206850: 
+  gaps: false
+  alignment_id: 444
+  id: 206850
+  codons: CCT,GCA,TCA,TCG
+  start_position: 288
+  amino_acids: P,A,S,S
+206517: 
+  gaps: false
+  alignment_id: 444
+  id: 206517
+  codons: GAA,GAA,GAA,GAA
+  start_position: 129
+  amino_acids: E,E,E,E
+206887: 
+  gaps: true
+  alignment_id: 444
+  id: 206887
+  codons: GGC,---,---,---
+  start_position: 312
+  amino_acids: G,X,X,X
+206628: 
+  gaps: false
+  alignment_id: 444
+  id: 206628
+  codons: GAC,GAT,GAT,GAT
+  start_position: 192
+  amino_acids: D,D,D,D
+206665: 
+  gaps: false
+  alignment_id: 444
+  id: 206665
+  codons: GTC,GTT,ACG,ACT
+  start_position: 219
+  amino_acids: V,V,T,T
+207461: 
+  gaps: false
+  alignment_id: 444
+  id: 207461
+  codons: TGT,TGC,TGT,TGT
+  start_position: 567
+  amino_acids: C,C,C,C
+207387: 
+  gaps: false
+  alignment_id: 444
+  id: 207387
+  codons: TTC,TTC,TTC,TTC
+  start_position: 549
+  amino_acids: F,F,F,F
+207313: 
+  gaps: false
+  alignment_id: 444
+  id: 207313
+  codons: GTG,GTG,GTG,GTG
+  start_position: 507
+  amino_acids: V,V,V,V
+207165: 
+  gaps: false
+  alignment_id: 444
+  id: 207165
+  codons: GCT,GCT,GCT,GCT
+  start_position: 447
+  amino_acids: A,A,A,A
+207128: 
+  gaps: false
+  alignment_id: 444
+  id: 207128
+  codons: TGT,TCT,TGT,TGT
+  start_position: 423
+  amino_acids: C,S,C,C
+206980: 
+  gaps: false
+  alignment_id: 444
+  id: 206980
+  codons: AAA,AAG,AAA,AAA
+  start_position: 342
+  amino_acids: K,K,K,K
+206795: 
+  gaps: false
+  alignment_id: 444
+  id: 206795
+  codons: ATG,ATG,ATG,ATG
+  start_position: 261
+  amino_acids: M,M,M,M
+206758: 
+  gaps: false
+  alignment_id: 444
+  id: 206758
+  codons: TCA,TCA,TCC,TCT
+  start_position: 240
+  amino_acids: S,S,S,S
+207258: 
+  gaps: false
+  alignment_id: 444
+  id: 207258
+  codons: TTG,TTA,TTA,TTG
+  start_position: 468
   amino_acids: L,L,L,L
-  gaps: 0
-
-202:
-  id: 202
-  alignment_id: 1
-  start_position: 603
+206999: 
+  gaps: false
+  alignment_id: 444
+  id: 206999
+  codons: AAG,AAG,AAG,AAG
+  start_position: 351
+  amino_acids: K,K,K,K
+206555: 
+  gaps: false
+  alignment_id: 444
+  id: 206555
+  codons: TCG,TCG,TCG,TCA
+  start_position: 150
+  amino_acids: S,S,S,S
+206592: 
+  gaps: false
+  alignment_id: 444
+  id: 206592
+  codons: TGC,TGT,TGC,TGC
+  start_position: 171
+  amino_acids: C,C,C,C
+206259: 
+  gaps: true
+  alignment_id: 444
+  id: 206259
+  codons: ---,---,---,TTA
+  start_position: 9
+  amino_acids: X,X,X,L
+206333: 
+  gaps: true
+  alignment_id: 444
+  id: 206333
+  codons: ---,---,---,AGG
+  start_position: 48
+  amino_acids: X,X,X,R
+206870: 
+  gaps: false
+  alignment_id: 444
+  id: 206870
+  codons: AAT,AAC,CAC,AAC
+  start_position: 300
+  amino_acids: N,N,H,N
+206537: 
+  gaps: false
+  alignment_id: 444
+  id: 206537
+  codons: GAT,GAT,GAT,GAT
+  start_position: 141
+  amino_acids: D,D,D,D
+206741: 
+  gaps: false
+  alignment_id: 444
+  id: 206741
+  codons: AAA,AAG,AAA,AAA
+  start_position: 231
+  amino_acids: K,K,K,K
+207500: 
+  gaps: false
+  alignment_id: 444
+  id: 207500
+  codons: GGC,GGA,GGT,GGT
+  start_position: 591
+  amino_acids: G,G,G,G
+207352: 
+  gaps: false
+  alignment_id: 444
+  id: 207352
+  codons: ACA,ACA,ACG,ACG
+  start_position: 528
+  amino_acids: T,T,T,T
+207093: 
+  gaps: false
+  alignment_id: 444
+  id: 207093
+  codons: CCG,CCA,CCA,CCA
+  start_position: 402
+  amino_acids: P,P,P,P
+207019: 
+  gaps: false
+  alignment_id: 444
+  id: 207019
+  codons: AAT,AGC,AAT,AAT
+  start_position: 360
+  amino_acids: N,S,N,N
+206908: 
+  gaps: false
+  alignment_id: 444
+  id: 206908
+  codons: AAA,AAA,AAA,AAA
+  start_position: 327
+  amino_acids: K,K,K,K
+206279: 
+  gaps: true
+  alignment_id: 444
+  id: 206279
+  codons: ---,---,---,AAA
+  start_position: 21
+  amino_acids: X,X,X,K
+207149: 
+  gaps: false
+  alignment_id: 444
+  id: 207149
+  codons: GGT,GGT,GGC,GGC
+  start_position: 435
+  amino_acids: G,G,G,G
+207038: 
+  gaps: false
+  alignment_id: 444
+  id: 207038
+  codons: CAT,CAT,CAT,CAT
+  start_position: 369
+  amino_acids: H,H,H,H
+206890: 
+  gaps: true
+  alignment_id: 444
+  id: 206890
+  codons: AAT,---,---,---
+  start_position: 315
+  amino_acids: N,X,X,X
+206335: 
+  gaps: true
+  alignment_id: 444
+  id: 206335
+  codons: ---,---,---,AAC
+  start_position: 51
+  amino_acids: X,X,X,N
+206372: 
+  gaps: true
+  alignment_id: 444
+  id: 206372
+  codons: ---,---,---,GTA
+  start_position: 69
+  amino_acids: X,X,X,V
+206409: 
+  gaps: false
+  alignment_id: 444
+  id: 206409
+  codons: AAG,AAG,AAG,AAG
+  start_position: 90
+  amino_acids: K,K,K,K
+206576: 
+  gaps: false
+  alignment_id: 444
+  id: 206576
+  codons: GCA,GCT,GCA,GCA
+  start_position: 162
+  amino_acids: A,A,A,A
+206650: 
+  gaps: false
+  alignment_id: 444
+  id: 206650
+  codons: CTA,CTA,CTC,CTT
+  start_position: 207
+  amino_acids: L,L,L,L
+206724: 
+  gaps: false
+  alignment_id: 444
+  id: 206724
+  codons: CAG,CAA,CAA,CAA
+  start_position: 222
+  amino_acids: Q,Q,Q,Q
+206391: 
+  gaps: true
+  alignment_id: 444
+  id: 206391
+  codons: ---,---,---,GAA
+  start_position: 81
+  amino_acids: X,X,X,E
+206428: 
+  gaps: false
+  alignment_id: 444
+  id: 206428
+  codons: AAA,AGA,AAG,AAA
+  start_position: 102
+  amino_acids: K,R,K,K
+206502: 
+  gaps: false
+  alignment_id: 444
+  id: 206502
+  codons: AAC,AAT,AAT,AAT
+  start_position: 120
+  amino_acids: N,N,N,N
+206872: 
+  gaps: false
+  alignment_id: 444
+  id: 206872
+  codons: TCA,TTT,TTA,TTT
+  start_position: 303
+  amino_acids: S,F,L,F
+207520: 
+  gaps: false
+  alignment_id: 444
+  id: 207520
+  codons: CTG,CTT,CTT,CTT
+  start_position: 600
+  amino_acids: L,L,L,L
+207335: 
+  gaps: false
+  alignment_id: 444
+  id: 207335
+  codons: TAC,TAT,TAT,TAC
+  start_position: 519
+  amino_acids: Y,Y,Y,Y
+207298: 
+  gaps: false
+  alignment_id: 444
+  id: 207298
+  codons: CTA,CTA,TTG,CTA
+  start_position: 498
+  amino_acids: L,L,L,L
+207113: 
+  gaps: false
+  alignment_id: 444
+  id: 207113
+  codons: GAA,GAA,GAG,GAG
+  start_position: 414
+  amino_acids: E,E,E,E
+207391: 
+  gaps: false
+  alignment_id: 444
+  id: 207391
+  codons: AGA,AGA,AGA,AGA
+  start_position: 552
+  amino_acids: R,R,R,R
+207280: 
+  gaps: false
+  alignment_id: 444
+  id: 207280
+  codons: ATC,ATA,ATA,ATA
+  start_position: 486
+  amino_acids: I,I,I,I
+207243: 
+  gaps: false
+  alignment_id: 444
+  id: 207243
+  codons: CGC,CGT,CGT,CGT
+  start_position: 456
+  amino_acids: R,R,R,R
+207132: 
+  gaps: false
+  alignment_id: 444
+  id: 207132
+  codons: GCT,GCT,GCT,GCT
+  start_position: 426
+  amino_acids: A,A,A,A
+206614: 
+  gaps: false
+  alignment_id: 444
+  id: 206614
+  codons: AAT,GAT,AAT,AAT
+  start_position: 183
+  amino_acids: N,D,N,N
+206318: 
+  gaps: true
+  alignment_id: 444
+  id: 206318
+  codons: ---,---,---,GCC
+  start_position: 39
+  amino_acids: X,X,X,A
+206355: 
+  gaps: true
+  alignment_id: 444
+  id: 206355
+  codons: ---,---,---,TTG
+  start_position: 60
+  amino_acids: X,X,X,L
+206762: 
+  gaps: false
+  alignment_id: 444
+  id: 206762
+  codons: AAG,AAG,AAG,AAG
+  start_position: 243
+  amino_acids: K,K,K,K
+207484: 
+  gaps: false
+  alignment_id: 444
+  id: 207484
+  codons: TTG,TTG,TTA,TTG
+  start_position: 582
+  amino_acids: L,L,L,L
+207262: 
+  gaps: false
+  alignment_id: 444
+  id: 207262
+  codons: CTT,CTT,CTT,CTT
+  start_position: 471
+  amino_acids: L,L,L,L
+207077: 
+  gaps: false
+  alignment_id: 444
+  id: 207077
+  codons: ATA,GTA,ATA,GTA
+  start_position: 390
+  amino_acids: I,V,I,V
+207003: 
+  gaps: false
+  alignment_id: 444
+  id: 207003
+  codons: AAT,AAA,AGT,AGT
+  start_position: 354
+  amino_acids: N,K,S,S
+206263: 
+  gaps: true
+  alignment_id: 444
+  id: 206263
+  codons: ---,---,---,TCA
+  start_position: 12
+  amino_acids: X,X,X,S
+206300: 
+  gaps: true
+  alignment_id: 444
+  id: 206300
+  codons: ---,---,---,ACA
+  start_position: 27
+  amino_acids: X,X,X,T
+206855: 
+  gaps: false
+  alignment_id: 444
+  id: 206855
+  codons: AGT,AAT,AAT,AAC
+  start_position: 291
+  amino_acids: S,N,N,N
+207466: 
+  gaps: false
+  alignment_id: 444
+  id: 207466
+  codons: GCA,GCA,GCA,GCC
+  start_position: 570
+  amino_acids: A,A,A,A
+207318: 
+  gaps: false
+  alignment_id: 444
+  id: 207318
+  codons: ACT,ACG,ACC,ACC
+  start_position: 510
+  amino_acids: T,T,T,T
+206800: 
+  gaps: false
+  alignment_id: 444
+  id: 206800
+  codons: TAT,TAT,TAT,TAT
+  start_position: 264
+  amino_acids: Y,Y,Y,Y
+207152: 
+  gaps: false
+  alignment_id: 444
+  id: 207152
+  codons: GAG,GAA,GAA,GAA
+  start_position: 438
+  amino_acids: E,E,E,E
+206412: 
+  gaps: false
+  alignment_id: 444
+  id: 206412
+  codons: AAT,AAT,AAT,AAT
+  start_position: 93
+  amino_acids: N,N,N,N
+206486: 
+  gaps: false
+  alignment_id: 444
+  id: 206486
+  codons: AAA,AAA,AAA,AGA
+  start_position: 111
+  amino_acids: K,K,K,R
+206523: 
+  gaps: false
+  alignment_id: 444
+  id: 206523
+  codons: GTC,GTT,GTT,GTT
+  start_position: 132
+  amino_acids: V,V,V,V
+207393: 
+  gaps: false
+  alignment_id: 444
+  id: 207393
+  codons: CAT,CAT,CAC,CAC
+  start_position: 555
+  amino_acids: H,H,H,H
+207097: 
+  gaps: false
+  alignment_id: 444
+  id: 207097
+  codons: AAG,AAA,AAG,AAG
+  start_position: 405
+  amino_acids: K,K,K,K
+206986: 
+  gaps: false
+  alignment_id: 444
+  id: 206986
+  codons: AAT,AAC,GCA,ACT
+  start_position: 345
+  amino_acids: N,N,A,T
+206727: 
+  gaps: false
+  alignment_id: 444
+  id: 206727
+  codons: AGC,AAC,AAC,AAC
+  start_position: 225
+  amino_acids: S,N,N,N
+206246: 
+  gaps: true
+  alignment_id: 444
+  id: 206246
+  codons: ---,---,---,ATG
+  start_position: 0
+  amino_acids: X,X,X,M
+207375: 
+  gaps: false
+  alignment_id: 444
+  id: 207375
+  codons: TCG,TCA,TCA,TCA
+  start_position: 540
+  amino_acids: S,S,S,S
+207301: 
+  gaps: false
+  alignment_id: 444
+  id: 207301
+  codons: GTA,GTA,GTA,GTA
+  start_position: 501
+  amino_acids: V,V,V,V
+207042: 
+  gaps: false
+  alignment_id: 444
+  id: 207042
+  codons: GGC,GCT,GTT,GCT
+  start_position: 372
+  amino_acids: G,A,V,A
+206820: 
+  gaps: false
+  alignment_id: 444
+  id: 206820
+  codons: AGG,AGA,AGA,AGA
+  start_position: 273
+  amino_acids: R,R,R,R
+206561: 
+  gaps: false
+  alignment_id: 444
+  id: 206561
+  codons: AAA,AAA,AAA,AAA
+  start_position: 153
+  amino_acids: K,K,K,K
+206968: 
+  gaps: false
+  alignment_id: 444
+  id: 206968
+  codons: AAT,AGC,GGC,AGC
+  start_position: 336
+  amino_acids: N,S,G,S
+206635: 
+  gaps: false
+  alignment_id: 444
+  id: 206635
+  codons: ATT,ATA,ATA,ATA
+  start_position: 195
+  amino_acids: I,I,I,I
+206302: 
+  gaps: true
+  alignment_id: 444
+  id: 206302
+  codons: ---,---,---,TTA
+  start_position: 30
+  amino_acids: X,X,X,L
+207283: 
+  gaps: false
+  alignment_id: 444
+  id: 207283
+  codons: TTC,TTT,TTC,TTC
+  start_position: 489
+  amino_acids: F,F,F,F
+206839: 
+  gaps: false
+  alignment_id: 444
+  id: 206839
+  codons: GAA,GAA,GAG,GAA
+  start_position: 282
+  amino_acids: E,E,E,E
+206913: 
+  gaps: false
+  alignment_id: 444
+  id: 206913
+  codons: AAG,AAG,AAG,AAG
+  start_position: 330
+  amino_acids: K,K,K,K
+206617: 
+  gaps: false
+  alignment_id: 444
+  id: 206617
+  codons: CAG,CAG,CAA,CAG
+  start_position: 186
+  amino_acids: Q,Q,Q,Q
+206284: 
+  gaps: true
+  alignment_id: 444
+  id: 206284
+  codons: ---,---,---,AAG
+  start_position: 24
+  amino_acids: X,X,X,K
+206654: 
+  gaps: false
+  alignment_id: 444
+  id: 206654
+  codons: GAA,CAA,CAA,CAG
+  start_position: 210
+  amino_acids: E,Q,Q,Q
+206377: 
+  gaps: true
+  alignment_id: 444
+  id: 206377
+  codons: ---,---,---,TTT
+  start_position: 72
+  amino_acids: X,X,X,F
+206747: 
+  gaps: false
+  alignment_id: 444
+  id: 206747
+  codons: AGT,GCC,AGC,AGC
+  start_position: 234
+  amino_acids: S,A,S,S
+206895: 
+  gaps: false
+  alignment_id: 444
+  id: 206895
+  codons: CAA,CAA,CAA,CAA
+  start_position: 318
+  amino_acids: Q,Q,Q,Q
+206766: 
+  gaps: false
+  alignment_id: 444
+  id: 206766
+  codons: GCC,GCA,GCA,GCA
+  start_position: 246
+  amino_acids: A,A,A,A
+206877: 
+  gaps: false
+  alignment_id: 444
+  id: 206877
+  codons: CAG,CAG,CAA,CAG
+  start_position: 306
+  amino_acids: Q,Q,Q,Q
+207266: 
+  gaps: false
+  alignment_id: 444
+  id: 207266
+  codons: GAG,GAG,GAA,GAG
+  start_position: 474
+  amino_acids: E,E,E,E
+207081: 
+  gaps: false
+  alignment_id: 444
+  id: 207081
+  codons: ACG,ATA,ACG,ACG
+  start_position: 393
+  amino_acids: T,I,T,T
+206859: 
+  gaps: false
+  alignment_id: 444
+  id: 206859
+  codons: GAT,GAG,AAT,GAT
+  start_position: 294
+  amino_acids: D,E,N,D
+206600: 
+  gaps: false
+  alignment_id: 444
+  id: 206600
+  codons: ACT,ACA,CCA,ACA
+  start_position: 174
+  amino_acids: T,T,P,T
+207359: 
+  gaps: false
+  alignment_id: 444
+  id: 207359
+  codons: CCT,CCT,CCT,CCT
+  start_position: 531
+  amino_acids: P,P,P,P
+207137: 
+  gaps: false
+  alignment_id: 444
+  id: 207137
+  codons: GAC,GAC,GAC,GAC
+  start_position: 429
+  amino_acids: D,D,D,D
+207100: 
+  gaps: false
+  alignment_id: 444
+  id: 207100
+  codons: AAT,AAT,AAC,AAC
+  start_position: 408
+  amino_acids: N,N,N,N
+206508: 
+  gaps: false
+  alignment_id: 444
+  id: 206508
+  codons: GAA,GAG,GAA,GAA
+  start_position: 123
+  amino_acids: E,E,E,E
+206582: 
+  gaps: false
+  alignment_id: 444
+  id: 206582
+  codons: AGA,AGG,AGA,AGA
+  start_position: 165
+  amino_acids: R,R,R,R
+206249: 
+  gaps: true
+  alignment_id: 444
+  id: 206249
+  codons: ---,---,---,CAT
+  start_position: 3
+  amino_acids: X,X,X,H
+206397: 
+  gaps: false
+  alignment_id: 444
+  id: 206397
+  codons: ATG,ATG,ATG,ATG
+  start_position: 84
+  amino_acids: M,M,M,M
+207378: 
+  gaps: false
+  alignment_id: 444
+  id: 207378
+  codons: TCT,TCT,TCA,TCA
+  start_position: 543
+  amino_acids: S,S,S,S
+207341: 
+  gaps: false
+  alignment_id: 444
+  id: 207341
+  codons: GGG,GGT,GGT,GGT
+  start_position: 522
+  amino_acids: G,G,G,G
+207119: 
+  gaps: false
+  alignment_id: 444
+  id: 207119
+  codons: CAA,CAA,CAA,CAA
+  start_position: 417
+  amino_acids: Q,Q,Q,Q
+207508: 
+  gaps: false
+  alignment_id: 444
+  id: 207508
+  codons: GGA,GGA,GGA,GAA
+  start_position: 594
+  amino_acids: G,G,G,E
+207471: 
+  gaps: false
+  alignment_id: 444
+  id: 207471
+  codons: GTG,GTG,GTG,GTG
+  start_position: 573
+  amino_acids: V,V,V,V
+207397: 
+  gaps: false
+  alignment_id: 444
+  id: 207397
+  codons: ATC,ATT,ATT,ATT
+  start_position: 558
+  amino_acids: I,I,I,I
+207249: 
+  gaps: false
+  alignment_id: 444
+  id: 207249
+  codons: TTA,TTG,TTA,TTA
+  start_position: 459
+  amino_acids: L,L,L,L
+207027: 
+  gaps: false
+  alignment_id: 444
+  id: 207027
+  codons: AAC,AAC,AGT,AGG
+  start_position: 363
+  amino_acids: N,N,S,R
+206546: 
+  gaps: false
+  alignment_id: 444
+  id: 206546
+  codons: AGA,AGG,AGA,AGA
+  start_position: 144
+  amino_acids: R,R,R,R
+206916: 
+  gaps: false
+  alignment_id: 444
+  id: 206916
+  codons: AAA,AAG,AAG,AAG
+  start_position: 333
+  amino_acids: K,K,K,K
+207527: 
+  gaps: false
+  alignment_id: 444
+  id: 207527
   codons: CCC,CAT,CCT,CCT
+  start_position: 603
   amino_acids: P,H,P,P
-  gaps: 0
-
+207490: 
+  gaps: false
+  alignment_id: 444
+  id: 207490
+  codons: AAA,AAG,AAG,AAG
+  start_position: 585
+  amino_acids: K,K,K,K
+206491: 
+  gaps: false
+  alignment_id: 444
+  id: 206491
+  codons: GTC,ATA,ATA,ATA
+  start_position: 114
+  amino_acids: V,I,I,I
+206269: 
+  gaps: true
+  alignment_id: 444
+  id: 206269
+  codons: ---,---,---,CCT
+  start_position: 15
+  amino_acids: X,X,X,P
+206639: 
+  gaps: false
+  alignment_id: 444
+  id: 206639
+  codons: TCC,CCT,CCC,CCC
+  start_position: 198
+  amino_acids: S,P,P,P
+206787: 
+  gaps: false
+  alignment_id: 444
+  id: 206787
+  codons: ATG,ATG,ATG,ATG
+  start_position: 255
+  amino_acids: M,M,M,M
+207324: 
+  gaps: false
+  alignment_id: 444
+  id: 207324
+  codons: AGA,CGA,AGA,AGA
+  start_position: 513
+  amino_acids: R,R,R,R
+206658: 
+  gaps: false
+  alignment_id: 444
+  id: 206658
+  codons: GAA,GAC,GAA,GAA
+  start_position: 213
+  amino_acids: E,D,E,E
+206325: 
+  gaps: true
+  alignment_id: 444
+  id: 206325
+  codons: ---,---,---,CTA
+  start_position: 42
+  amino_acids: X,X,X,L
+206362: 
+  gaps: true
+  alignment_id: 444
+  id: 206362
+  codons: ---,---,---,ACA
+  start_position: 63
+  amino_acids: X,X,X,T
+206806: 
+  gaps: false
+  alignment_id: 444
+  id: 206806
+  codons: GCT,GCC,GCC,GCC
+  start_position: 267
+  amino_acids: A,A,A,A
+207158: 
+  gaps: false
+  alignment_id: 444
+  id: 207158
+  codons: GCC,GCC,GCT,GCT
+  start_position: 441
+  amino_acids: A,A,A,A
+207084: 
+  gaps: false
+  alignment_id: 444
+  id: 207084
+  codons: GTT,GTA,GTG,ATG
+  start_position: 396
+  amino_acids: V,V,V,M
+206529: 
+  gaps: false
+  alignment_id: 444
+  id: 206529
+  codons: TTA,TTA,TTA,TTA
+  start_position: 135
+  amino_acids: L,L,L,L
+206566: 
+  gaps: false
+  alignment_id: 444
+  id: 206566
+  codons: TTT,TTT,TTT,TTT
+  start_position: 156
+  amino_acids: F,F,F,F
+206603: 
+  gaps: false
+  alignment_id: 444
+  id: 206603
+  codons: TTA,TTA,TTA,TTA
+  start_position: 177
+  amino_acids: L,L,L,L
+206973: 
+  gaps: false
+  alignment_id: 444
+  id: 206973
+  codons: GGT,AGC,AAT,AGT
+  start_position: 339
+  amino_acids: G,S,N,S
+206381: 
+  gaps: true
+  alignment_id: 444
+  id: 206381
+  codons: ---,---,---,TGT
+  start_position: 75
+  amino_acids: X,X,X,C
+207288: 
+  gaps: false
+  alignment_id: 444
+  id: 207288
+  codons: AAC,AAC,AAC,AAC
+  start_position: 492
+  amino_acids: N,N,N,N
+207251: 
+  gaps: false
+  alignment_id: 444
+  id: 207251
+  codons: TTG,TTG,TTG,TTG
+  start_position: 462
+  amino_acids: L,L,L,L
+207066: 
+  gaps: false
+  alignment_id: 444
+  id: 207066
+  codons: ACA,TCA,TCA,TCA
+  start_position: 381
+  amino_acids: T,S,S,S
+207270: 
+  gaps: false
+  alignment_id: 444
+  id: 207270
+  codons: AGA,AGA,AGA,AGA
+  start_position: 477
+  amino_acids: R,R,R,R
+206308: 
+  gaps: true
+  alignment_id: 444
+  id: 206308
+  codons: ---,---,---,TAT
+  start_position: 33
+  amino_acids: X,X,X,Y
+206345: 
+  gaps: true
+  alignment_id: 444
+  id: 206345
+  codons: ---,---,---,CAA
+  start_position: 54
+  amino_acids: X,X,X,Q
+206752: 
+  gaps: false
+  alignment_id: 444
+  id: 206752
+  codons: GTT,GTT,GTC,GTT
+  start_position: 237
+  amino_acids: V,V,V,V
+206826: 
+  gaps: false
+  alignment_id: 444
+  id: 206826
+  codons: ACG,ACA,ACG,ACG
+  start_position: 276
+  amino_acids: T,T,T,T
+206863: 
+  gaps: false
+  alignment_id: 444
+  id: 206863
+  codons: TCG,TTG,TTG,TTG
+  start_position: 297
+  amino_acids: S,L,L,L
+206900: 
+  gaps: false
+  alignment_id: 444
+  id: 206900
+  codons: GAC,GAC,GAG,GAG
+  start_position: 321
+  amino_acids: D,D,E,E
+206993: 
+  gaps: false
+  alignment_id: 444
+  id: 206993
+  codons: CAC,AAC,AAT,AAT
+  start_position: 348
+  amino_acids: H,N,N,N
+206475: 
+  gaps: false
+  alignment_id: 444
+  id: 206475
+  codons: TTA,CTA,CTA,CTA
+  start_position: 105
+  amino_acids: L,L,L,L
+206845: 
+  gaps: false
+  alignment_id: 444
+  id: 206845
+  codons: GTA,ATA,GTA,ATA
+  start_position: 285
+  amino_acids: V,I,V,I
+206882: 
+  gaps: true
+  alignment_id: 444
+  id: 206882
+  codons: CAT,---,---,---
+  start_position: 309
+  amino_acids: H,X,X,X
+207456: 
+  gaps: false
+  alignment_id: 444
+  id: 207456
+  codons: ACC,ACT,ACA,ACT
+  start_position: 564
+  amino_acids: T,T,T,T
+207382: 
+  gaps: false
+  alignment_id: 444
+  id: 207382
+  codons: AGA,AGA,AGA,AGA
+  start_position: 546
+  amino_acids: R,R,R,R
+207308: 
+  gaps: false
+  alignment_id: 444
+  id: 207308
+  codons: ATA,ATA,ATA,ATA
+  start_position: 504
+  amino_acids: I,I,I,I
+207234: 
+  gaps: false
+  alignment_id: 444
+  id: 207234
+  codons: GGA,GGA,GGA,GGG
+  start_position: 450
+  amino_acids: G,G,G,G
+206272: 
+  gaps: true
+  alignment_id: 444
+  id: 206272
+  codons: ---,---,---,ATA
+  start_position: 18
+  amino_acids: X,X,X,I
+206420: 
+  gaps: false
+  alignment_id: 444
+  id: 206420
+  codons: GTG,GTT,GTT,GTT
+  start_position: 96
+  amino_acids: V,V,V,V
+206790: 
+  gaps: false
+  alignment_id: 444
+  id: 206790
+  codons: CAC,CAC,CAC,CAC
+  start_position: 258
+  amino_acids: H,H,H,H
+207401: 
+  gaps: false
+  alignment_id: 444
+  id: 207401
+  codons: TCA,TCC,TCA,TCA
+  start_position: 561
+  amino_acids: S,S,S,S
+207364: 
+  gaps: false
+  alignment_id: 444
+  id: 207364
+  codons: TTG,CTG,TTG,TTG
+  start_position: 534
+  amino_acids: L,L,L,L
+207031: 
+  gaps: true
+  alignment_id: 444
+  id: 207031
+  codons: AAT,---,---,---
+  start_position: 366
+  amino_acids: N,X,X,X
+206624: 
+  gaps: false
+  alignment_id: 444
+  id: 206624
+  codons: AAG,AAA,AAG,AAG
+  start_position: 189
+  amino_acids: K,K,K,K
+206772: 
+  gaps: false
+  alignment_id: 444
+  id: 206772
+  codons: TCC,TCC,TCC,TCC
+  start_position: 249
+  amino_acids: S,S,S,S
+206513: 
+  gaps: false
+  alignment_id: 444
+  id: 206513
+  codons: TCA,TCT,TCA,TCA
+  start_position: 126
+  amino_acids: S,S,S,S
+207272: 
+  gaps: false
+  alignment_id: 444
+  id: 207272
+  codons: GCT,GCA,GCA,GCA
+  start_position: 480
+  amino_acids: A,A,A,A
+207124: 
+  gaps: false
+  alignment_id: 444
+  id: 207124
+  codons: GGC,GGA,GGA,GGA
+  start_position: 420
+  amino_acids: G,G,G,G
+207087: 
+  gaps: false
+  alignment_id: 444
+  id: 207087
+  codons: CAA,CAG,CAG,CAA
+  start_position: 399
+  amino_acids: Q,Q,Q,Q
+207050: 
+  gaps: false
+  alignment_id: 444
+  id: 207050
+  codons: AAC,AAT,AAC,GAC
+  start_position: 375
+  amino_acids: N,N,N,D
+207013: 
+  gaps: false
+  alignment_id: 444
+  id: 207013
+  codons: AAT,AGT,AAT,AAT
+  start_position: 357
+  amino_acids: N,S,N,N
+206643: 
+  gaps: false
+  alignment_id: 444
+  id: 206643
+  codons: TCT,TTC,TCC,TTC
+  start_position: 201
+  amino_acids: S,F,S,F
+206662: 
+  gaps: false
+  alignment_id: 444
+  id: 206662
+  codons: TTA,TTG,CTA,TTA
+  start_position: 216
+  amino_acids: L,L,L,L
+206366: 
+  gaps: true
+  alignment_id: 444
+  id: 206366
+  codons: ---,---,---,TCA
+  start_position: 66
+  amino_acids: X,X,X,S
+206736: 
+  gaps: false
+  alignment_id: 444
+  id: 206736
+  codons: AAT,AAT,AAC,AAT
+  start_position: 228
+  amino_acids: N,N,N,N
+206551: 
+  gaps: false
+  alignment_id: 444
+  id: 206551
+  codons: AAA,AAA,AAA,AAA
+  start_position: 147
+  amino_acids: K,K,K,K
+206255: 
+  gaps: true
+  alignment_id: 444
+  id: 206255
+  codons: ---,---,---,CAC
+  start_position: 6
+  amino_acids: X,X,X,H
+207347: 
+  gaps: false
+  alignment_id: 444
+  id: 207347
+  codons: GGT,GGC,GGC,GGC
+  start_position: 525
+  amino_acids: G,G,G,G
+206903: 
+  gaps: false
+  alignment_id: 444
+  id: 206903
+  codons: CAG,CAG,CAG,CAG
+  start_position: 324
+  amino_acids: Q,Q,Q,Q

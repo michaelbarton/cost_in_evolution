@@ -1,100 +1,1081 @@
-1:
-  amino_acid_id: 18
-  condition_id: 1
-  cost_type_id: 3
-  estimate: 204.2
-2:
-  amino_acid_id: 16
-  estimate: 105.1
-  condition_id: 1
-  cost_type_id: 3
-3:
+--- 
+647: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 647
   amino_acid_id: 7
-  estimate: 147.1
+  estimate: 4.19e-09
+536: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 536
+  amino_acid_id: 16
+  estimate: 0.00926983
+573: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 573
+  amino_acid_id: 13
+  estimate: 0.00316896
+610: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 610
+  amino_acid_id: 10
+  estimate: 1.09e-08
+666: 
   condition_id: 1
   cost_type_id: 3
-4:
-  amino_acid_id: 1
-  estimate: 89.1
-  condition_id: 1
-  cost_type_id: 3
-5:
-  amino_acid_id: 4
-  estimate: 133.1
-  condition_id: 1
-  cost_type_id: 3
-6:
+  id: 666
   amino_acid_id: 3
   estimate: 132.1
+629: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 629
+  amino_acid_id: 9
+  estimate: 4.74e-06
+518: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 518
+  amino_acid_id: 18
+  estimate: 9.99939
+555: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 555
+  amino_acid_id: 15
+  estimate: 4.96506
+592: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 592
+  amino_acid_id: 12
+  estimate: 5.34e-06
+648: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 648
+  amino_acid_id: 8
+  estimate: -5.52e-08
+537: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 537
+  amino_acid_id: 17
+  estimate: 0.00957003
+574: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 574
+  amino_acid_id: 14
+  estimate: 0.0123021
+611: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 611
+  amino_acid_id: 11
+  estimate: 5.61e-08
+667: 
   condition_id: 1
   cost_type_id: 3
-7:
+  id: 667
   amino_acid_id: 19
   estimate: 181.2
+630: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 630
+  amino_acid_id: 10
+  estimate: -1.01e-06
+519: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 519
+  amino_acid_id: 19
+  estimate: 4.99996
+556: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 556
+  amino_acid_id: 16
+  estimate: 2.46805
+593: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 593
+  amino_acid_id: 13
+  estimate: 0.000110226
+649: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 649
+  amino_acid_id: 9
+  estimate: 3.14e-09
+501: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 501
+  amino_acid_id: 1
+  estimate: 4.99999
+538: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 538
+  amino_acid_id: 18
+  estimate: 0.00283983
+575: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 575
+  amino_acid_id: 15
+  estimate: 0.00817745
+612: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 612
+  amino_acid_id: 12
+  estimate: 1.53e-08
+668: 
   condition_id: 1
   cost_type_id: 3
-8:
+  id: 668
   amino_acid_id: 10
   estimate: 131.2
+631: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 631
+  amino_acid_id: 11
+  estimate: 2.07e-06
+520: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 520
+  amino_acid_id: 20
+  estimate: 4.99997
+557: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 557
+  amino_acid_id: 17
+  estimate: 3.42864
+594: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 594
+  amino_acid_id: 14
+  estimate: 0.000110646
+650: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 650
+  amino_acid_id: 10
+  estimate: -1.94e-09
+502: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 502
+  amino_acid_id: 2
+  estimate: 20.0005
+539: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 539
+  amino_acid_id: 19
+  estimate: 0.00509996
+576: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 576
+  amino_acid_id: 16
+  estimate: 0.00457577
+613: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 613
+  amino_acid_id: 13
+  estimate: 5.59e-08
+669: 
   condition_id: 1
   cost_type_id: 3
-9:
+  id: 669
   amino_acid_id: 8
   estimate: 75.1
+632: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 632
+  amino_acid_id: 12
+  estimate: -1.67e-06
+521: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 521
+  amino_acid_id: 1
+  estimate: 0.02294
+558: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 558
+  amino_acid_id: 18
+  estimate: 11.9646
+595: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 595
+  amino_acid_id: 15
+  estimate: 3.82e-05
+651: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 651
+  amino_acid_id: 11
+  estimate: 6.13e-09
+540: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 540
+  amino_acid_id: 20
+  estimate: 0.0132299
+577: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 577
+  amino_acid_id: 17
+  estimate: 0.00656241
+614: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 614
+  amino_acid_id: 14
+  estimate: 1.48e-07
+503: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 503
+  amino_acid_id: 3
+  estimate: 10.0
+670: 
   condition_id: 1
   cost_type_id: 3
-10:
+  id: 670
   amino_acid_id: 20
   estimate: 117.2
+633: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 633
+  amino_acid_id: 13
+  estimate: 5.00001
+559: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 559
+  amino_acid_id: 19
+  estimate: 8.86861
+596: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 596
+  amino_acid_id: 16
+  estimate: -4.66e-05
+522: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 522
+  amino_acid_id: 2
+  estimate: 0.0321407
+652: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 652
+  amino_acid_id: 12
+  estimate: -4.79e-09
+615: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 615
+  amino_acid_id: 15
+  estimate: 6.29e-08
+578: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 578
+  amino_acid_id: 18
+  estimate: 0.00339795
+504: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 504
+  amino_acid_id: 4
+  estimate: 4.99996
+541: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 541
+  amino_acid_id: 1
+  estimate: 2.50005
+671: 
   condition_id: 1
   cost_type_id: 3
-11:
+  id: 671
   amino_acid_id: 14
   estimate: 165.2
+634: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 634
+  amino_acid_id: 14
+  estimate: -6.7e-06
+597: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 597
+  amino_acid_id: 17
+  estimate: 6.95e-05
+523: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 523
+  amino_acid_id: 3
+  estimate: 0.01017
+560: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 560
+  amino_acid_id: 20
+  estimate: 4.78575
+653: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 653
+  amino_acid_id: 13
+  estimate: 0.002535
+616: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 616
+  amino_acid_id: 16
+  estimate: -8.64e-08
+505: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 505
+  amino_acid_id: 5
+  estimate: 5.00167
+542: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 542
+  amino_acid_id: 2
+  estimate: 6.96484
+579: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 579
+  amino_acid_id: 19
+  estimate: 0.00904599
+672: 
   condition_id: 1
   cost_type_id: 3
-12:
+  id: 672
   amino_acid_id: 13
   estimate: 149.2
+635: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 635
+  amino_acid_id: 15
+  estimate: -2.91e-06
+524: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 524
+  amino_acid_id: 4
+  estimate: 0.0148749
+561: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 561
+  amino_acid_id: 1
+  estimate: 0.0114702
+598: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 598
+  amino_acid_id: 18
+  estimate: 0.000175542
+654: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 654
+  amino_acid_id: 14
+  estimate: -8.98e-09
+617: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 617
+  amino_acid_id: 17
+  estimate: 1.33e-07
+506: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 506
+  amino_acid_id: 6
+  estimate: 10.0004
+543: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 543
+  amino_acid_id: 3
+  estimate: 3.92904
+580: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 580
+  amino_acid_id: 20
+  estimate: 0.0126631
+673: 
   condition_id: 1
   cost_type_id: 3
-13:
+  id: 673
   amino_acid_id: 12
   estimate: 146.2
+636: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 636
+  amino_acid_id: 16
+  estimate: 2.42e-06
+525: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 525
+  amino_acid_id: 5
+  estimate: 0.00033011
+562: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 562
+  amino_acid_id: 2
+  estimate: 0.0111925
+599: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 599
+  amino_acid_id: 19
+  estimate: 4.91e-05
+655: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 655
+  amino_acid_id: 15
+  estimate: -4.79e-09
+618: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 618
+  amino_acid_id: 18
+  estimate: 4.99e-08
+507: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 507
+  amino_acid_id: 7
+  estimate: 4.99999
+544: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 544
+  amino_acid_id: 4
+  estimate: 3.07215
+581: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 581
+  amino_acid_id: 1
+  estimate: -1.38e-05
+674: 
   condition_id: 1
   cost_type_id: 3
-14:
+  id: 674
   amino_acid_id: 6
   estimate: 146.2
+637: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 637
+  amino_acid_id: 17
+  estimate: 2.27e-06
+526: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 526
+  amino_acid_id: 6
+  estimate: 0.0105404
+563: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 563
+  amino_acid_id: 3
+  estimate: 0.00399583
+600: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 600
+  amino_acid_id: 20
+  estimate: -2.57e-05
+656: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 656
+  amino_acid_id: 16
+  estimate: 4.49e-09
+619: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 619
+  amino_acid_id: 19
+  estimate: 5.01e-08
+508: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 508
+  amino_acid_id: 8
+  estimate: 5.00001
+545: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 545
+  amino_acid_id: 5
+  estimate: 3.80496
+582: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 582
+  amino_acid_id: 2
+  estimate: -9.01e-06
+675: 
   condition_id: 1
   cost_type_id: 3
-15:
+  id: 675
   amino_acid_id: 9
   estimate: 155.2
+638: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 638
+  amino_acid_id: 18
+  estimate: -1.0e-05
+527: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 527
+  amino_acid_id: 7
+  estimate: 0.01509
+564: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 564
+  amino_acid_id: 4
+  estimate: 0.00913963
+601: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 601
+  amino_acid_id: 1
+  estimate: -6.35e-08
+657: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 657
+  amino_acid_id: 17
+  estimate: 4.34e-09
+620: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 620
+  amino_acid_id: 20
+  estimate: -6.79e-08
+509: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 509
+  amino_acid_id: 9
+  estimate: 14.9999
+546: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 546
+  amino_acid_id: 6
+  estimate: 4.60794
+583: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 583
+  amino_acid_id: 3
+  estimate: -8.97e-05
+676: 
   condition_id: 1
   cost_type_id: 3
-16:
+  id: 676
   amino_acid_id: 15
   estimate: 115.1
+639: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 639
+  amino_acid_id: 19
+  estimate: 1.47e-06
+528: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 528
+  amino_acid_id: 8
+  estimate: 0.01452
+565: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 565
+  amino_acid_id: 5
+  estimate: 0.000251128
+602: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 602
+  amino_acid_id: 2
+  estimate: -1.45e-08
+658: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 658
+  amino_acid_id: 18
+  estimate: -2.84e-09
+621: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 621
+  amino_acid_id: 1
+  estimate: -2.22e-06
+510: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 510
+  amino_acid_id: 10
+  estimate: 5.00411
+547: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 547
+  amino_acid_id: 7
+  estimate: 4.32146
+584: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 584
+  amino_acid_id: 4
+  estimate: -9.45e-05
+677: 
   condition_id: 1
   cost_type_id: 3
-17:
+  id: 677
   amino_acid_id: 5
   estimate: 121.2
+640: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 640
+  amino_acid_id: 20
+  estimate: -1.81e-06
+529: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 529
+  amino_acid_id: 9
+  estimate: 0.00994496
+566: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 566
+  amino_acid_id: 6
+  estimate: 0.00485677
+603: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 603
+  amino_acid_id: 3
+  estimate: -9.13e-08
+659: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 659
+  amino_acid_id: 19
+  estimate: 1.5e-09
+622: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 622
+  amino_acid_id: 2
+  estimate: 5.59e-07
+511: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 511
+  amino_acid_id: 11
+  estimate: 4.99981
+548: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 548
+  amino_acid_id: 8
+  estimate: 1.53572
+585: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 585
+  amino_acid_id: 5
+  estimate: -0.0018141
+678: 
   condition_id: 1
   cost_type_id: 3
-18:
+  id: 678
   amino_acid_id: 17
   estimate: 119.1
+641: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 641
+  amino_acid_id: 1
+  estimate: -1.02e-08
+530: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 530
+  amino_acid_id: 10
+  estimate: 0.00964293
+567: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 567
+  amino_acid_id: 7
+  estimate: 0.0130422
+604: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 604
+  amino_acid_id: 4
+  estimate: -2.81e-07
+660: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 660
+  amino_acid_id: 20
+  estimate: -4.79e-09
+623: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 623
+  amino_acid_id: 3
+  estimate: 1.07e-05
+512: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 512
+  amino_acid_id: 12
+  estimate: 10.0
+549: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 549
+  amino_acid_id: 9
+  estimate: 7.30842
+586: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 586
+  amino_acid_id: 6
+  estimate: 0.000210179
+679: 
   condition_id: 1
   cost_type_id: 3
-19:
+  id: 679
   amino_acid_id: 11
   estimate: 131.2
+642: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 642
+  amino_acid_id: 2
+  estimate: 8.98e-10
+531: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 531
+  amino_acid_id: 11
+  estimate: 0.0148194
+568: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 568
+  amino_acid_id: 8
+  estimate: 0.00445974
+605: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 605
+  amino_acid_id: 5
+  estimate: -1.2e-07
+661: 
   condition_id: 1
   cost_type_id: 3
-20:
+  id: 661
+  amino_acid_id: 18
+  estimate: 204.2
+624: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 624
+  amino_acid_id: 4
+  estimate: -1.27e-05
+550: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 550
+  amino_acid_id: 10
+  estimate: 6.0362
+587: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 587
+  amino_acid_id: 7
+  estimate: -0.0001145
+513: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 513
+  amino_acid_id: 13
+  estimate: 4.99997
+680: 
+  condition_id: 1
+  cost_type_id: 3
+  id: 680
   amino_acid_id: 2
   estimate: 174.2
+643: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 643
+  amino_acid_id: 3
+  estimate: 1.09e-08
+569: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 569
+  amino_acid_id: 9
+  estimate: 0.00484548
+606: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 606
+  amino_acid_id: 6
+  estimate: 2.22e-07
+532: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 532
+  amino_acid_id: 12
+  estimate: 0.0286201
+662: 
   condition_id: 1
   cost_type_id: 3
+  id: 662
+  amino_acid_id: 16
+  estimate: 105.1
+625: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 625
+  amino_acid_id: 5
+  estimate: 5.00058
+588: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 588
+  amino_acid_id: 8
+  estimate: -4.5e-06
+514: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 514
+  amino_acid_id: 14
+  estimate: 5.00032
+551: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 551
+  amino_acid_id: 11
+  estimate: 6.03577
+644: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 644
+  amino_acid_id: 4
+  estimate: -3.77e-08
+607: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 607
+  amino_acid_id: 7
+  estimate: -3.46e-07
+533: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 533
+  amino_acid_id: 13
+  estimate: 0.00253498
+570: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 570
+  amino_acid_id: 10
+  estimate: 0.0116318
+663: 
+  condition_id: 1
+  cost_type_id: 3
+  id: 663
+  amino_acid_id: 7
+  estimate: 147.1
+626: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 626
+  amino_acid_id: 6
+  estimate: 2.98e-06
+515: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 515
+  amino_acid_id: 15
+  estimate: 5.00012
+552: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 552
+  amino_acid_id: 12
+  estimate: 6.57164
+589: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 589
+  amino_acid_id: 9
+  estimate: -0.000182529
+645: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 645
+  amino_acid_id: 5
+  estimate: 0.000330038
+534: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 534
+  amino_acid_id: 14
+  estimate: 0.00669543
+571: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 571
+  amino_acid_id: 11
+  estimate: 0.01789
+608: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 608
+  amino_acid_id: 8
+  estimate: -1.31e-08
+664: 
+  condition_id: 1
+  cost_type_id: 3
+  id: 664
+  amino_acid_id: 1
+  estimate: 89.1
+627: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 627
+  amino_acid_id: 7
+  estimate: 1.39e-06
+516: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 516
+  amino_acid_id: 16
+  estimate: 4.99991
+553: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 553
+  amino_acid_id: 13
+  estimate: 6.25041
+590: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 590
+  amino_acid_id: 10
+  estimate: 5.63e-06
+646: 
+  condition_id: 5
+  cost_type_id: 2
+  id: 646
+  amino_acid_id: 6
+  estimate: 3.14e-09
+535: 
+  condition_id: 3
+  cost_type_id: 2
+  id: 535
+  amino_acid_id: 15
+  estimate: 0.00823519
+572: 
+  condition_id: 2
+  cost_type_id: 2
+  id: 572
+  amino_acid_id: 12
+  estimate: 0.018808
+609: 
+  condition_id: 4
+  cost_type_id: 2
+  id: 609
+  amino_acid_id: 9
+  estimate: -1.21e-07
+665: 
+  condition_id: 1
+  cost_type_id: 3
+  id: 665
+  amino_acid_id: 4
+  estimate: 133.1
+628: 
+  condition_id: 5
+  cost_type_id: 1
+  id: 628
+  amino_acid_id: 8
+  estimate: -1.9e-05
+517: 
+  condition_id: 3
+  cost_type_id: 1
+  id: 517
+  amino_acid_id: 17
+  estimate: 5.00001
+554: 
+  condition_id: 2
+  cost_type_id: 1
+  id: 554
+  amino_acid_id: 14
+  estimate: 9.18754
+591: 
+  condition_id: 4
+  cost_type_id: 1
+  id: 591
+  amino_acid_id: 11
+  estimate: 1.89e-05
