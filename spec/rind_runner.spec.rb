@@ -49,7 +49,7 @@ describe RindRunner do
       rr.generate_tree_file
       File.exists?(rr.tmp_dir + '/treefile').should == true
       File.open(rr.tmp_dir + '/treefile').read.strip.should ==
-        '((FYDL177C: 0.089768, PYDL177C: 0.044688): 0.021206, MYDL177C: 0.096521, BYDL177C: 0.166724);'
+        '((FYDL177C: 0.089768, PYDL177C: 0.044687): 0.021206, MYDL177C: 0.096521, BYDL177C: 0.166724);'
       File.delete(rr.tmp_dir + '/treefile')
       Dir.delete(rr.tmp_dir)
     end
