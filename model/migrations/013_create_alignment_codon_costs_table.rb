@@ -6,7 +6,6 @@ class CreateAlignmentCodonCostsTable < ActiveRecord::Migration
       t.integer :condition_id
       t.integer :cost_type_id
       t.float   :mean
-      t.float   :variance
     end
     add_index(:alignment_codon_costs,[:alignment_codon_id,:condition_id,:cost_type_id], 
       :unique => true, :name => :alignment_codon_cost_index)
