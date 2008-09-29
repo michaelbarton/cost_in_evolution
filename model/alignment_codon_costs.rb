@@ -3,6 +3,10 @@ class AlignmentCodonCost < ActiveRecord::Base
   belongs_to :condition
   belongs_to :cost_type
 
+  validates_presence_of :alignment_codon_id, :condition_id, :cost_type_id, :mean
+
+  validates_uniqueness_of :alignment_codon_id, :scope => [:condition_id, :cost_type_id]
+
   def self.create_from_codon(codon)
  
     # Each group of condition and cost
