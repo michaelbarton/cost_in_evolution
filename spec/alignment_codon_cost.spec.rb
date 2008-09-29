@@ -35,6 +35,24 @@ describe AlignmentCodonCost do
     end
   end
 
+  describe 'validations' do
+
+    after(:all) {AlignmentCodonCost.delete_all}
+
+    it 'should be false if duplicate row exists' do
+      first = AlignmentCodonCost.create(
+        :alignment_codon_id => 1,
+        :condition_id       => 1,
+        :cost_type_id       => 1,
+	:mean               => 0
+      )
+      duplicate = first.clone
+      duplicate.valid?.should be_false
+      first.destroy
+    end
+  
+  end
+
 
   describe 'estimated alignment codon costs' do
 
