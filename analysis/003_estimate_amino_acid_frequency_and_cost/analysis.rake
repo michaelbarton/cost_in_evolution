@@ -94,4 +94,18 @@ namespace '003' do
     16.times { p.call }
   end
 
+  desc 'Prints average gene cost to file'
+  task :print_average_gene_costs do
+    target = File.join(File.dirname(__FILE__),'r','data','average_protein_costs.csv')
+    sql = File.join(File.dirname(__FILE__),'sql','average_protein_costs.sql')
+    output_from_sql(sql,target)
+  end
+
+  desc 'Prints alignment codon cost to file'
+  task :print_alignment_codon_costs do
+    target = File.join(File.dirname(__FILE__),'r','data','alignment_codon_costs.csv')
+    sql = File.join(File.dirname(__FILE__),'sql','alignment_codon_costs.sql')
+    output_from_sql(sql,target)
+  end
+
 end
