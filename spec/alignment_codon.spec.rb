@@ -80,6 +80,7 @@ describe AlignmentCodon do
     it 'should create the expected number of records' do
       AlignmentCodon.create_from_alignment(Alignment.first)
       AlignmentCodon.all.length.should == 202
+      Alignment.first.alignment_codons.all.length.should == 202
       AlignmentCodon.delete_all
     end
 
