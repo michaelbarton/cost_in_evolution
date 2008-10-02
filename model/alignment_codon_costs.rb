@@ -25,12 +25,14 @@ class AlignmentCodonCost < ActiveRecord::Base
         }).estimate
       end
 
-      AlignmentCodonCost.create(
+      aac = AlignmentCodonCost.new(
         :alignment_codon_id => codon.id,
         :condition_id       => cost.condition_id,
         :cost_type_id       => cost.cost_type_id,
         :mean               => self.weighted_mean(costs,frequencies)
       )
+
+      aac.save
     end
   end
 
