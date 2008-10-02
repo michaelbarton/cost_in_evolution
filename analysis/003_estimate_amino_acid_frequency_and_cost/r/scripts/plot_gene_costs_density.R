@@ -22,3 +22,7 @@ chart <- densityplot(
   xlab="Frequency weighted, mean per residue protein cost",
   scale="free")
 
+postscript(paste(getwd(),'../plots/average_gene_cost_density.eps',sep='/'),
+  width=10,height=10,onefile=FALSE,horizontal=FALSE, paper = "special")
+print(chart)
+graphics.off()
