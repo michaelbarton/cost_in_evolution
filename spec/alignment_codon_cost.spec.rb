@@ -64,6 +64,11 @@ describe AlignmentCodonCost do
       AlignmentCodonCost.delete_all
     end
 
+    it 'should create the expected number of costs' do
+      n_costs = AminoAcidCost.all(:group => ["condition_id"," , ","cost_type_id"]).size
+      AlignmentCodonCost.all.size.should == AlignmentCodon.all.size * n_costs
+    end
+
     it 'should calculate the expected cost for the first codon' do
       AlignmentCodonCost.first.mean.should be_close(149.2, 0.0001)
     end
