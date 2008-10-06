@@ -1,8 +1,7 @@
 SELECT
   genes.name AS gene,
   alignment_codons.start_position AS codon,
-  conditions.abbrv AS condition_type,
-  cost_types.abbrv AS cost_type,
+  CONCAT(conditions.abbrv, '-', cost_types.abbrv) AS cost_type,
   alignment_codon_costs.mean AS cost
 FROM
   alignment_codon_costs
