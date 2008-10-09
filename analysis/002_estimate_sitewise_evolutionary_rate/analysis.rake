@@ -85,4 +85,12 @@ namespace '002' do
     end
   end
 
+  desc 'Prints site mutation rate data to file'
+  task :print_site_mutation_data do
+    target = File.join(File.dirname(__FILE__),'r','data','site_mutation_rates.csv')
+    sql = File.join(File.dirname(__FILE__),'sql','site_mutation_rates.sql')
+    output_from_sql(sql,target)
+  end
+
+
 end
