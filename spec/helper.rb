@@ -3,6 +3,7 @@ require 'factory_girl'
 Dir.glob(File.dirname(__FILE__) + '/factory/*.rb') {|file| require file}
 
 ActiveRecord::Base.establish_connection(Needle::Registry.instance.database_connections['testing'])
+ActiveRecord::Migration.verbose = FALSE
 [0,nil].each {|i| ActiveRecord::Migrator.migrate(File.dirname(__FILE__) + '/../model/migrations',i)}
 
 Needle::Registry.instance.register(:logger) do
