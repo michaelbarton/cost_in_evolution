@@ -7,6 +7,17 @@ describe CorrelationByGene do
       :conditions, :cost_types, :alignment_codon_costs
   end
 
+  describe 'fetching appropriate cost and rate data' do
+
+    it 'should collect correct mutation rate data' do
+      rates, costs = CorrelationByGene.fetch_cost_rate_data(Alignment.first)
+
+      rates.length.should == 170
+      rates.first.should == 0.638
+    end
+
+  end
+
   describe 'estimate correlation between site costs and mutation rates' do
 
     before do
