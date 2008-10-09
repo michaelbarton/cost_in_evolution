@@ -1,5 +1,9 @@
 require 'pathname'
-require Pathname.new(File.join(File.join(File.dirname(__FILE__),'..','..','config','environment.rb'))).cleanpath.to_s
+
+ROOT = Pathname.new(File.join(File.join(File.dirname(__FILE__),'..','..'))).cleanpath.to_s
+$:.unshift(ROOT)
+
+require 'config/environment'
 
 FIXTURES_DIR = Pathname.new(File.join(File.join(File.dirname(__FILE__)))).cleanpath.to_s
 
@@ -33,3 +37,6 @@ dump_models(mutations)
 
 frequencies = codons.map{|c| c.amino_acid_frequencies}.flatten
 dump_models(frequencies)
+
+codon_costs = codons.map{|c| c.alignment_codon_costs}.flatten
+dump_models(codon_costs)
