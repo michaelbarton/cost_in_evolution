@@ -27,7 +27,7 @@ describe CorrelationByGene do
       cost = CorrelationByGene.find_by_cost_type_id_and_condition_id(weight.id,unspecified.id)
 
       cost.should_not be_nil
-      cost.should be_close(-0.28944959,0.0001)
+      cost.r.should be_close(-0.28944959,0.0001)
     end
 
     it 'should estimate the correct nitrogen absolute correlation' do
@@ -36,7 +36,7 @@ describe CorrelationByGene do
       cost = CorrelationByGene.find_by_cost_type_id_and_condition_id(absolute.id,nitrogen.id)
 
      cost.should_not be_nil
-     cost.should be_close(-0.15978649,0.0001)
+     cost.r.should be_close(-0.15978649,0.0001)
     end
 
     it 'should estimate the correct sulphur relative correlation' do
@@ -45,7 +45,7 @@ describe CorrelationByGene do
       cost = CorrelationByGene.find_by_cost_type_id_and_condition_id(relative.id,sulphur.id)
 
       cost.should_not be_nil
-      cost.should be_close(-0.15476049,0.0001)
+      cost.r.should be_close(-0.15476049,0.0001)
     end
 
   end
