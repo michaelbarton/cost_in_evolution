@@ -19,6 +19,7 @@ levels(data$cost_type)[which(levels(data$cost_type)  == 'none-wei')] <- "Molecul
 chart <- densityplot(
   ~ cost | cost_type,
   data=data,
+  pch=".",
   xlab="Frequency weighted, mean per residue protein cost",
   scale="free")
 
