@@ -77,7 +77,6 @@ namespace '003' do
     end
   end
 
-
   desc 'Clears alignment codon cost data'
   task :clear_alignment_codon_costs do
     AlignmentCodonCost.delete_all
