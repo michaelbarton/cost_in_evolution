@@ -23,24 +23,31 @@ describe CorrelationByGene do
 
     it 'should estimate the correct weight correlation' do
       weight = CostType.find_by_abbrv('wei')
-      unspecified = Condition.find_by_abbv('none')
-      CorrelationByGene.find_by_cost_type_and_condition(weight,unspecified).
-        should be_close(-0.28944959,0.0001)
+      unspecified = Condition.find_by_abbrv('none')
+      cost = CorrelationByGene.find_by_cost_type_id_and_condition_id(weight.id,unspecified.id)
+
+      cost.should_not be_nil
+      cost.should be_close(-0.28944959,0.0001)
     end
 
     it 'should estimate the correct nitrogen absolute correlation' do
       absolute = CostType.find_by_abbrv('abs')
-      nitrogen = Condition.find_by_abbv('nit')
-      CorrelationByGene.find_by_cost_type_and_condition(absolute,nitrogen).
-        should be_close(-0.15978649,0.0001)
+      nitrogen = Condition.find_by_abbrv('nit')
+      cost = CorrelationByGene.find_by_cost_type_id_and_condition_id(absolute.id,nitrogen.id)
+
+     cost.should_not be_nil
+     cost.should be_close(-0.15978649,0.0001)
     end
 
     it 'should estimate the correct sulphur relative correlation' do
       relative = CostType.find_by_abbrv('rel')
-      sulphur = Condition.find_by_abbv('sul')
-      CorrelationByGene.find_by_cost_type_and_condition(relative,sulphur).
-        should be_close(-0.15476049,0.0001)
+      sulphur = Condition.find_by_abbrv('sul')
+      cost = CorrelationByGene.find_by_cost_type_id_and_condition_id(relative.id,sulphur.id)
+
+      cost.should_not be_nil
+      cost.should be_close(-0.15476049,0.0001)
     end
+
   end
 
 end
