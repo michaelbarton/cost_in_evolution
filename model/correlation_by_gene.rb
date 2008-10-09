@@ -5,9 +5,23 @@ class CorrelationByGene < ActiveRecord::Base
 
   def self.estimate_for(alignment)
 
+    rates, costs = fetch_cost_rate_data(alignment)
+
+    costs.keys.each do |key|
+      CorrelationByGene.new(
+        :alignment_id => alignment.id,
+        :condition_id => key.first,
+        :cost_type_id => key.last,
+        :r            => Rustat::Correlation.spearman(rates,costs[key])
+      ).save!
+    end
+  end
+
+  def self.fetch_cost_rate_data(alignment)
+
     codons = AlignmentCodon.find(
       :all, 
-      :conditions => ["alignment_id = ? AND gaps = ?",444,FALSE],
+      :conditions => ["alignment_id = ? AND gaps = ?",444,false],
       :include    => [:site_mutation, :alignment_codon_costs])
 
     rates = Array.new
@@ -20,14 +34,7 @@ class CorrelationByGene < ActiveRecord::Base
       hash
     end
 
-    costs.keys.each do |key|
-      CorrelationByGene.new(
-        :alignment_id => alignment.id,
-        :condition_id => key.first,
-        :cost_type_id => key.last,
-        :r            => Rustat::Correlation.spearman(rates,costs[key])
-      ).save!
-    end
+    [rates,costs]
   end
 
 end
