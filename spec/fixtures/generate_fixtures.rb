@@ -9,7 +9,16 @@ FIXTURES_DIR = Pathname.new(File.join(File.join(File.dirname(__FILE__)))).cleanp
 
 def dump_models(models)
   hash = models.inject(Hash.new) do |hash,model|
-    hash[model.id] = model.attributes
+    hash[model.id] = model.attribute_names.inject(Hash.new) do |attributes,name|
+      if model[name].class == TrueClass
+        attributes[name] = 1
+      elsif model[name].class == FalseClass
+        attributes[name] = 0
+      else
+        attributes[name] = model[name]
+      end
+      attributes
+    end
     hash
   end
   File.open(File.join(FIXTURES_DIR,"#{models.first.class.table_name}.yml"),'w') do |file|
