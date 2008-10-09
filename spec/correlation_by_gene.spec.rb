@@ -3,7 +3,7 @@ require File.dirname(__FILE__) + '/helper.rb'
 describe CorrelationByGene do
 
   before(:all) do
-    fixtures :genes, :alignments, :alignment_codons,
+    fixtures :genes, :alignments, :alignment_codons, :site_mutations,
       :conditions, :cost_types, :alignment_codon_costs
   end
 
