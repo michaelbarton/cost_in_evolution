@@ -1,1413 +1,1413 @@
 --- 
 207477: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207477
   codons: GAG,GAA,GAA,GAA
   start_position: 576
   amino_acids: E,E,E,E
 207292: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207292
   codons: ATC,GTT,GTC,GTC
   start_position: 495
   amino_acids: I,V,V,V
 207255: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207255
   codons: ACT,ACT,ACC,ACT
   start_position: 465
   amino_acids: T,T,T,T
 207144: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207144
   codons: TGT,TGT,TGT,TGC
   start_position: 432
   amino_acids: C,C,C,C
 207070: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207070
   codons: ACG,AAA,AGG,AAA
   start_position: 384
   amino_acids: T,K,R,K
 206404: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206404
   codons: AGC,AGT,AGT,AAT
   start_position: 87
   amino_acids: S,S,S,N
 206589: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206589
   codons: TGT,TGT,TGT,TGT
   start_position: 168
   amino_acids: C,C,C,C
 206330: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206330
   codons: ---,---,---,GAC
   start_position: 45
   amino_acids: X,X,X,D
 207496: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207496
   codons: AAG,AAG,AAG,AAG
   start_position: 588
   amino_acids: K,K,K,K
 207237: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207237
   codons: CAG,CAA,CAG,CAA
   start_position: 453
   amino_acids: Q,Q,Q,Q
 207163: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207163
   codons: GCT,GGT,GGT,GGT
   start_position: 444
   amino_acids: A,G,G,G
 206386: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206386
   codons: ---,---,---,GAA
   start_position: 78
   amino_acids: X,X,X,E
 206423: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206423
   codons: GGG,GGA,GGT,GGC
   start_position: 99
   amino_acids: G,G,G,G
 206830: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206830
   codons: GCC,GCA,GCC,GCC
   start_position: 279
   amino_acids: A,A,A,A
 206497: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206497
   codons: TGG,TGG,TGG,TGG
   start_position: 117
   amino_acids: W,W,W,W
 206534: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206534
   codons: GTT,ATC,GTT,ATT
   start_position: 138
   amino_acids: V,I,V,I
 206608: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206608
   codons: CGA,CAG,CAA,CAG
   start_position: 180
   amino_acids: R,Q,Q,Q
 206312: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206312
   codons: ---,---,---,AAA
   start_position: 36
   amino_acids: X,X,X,K
 207330: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207330
   codons: TGG,TGG,TGG,TGG
   start_position: 516
   amino_acids: W,W,W,W
 207108: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207108
   codons: GTT,ATT,ATT,ATT
   start_position: 411
   amino_acids: V,I,I,I
 206812: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206812
   codons: TGG,TGG,TGG,TGG
   start_position: 270
   amino_acids: W,W,W,W
 207275: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207275
   codons: AAT,AAT,AAC,AAC
   start_position: 483
   amino_acids: N,N,N,N
 207053: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207053
   codons: AAG,AAG,AAG,AAG
   start_position: 378
   amino_acids: K,K,K,K
 206572: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206572
   codons: CAA,CAA,CAA,CAA
   start_position: 159
   amino_acids: Q,Q,Q,Q
 206646: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206646
   codons: GTA,ATC,ATA,ATA
   start_position: 204
   amino_acids: V,I,I,I
 206350: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206350
   codons: ---,---,---,TGT
   start_position: 57
   amino_acids: X,X,X,C
 207516: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207516
   codons: TTT,TAT,TTT,TTT
   start_position: 597
   amino_acids: F,Y,F,F
 207479: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207479
   codons: AGT,ACT,ACC,ACT
   start_position: 579
   amino_acids: S,T,T,T
 207368: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207368
   codons: GGC,GGT,GGC,GGC
   start_position: 537
   amino_acids: G,G,G,G
 207072: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207072
   codons: AAG,ATG,AAC,AAG
   start_position: 387
   amino_acids: K,M,N,K
 206776: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206776
   codons: CAC,CAC,CAC,CAC
   start_position: 252
   amino_acids: H,H,H,H
 206480: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206480
   codons: GTA,GTG,GTG,GTG
   start_position: 108
   amino_acids: V,V,V,V
 206850: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206850
   codons: CCT,GCA,TCA,TCG
   start_position: 288
   amino_acids: P,A,S,S
 206517: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206517
   codons: GAA,GAA,GAA,GAA
   start_position: 129
   amino_acids: E,E,E,E
 206887: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206887
   codons: GGC,---,---,---
   start_position: 312
   amino_acids: G,X,X,X
 206628: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206628
   codons: GAC,GAT,GAT,GAT
   start_position: 192
   amino_acids: D,D,D,D
 206665: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206665
   codons: GTC,GTT,ACG,ACT
   start_position: 219
   amino_acids: V,V,T,T
 207461: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207461
   codons: TGT,TGC,TGT,TGT
   start_position: 567
   amino_acids: C,C,C,C
 207387: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207387
   codons: TTC,TTC,TTC,TTC
   start_position: 549
   amino_acids: F,F,F,F
 207313: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207313
   codons: GTG,GTG,GTG,GTG
   start_position: 507
   amino_acids: V,V,V,V
 207165: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207165
   codons: GCT,GCT,GCT,GCT
   start_position: 447
   amino_acids: A,A,A,A
 207128: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207128
   codons: TGT,TCT,TGT,TGT
   start_position: 423
   amino_acids: C,S,C,C
 206980: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206980
   codons: AAA,AAG,AAA,AAA
   start_position: 342
   amino_acids: K,K,K,K
 206795: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206795
   codons: ATG,ATG,ATG,ATG
   start_position: 261
   amino_acids: M,M,M,M
 206758: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206758
   codons: TCA,TCA,TCC,TCT
   start_position: 240
   amino_acids: S,S,S,S
 207258: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207258
   codons: TTG,TTA,TTA,TTG
   start_position: 468
   amino_acids: L,L,L,L
 206999: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206999
   codons: AAG,AAG,AAG,AAG
   start_position: 351
   amino_acids: K,K,K,K
 206555: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206555
   codons: TCG,TCG,TCG,TCA
   start_position: 150
   amino_acids: S,S,S,S
 206592: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206592
   codons: TGC,TGT,TGC,TGC
   start_position: 171
   amino_acids: C,C,C,C
 206259: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206259
   codons: ---,---,---,TTA
   start_position: 9
   amino_acids: X,X,X,L
 206333: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206333
   codons: ---,---,---,AGG
   start_position: 48
   amino_acids: X,X,X,R
 206870: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206870
   codons: AAT,AAC,CAC,AAC
   start_position: 300
   amino_acids: N,N,H,N
 206537: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206537
   codons: GAT,GAT,GAT,GAT
   start_position: 141
   amino_acids: D,D,D,D
 206741: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206741
   codons: AAA,AAG,AAA,AAA
   start_position: 231
   amino_acids: K,K,K,K
 207500: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207500
   codons: GGC,GGA,GGT,GGT
   start_position: 591
   amino_acids: G,G,G,G
 207352: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207352
   codons: ACA,ACA,ACG,ACG
   start_position: 528
   amino_acids: T,T,T,T
 207093: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207093
   codons: CCG,CCA,CCA,CCA
   start_position: 402
   amino_acids: P,P,P,P
 207019: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207019
   codons: AAT,AGC,AAT,AAT
   start_position: 360
   amino_acids: N,S,N,N
 206908: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206908
   codons: AAA,AAA,AAA,AAA
   start_position: 327
   amino_acids: K,K,K,K
 206279: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206279
   codons: ---,---,---,AAA
   start_position: 21
   amino_acids: X,X,X,K
 207149: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207149
   codons: GGT,GGT,GGC,GGC
   start_position: 435
   amino_acids: G,G,G,G
 207038: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207038
   codons: CAT,CAT,CAT,CAT
   start_position: 369
   amino_acids: H,H,H,H
 206890: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206890
   codons: AAT,---,---,---
   start_position: 315
   amino_acids: N,X,X,X
 206335: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206335
   codons: ---,---,---,AAC
   start_position: 51
   amino_acids: X,X,X,N
 206372: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206372
   codons: ---,---,---,GTA
   start_position: 69
   amino_acids: X,X,X,V
 206409: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206409
   codons: AAG,AAG,AAG,AAG
   start_position: 90
   amino_acids: K,K,K,K
 206576: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206576
   codons: GCA,GCT,GCA,GCA
   start_position: 162
   amino_acids: A,A,A,A
 206650: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206650
   codons: CTA,CTA,CTC,CTT
   start_position: 207
   amino_acids: L,L,L,L
 206724: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206724
   codons: CAG,CAA,CAA,CAA
   start_position: 222
   amino_acids: Q,Q,Q,Q
 206391: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206391
   codons: ---,---,---,GAA
   start_position: 81
   amino_acids: X,X,X,E
 206428: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206428
   codons: AAA,AGA,AAG,AAA
   start_position: 102
   amino_acids: K,R,K,K
 206502: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206502
   codons: AAC,AAT,AAT,AAT
   start_position: 120
   amino_acids: N,N,N,N
 206872: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206872
   codons: TCA,TTT,TTA,TTT
   start_position: 303
   amino_acids: S,F,L,F
 207520: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207520
   codons: CTG,CTT,CTT,CTT
   start_position: 600
   amino_acids: L,L,L,L
 207335: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207335
   codons: TAC,TAT,TAT,TAC
   start_position: 519
   amino_acids: Y,Y,Y,Y
 207298: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207298
   codons: CTA,CTA,TTG,CTA
   start_position: 498
   amino_acids: L,L,L,L
 207113: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207113
   codons: GAA,GAA,GAG,GAG
   start_position: 414
   amino_acids: E,E,E,E
 207391: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207391
   codons: AGA,AGA,AGA,AGA
   start_position: 552
   amino_acids: R,R,R,R
 207280: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207280
   codons: ATC,ATA,ATA,ATA
   start_position: 486
   amino_acids: I,I,I,I
 207243: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207243
   codons: CGC,CGT,CGT,CGT
   start_position: 456
   amino_acids: R,R,R,R
 207132: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207132
   codons: GCT,GCT,GCT,GCT
   start_position: 426
   amino_acids: A,A,A,A
 206614: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206614
   codons: AAT,GAT,AAT,AAT
   start_position: 183
   amino_acids: N,D,N,N
 206318: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206318
   codons: ---,---,---,GCC
   start_position: 39
   amino_acids: X,X,X,A
 206355: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206355
   codons: ---,---,---,TTG
   start_position: 60
   amino_acids: X,X,X,L
 206762: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206762
   codons: AAG,AAG,AAG,AAG
   start_position: 243
   amino_acids: K,K,K,K
 207484: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207484
   codons: TTG,TTG,TTA,TTG
   start_position: 582
   amino_acids: L,L,L,L
 207262: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207262
   codons: CTT,CTT,CTT,CTT
   start_position: 471
   amino_acids: L,L,L,L
 207077: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207077
   codons: ATA,GTA,ATA,GTA
   start_position: 390
   amino_acids: I,V,I,V
 207003: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207003
   codons: AAT,AAA,AGT,AGT
   start_position: 354
   amino_acids: N,K,S,S
 206263: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206263
   codons: ---,---,---,TCA
   start_position: 12
   amino_acids: X,X,X,S
 206300: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206300
   codons: ---,---,---,ACA
   start_position: 27
   amino_acids: X,X,X,T
 206855: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206855
   codons: AGT,AAT,AAT,AAC
   start_position: 291
   amino_acids: S,N,N,N
 207466: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207466
   codons: GCA,GCA,GCA,GCC
   start_position: 570
   amino_acids: A,A,A,A
 207318: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207318
   codons: ACT,ACG,ACC,ACC
   start_position: 510
   amino_acids: T,T,T,T
 206800: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206800
   codons: TAT,TAT,TAT,TAT
   start_position: 264
   amino_acids: Y,Y,Y,Y
 207152: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207152
   codons: GAG,GAA,GAA,GAA
   start_position: 438
   amino_acids: E,E,E,E
 206412: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206412
   codons: AAT,AAT,AAT,AAT
   start_position: 93
   amino_acids: N,N,N,N
 206486: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206486
   codons: AAA,AAA,AAA,AGA
   start_position: 111
   amino_acids: K,K,K,R
 206523: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206523
   codons: GTC,GTT,GTT,GTT
   start_position: 132
   amino_acids: V,V,V,V
 207393: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207393
   codons: CAT,CAT,CAC,CAC
   start_position: 555
   amino_acids: H,H,H,H
 207097: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207097
   codons: AAG,AAA,AAG,AAG
   start_position: 405
   amino_acids: K,K,K,K
 206986: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206986
   codons: AAT,AAC,GCA,ACT
   start_position: 345
   amino_acids: N,N,A,T
 206727: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206727
   codons: AGC,AAC,AAC,AAC
   start_position: 225
   amino_acids: S,N,N,N
 206246: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206246
   codons: ---,---,---,ATG
   start_position: 0
   amino_acids: X,X,X,M
 207375: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207375
   codons: TCG,TCA,TCA,TCA
   start_position: 540
   amino_acids: S,S,S,S
 207301: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207301
   codons: GTA,GTA,GTA,GTA
   start_position: 501
   amino_acids: V,V,V,V
 207042: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207042
   codons: GGC,GCT,GTT,GCT
   start_position: 372
   amino_acids: G,A,V,A
 206820: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206820
   codons: AGG,AGA,AGA,AGA
   start_position: 273
   amino_acids: R,R,R,R
 206561: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206561
   codons: AAA,AAA,AAA,AAA
   start_position: 153
   amino_acids: K,K,K,K
 206968: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206968
   codons: AAT,AGC,GGC,AGC
   start_position: 336
   amino_acids: N,S,G,S
 206635: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206635
   codons: ATT,ATA,ATA,ATA
   start_position: 195
   amino_acids: I,I,I,I
 206302: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206302
   codons: ---,---,---,TTA
   start_position: 30
   amino_acids: X,X,X,L
 207283: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207283
   codons: TTC,TTT,TTC,TTC
   start_position: 489
   amino_acids: F,F,F,F
 206839: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206839
   codons: GAA,GAA,GAG,GAA
   start_position: 282
   amino_acids: E,E,E,E
 206913: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206913
   codons: AAG,AAG,AAG,AAG
   start_position: 330
   amino_acids: K,K,K,K
 206617: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206617
   codons: CAG,CAG,CAA,CAG
   start_position: 186
   amino_acids: Q,Q,Q,Q
 206284: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206284
   codons: ---,---,---,AAG
   start_position: 24
   amino_acids: X,X,X,K
 206654: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206654
   codons: GAA,CAA,CAA,CAG
   start_position: 210
   amino_acids: E,Q,Q,Q
 206377: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206377
   codons: ---,---,---,TTT
   start_position: 72
   amino_acids: X,X,X,F
 206747: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206747
   codons: AGT,GCC,AGC,AGC
   start_position: 234
   amino_acids: S,A,S,S
 206895: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206895
   codons: CAA,CAA,CAA,CAA
   start_position: 318
   amino_acids: Q,Q,Q,Q
 206766: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206766
   codons: GCC,GCA,GCA,GCA
   start_position: 246
   amino_acids: A,A,A,A
 206877: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206877
   codons: CAG,CAG,CAA,CAG
   start_position: 306
   amino_acids: Q,Q,Q,Q
 207266: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207266
   codons: GAG,GAG,GAA,GAG
   start_position: 474
   amino_acids: E,E,E,E
 207081: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207081
   codons: ACG,ATA,ACG,ACG
   start_position: 393
   amino_acids: T,I,T,T
 206859: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206859
   codons: GAT,GAG,AAT,GAT
   start_position: 294
   amino_acids: D,E,N,D
 206600: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206600
   codons: ACT,ACA,CCA,ACA
   start_position: 174
   amino_acids: T,T,P,T
 207359: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207359
   codons: CCT,CCT,CCT,CCT
   start_position: 531
   amino_acids: P,P,P,P
 207137: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207137
   codons: GAC,GAC,GAC,GAC
   start_position: 429
   amino_acids: D,D,D,D
 207100: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207100
   codons: AAT,AAT,AAC,AAC
   start_position: 408
   amino_acids: N,N,N,N
 206508: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206508
   codons: GAA,GAG,GAA,GAA
   start_position: 123
   amino_acids: E,E,E,E
 206582: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206582
   codons: AGA,AGG,AGA,AGA
   start_position: 165
   amino_acids: R,R,R,R
 206249: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206249
   codons: ---,---,---,CAT
   start_position: 3
   amino_acids: X,X,X,H
 206397: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206397
   codons: ATG,ATG,ATG,ATG
   start_position: 84
   amino_acids: M,M,M,M
 207378: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207378
   codons: TCT,TCT,TCA,TCA
   start_position: 543
   amino_acids: S,S,S,S
 207341: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207341
   codons: GGG,GGT,GGT,GGT
   start_position: 522
   amino_acids: G,G,G,G
 207119: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207119
   codons: CAA,CAA,CAA,CAA
   start_position: 417
   amino_acids: Q,Q,Q,Q
 207508: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207508
   codons: GGA,GGA,GGA,GAA
   start_position: 594
   amino_acids: G,G,G,E
 207471: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207471
   codons: GTG,GTG,GTG,GTG
   start_position: 573
   amino_acids: V,V,V,V
 207397: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207397
   codons: ATC,ATT,ATT,ATT
   start_position: 558
   amino_acids: I,I,I,I
 207249: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207249
   codons: TTA,TTG,TTA,TTA
   start_position: 459
   amino_acids: L,L,L,L
 207027: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207027
   codons: AAC,AAC,AGT,AGG
   start_position: 363
   amino_acids: N,N,S,R
 206546: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206546
   codons: AGA,AGG,AGA,AGA
   start_position: 144
   amino_acids: R,R,R,R
 206916: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206916
   codons: AAA,AAG,AAG,AAG
   start_position: 333
   amino_acids: K,K,K,K
 207527: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207527
   codons: CCC,CAT,CCT,CCT
   start_position: 603
   amino_acids: P,H,P,P
 207490: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207490
   codons: AAA,AAG,AAG,AAG
   start_position: 585
   amino_acids: K,K,K,K
 206491: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206491
   codons: GTC,ATA,ATA,ATA
   start_position: 114
   amino_acids: V,I,I,I
 206269: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206269
   codons: ---,---,---,CCT
   start_position: 15
   amino_acids: X,X,X,P
 206639: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206639
   codons: TCC,CCT,CCC,CCC
   start_position: 198
   amino_acids: S,P,P,P
 206787: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206787
   codons: ATG,ATG,ATG,ATG
   start_position: 255
   amino_acids: M,M,M,M
 207324: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207324
   codons: AGA,CGA,AGA,AGA
   start_position: 513
   amino_acids: R,R,R,R
 206658: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206658
   codons: GAA,GAC,GAA,GAA
   start_position: 213
   amino_acids: E,D,E,E
 206325: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206325
   codons: ---,---,---,CTA
   start_position: 42
   amino_acids: X,X,X,L
 206362: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206362
   codons: ---,---,---,ACA
   start_position: 63
   amino_acids: X,X,X,T
 206806: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206806
   codons: GCT,GCC,GCC,GCC
   start_position: 267
   amino_acids: A,A,A,A
 207158: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207158
   codons: GCC,GCC,GCT,GCT
   start_position: 441
   amino_acids: A,A,A,A
 207084: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207084
   codons: GTT,GTA,GTG,ATG
   start_position: 396
   amino_acids: V,V,V,M
 206529: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206529
   codons: TTA,TTA,TTA,TTA
   start_position: 135
   amino_acids: L,L,L,L
 206566: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206566
   codons: TTT,TTT,TTT,TTT
   start_position: 156
   amino_acids: F,F,F,F
 206603: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206603
   codons: TTA,TTA,TTA,TTA
   start_position: 177
   amino_acids: L,L,L,L
 206973: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206973
   codons: GGT,AGC,AAT,AGT
   start_position: 339
   amino_acids: G,S,N,S
 206381: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206381
   codons: ---,---,---,TGT
   start_position: 75
   amino_acids: X,X,X,C
 207288: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207288
   codons: AAC,AAC,AAC,AAC
   start_position: 492
   amino_acids: N,N,N,N
 207251: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207251
   codons: TTG,TTG,TTG,TTG
   start_position: 462
   amino_acids: L,L,L,L
 207066: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207066
   codons: ACA,TCA,TCA,TCA
   start_position: 381
   amino_acids: T,S,S,S
 207270: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207270
   codons: AGA,AGA,AGA,AGA
   start_position: 477
   amino_acids: R,R,R,R
 206308: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206308
   codons: ---,---,---,TAT
   start_position: 33
   amino_acids: X,X,X,Y
 206345: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206345
   codons: ---,---,---,CAA
   start_position: 54
   amino_acids: X,X,X,Q
 206752: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206752
   codons: GTT,GTT,GTC,GTT
   start_position: 237
   amino_acids: V,V,V,V
 206826: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206826
   codons: ACG,ACA,ACG,ACG
   start_position: 276
   amino_acids: T,T,T,T
 206863: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206863
   codons: TCG,TTG,TTG,TTG
   start_position: 297
   amino_acids: S,L,L,L
 206900: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206900
   codons: GAC,GAC,GAG,GAG
   start_position: 321
   amino_acids: D,D,E,E
 206993: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206993
   codons: CAC,AAC,AAT,AAT
   start_position: 348
   amino_acids: H,N,N,N
 206475: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206475
   codons: TTA,CTA,CTA,CTA
   start_position: 105
   amino_acids: L,L,L,L
 206845: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206845
   codons: GTA,ATA,GTA,ATA
   start_position: 285
   amino_acids: V,I,V,I
 206882: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206882
   codons: CAT,---,---,---
   start_position: 309
   amino_acids: H,X,X,X
 207456: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207456
   codons: ACC,ACT,ACA,ACT
   start_position: 564
   amino_acids: T,T,T,T
 207382: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207382
   codons: AGA,AGA,AGA,AGA
   start_position: 546
   amino_acids: R,R,R,R
 207308: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207308
   codons: ATA,ATA,ATA,ATA
   start_position: 504
   amino_acids: I,I,I,I
 207234: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207234
   codons: GGA,GGA,GGA,GGG
   start_position: 450
   amino_acids: G,G,G,G
 206272: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206272
   codons: ---,---,---,ATA
   start_position: 18
   amino_acids: X,X,X,I
 206420: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206420
   codons: GTG,GTT,GTT,GTT
   start_position: 96
   amino_acids: V,V,V,V
 206790: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206790
   codons: CAC,CAC,CAC,CAC
   start_position: 258
   amino_acids: H,H,H,H
 207401: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207401
   codons: TCA,TCC,TCA,TCA
   start_position: 561
   amino_acids: S,S,S,S
 207364: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207364
   codons: TTG,CTG,TTG,TTG
   start_position: 534
   amino_acids: L,L,L,L
 207031: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 207031
   codons: AAT,---,---,---
   start_position: 366
   amino_acids: N,X,X,X
 206624: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206624
   codons: AAG,AAA,AAG,AAG
   start_position: 189
   amino_acids: K,K,K,K
 206772: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206772
   codons: TCC,TCC,TCC,TCC
   start_position: 249
   amino_acids: S,S,S,S
 206513: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206513
   codons: TCA,TCT,TCA,TCA
   start_position: 126
   amino_acids: S,S,S,S
 207272: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207272
   codons: GCT,GCA,GCA,GCA
   start_position: 480
   amino_acids: A,A,A,A
 207124: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207124
   codons: GGC,GGA,GGA,GGA
   start_position: 420
   amino_acids: G,G,G,G
 207087: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207087
   codons: CAA,CAG,CAG,CAA
   start_position: 399
   amino_acids: Q,Q,Q,Q
 207050: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207050
   codons: AAC,AAT,AAC,GAC
   start_position: 375
   amino_acids: N,N,N,D
 207013: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207013
   codons: AAT,AGT,AAT,AAT
   start_position: 357
   amino_acids: N,S,N,N
 206643: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206643
   codons: TCT,TTC,TCC,TTC
   start_position: 201
   amino_acids: S,F,S,F
 206662: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206662
   codons: TTA,TTG,CTA,TTA
   start_position: 216
   amino_acids: L,L,L,L
 206366: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206366
   codons: ---,---,---,TCA
   start_position: 66
   amino_acids: X,X,X,S
 206736: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206736
   codons: AAT,AAT,AAC,AAT
   start_position: 228
   amino_acids: N,N,N,N
 206551: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206551
   codons: AAA,AAA,AAA,AAA
   start_position: 147
   amino_acids: K,K,K,K
 206255: 
-  gaps: true
+  gaps: 1
   alignment_id: 444
   id: 206255
   codons: ---,---,---,CAC
   start_position: 6
   amino_acids: X,X,X,H
 207347: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 207347
   codons: GGT,GGC,GGC,GGC
   start_position: 525
   amino_acids: G,G,G,G
 206903: 
-  gaps: false
+  gaps: 0
   alignment_id: 444
   id: 206903
   codons: CAG,CAG,CAG,CAG
