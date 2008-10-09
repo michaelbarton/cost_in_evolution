@@ -1,7 +1,8 @@
 SELECT
   genes.name AS gene,
   CONCAT(conditions.abbrv, '-', cost_types.abbrv) AS cost_type,
-  AVG(alignment_codon_costs.mean) AS cost
+  AVG(alignment_codon_costs.mean) AS cost,
+  STDDEV(alignment_codon_costs.mean) AS dev
 FROM
   alignment_codon_costs
 LEFT JOIN
