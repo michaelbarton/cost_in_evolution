@@ -21,7 +21,7 @@ class CorrelationByGene < ActiveRecord::Base
 
     codons = AlignmentCodon.find(
       :all, 
-      :conditions => ["alignment_id = ? AND gaps = ?",444,false],
+      :conditions => ["alignment_id = ? AND gaps = ?",alignment.id,false],
       :include    => [:site_mutation, :alignment_codon_costs])
 
     rates = Array.new
