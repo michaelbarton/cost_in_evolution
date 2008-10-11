@@ -31,7 +31,7 @@ r.register(:config) { YAML::load(File.open(File.dirname(__FILE__) + '/config.yml
 r.register(:logger) { Logger.new(r.config['log']['analysis']) }
 r.register(:database_connections) {YAML::load(File.open(File.dirname(__FILE__) + '/database.yml'))}
 
-ActiveRecord::Base.logger = Logger.new(File.join(File.dirname(__FILE__),'..',r.config['log']['db']))
+ActiveRecord::Base.logger = Logger.new(r.config['log']['db'])
 ActiveRecord::Base.establish_connection(r[:database_connections]['default'])
 
 Dir.glob(File.dirname(__FILE__) + '/../model/*.rb') {|file| require file}
