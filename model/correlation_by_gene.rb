@@ -8,12 +8,15 @@ class CorrelationByGene < ActiveRecord::Base
     rates, costs = fetch_cost_rate_data(alignment)
 
     costs.keys.each do |key|
-      CorrelationByGene.new(
-        :alignment_id => alignment.id,
-        :condition_id => key.first,
-        :cost_type_id => key.last,
-        :r            => Rustat::Correlation.spearman(rates,costs[key])
-      ).save!
+      r = Rustat::Correlation.spearman(rates,costs[key])
+      if r <= 1 and r >= -1
+        CorrelationByGene.new(
+          :alignment_id => alignment.id,
+          :condition_id => key.first,
+          :cost_type_id => key.last,
+          :r            => r
+        ).save!
+      end
     end
   end
 
