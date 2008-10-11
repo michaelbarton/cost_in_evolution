@@ -14,11 +14,12 @@ namespace '004' do
   task :print_gene_correlation_data do
     target = File.join(File.dirname(__FILE__),'r','data','correlation_by_gene.csv')
     FasterCSV.open(target,'w') do |csv|
+      csv << ["gene","condition","cost_type","r"]
       CorrelationByGene.each do |cor|
         csv << [
           cor.alignment.gene.name,
-          cor.condition.name,
-          cor.cost_type.name,
+          cor.condition.abbrv,
+          cor.cost_type.abbrv,
           cor.r
         ]
       end
