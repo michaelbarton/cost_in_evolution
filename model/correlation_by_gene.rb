@@ -1,7 +1,7 @@
 class CorrelationByGene < ActiveRecord::Base
-  has_one :alignment
-  has_one :condition
-  has_one :cost_type
+  belongs_to :alignment
+  belongs_to :condition
+  belongs_to :cost_type
 
   def self.estimate_for(alignment)
 
