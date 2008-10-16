@@ -2,6 +2,7 @@ class Gene < ActiveRecord::Base
   include Validatable
 
   has_many :alignments
+  has_many :flux_sensitivities
 
   validates_presence_of :name, :dna
 
