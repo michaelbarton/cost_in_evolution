@@ -8,3 +8,4 @@ log/*
 www/site/*.html
 analysis/*/r/plots/*
 analysis/*/r/data/*
+analysis/*/r/results/*
