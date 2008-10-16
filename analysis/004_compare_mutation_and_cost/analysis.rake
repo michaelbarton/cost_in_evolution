@@ -52,4 +52,24 @@ namespace '004' do
       end
     end
   end
+
+  desc 'Print cost versus site rate'
+  task :print_cost_vs_site_rate do
+    target = File.join(File.dirname(__FILE__),'r','data','site_vs_rate_cost.csv')
+    FasterCSV.open(target,'w') do |csv|
+      csv << ['rate','cost','cost_type','condition']
+      AlignmentCodon.each do |codon|
+        next if codon.gaps == true
+        codon.alignment_codon_costs.each do |cost|
+          csv << [
+            codon.site_mutation.rate,
+            cost.mean,
+            cost.condition.abbrv,
+            cost.cost_type.abbrv
+          ]
+        end
+      end
+    end
+  end
+ 
 end
