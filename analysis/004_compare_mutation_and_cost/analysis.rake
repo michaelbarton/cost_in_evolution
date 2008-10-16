@@ -26,5 +26,30 @@ namespace '004' do
       end
     end
   end
- 
+
+  desc 'Print gene cost vs rate data'
+  task :print_gene_cost_rate_data do
+    target = File.join(File.dirname(__FILE__),'r','data','gene_cost_rate.csv')
+    FasterCSV.open(target,'w') do |csv|
+      csv << ["gene","cost","tree_length","cost_type","condition"]
+      Alignment.each do |align|
+        CostType.each  do |cost|
+          Condition.each do |condition|
+            costs = AlignmentCodonCost.find(:all,
+              :conditions => ["condition_id = ? AND cost_type_id = ? AND alignment_id = ? AND gaps = ?",condition.id,cost.id,align.id,false],
+              :joins => "LEFT JOIN alignment_codons ON alignment_codons.id = alignment_codon_costs.alignment_codon_id")
+            if costs.size > 0
+              csv << [
+                align.gene.name,
+                Rustat::Summary.mean(costs.map{|c| c.mean}),
+                GeneMutation.find_by_alignment_id_and_dataset(align.id,'Barton2009').estimated_rate,
+                cost.abbrv,
+                condition.abbrv
+                ]
+            end
+          end
+        end
+      end
+    end
+  end
 end
