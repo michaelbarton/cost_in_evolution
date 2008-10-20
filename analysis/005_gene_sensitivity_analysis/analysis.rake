@@ -41,6 +41,31 @@ namespace '005' do
     end
   end
 
+  desc 'Print flux sensitivity table'
+  task :print_flux_sensitivity_data do
+    target = File.join(File.dirname(__FILE__),'r','data','flux_sensitivity_data.csv')
+    header = ["gene","condition","cost_type","reaction","sensitivity"]
+
+    FasterCSV.open(target,'w') do |csv|
+      csv << header
+
+      # Iterate over the table and print each row, using joined attributes where necessary
+      FluxSensitivity.each do |flux|
+
+        if flux.gene then name = flux.gene.name else name = nil end
+
+        csv << [
+          name,
+          flux.condition.abbrv,
+          flux.cost_type.abbrv,
+          flux.reaction_name,
+          flux.estimate
+        ]
+      end
+    end
+
+  end
+
   desc 'Plot site correlation including flux sensitivity'
   task :print_gene_cost_by_flux do
     target = File.join(File.dirname(__FILE__),'r','data','gene_cost_by_flux.csv')
