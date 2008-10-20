@@ -24,15 +24,19 @@ namespace '005' do
     FasterCSV.open(data,:headers => true,:col_sep => "\t").each do |row|
       gene = Gene.find_by_name(row['gene'])
       if gene
-        cost_types.each do |name,cost|
-          FluxSensitivity.new(
-            :gene_id       => gene.id,
-            :condition_id  => conditions[row['environment']],
-            :cost_type_id  => cost,
-            :reaction_name => row['reaction'],
-            :estimate      => row[name]
-          ).save!
-        end
+        gene_id = gene.id
+      else
+        gene_id = nil
+      end
+
+      cost_types.each do |name,cost|
+        FluxSensitivity.new(
+          :gene_id       => gene_id,
+          :condition_id  => conditions[row['environment']],
+          :cost_type_id  => cost,
+          :reaction_name => row['reaction'],
+          :estimate      => row[name]
+        ).save!
       end
     end
   end
