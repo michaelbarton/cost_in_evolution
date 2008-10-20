@@ -6,7 +6,7 @@ namespace '005' do
   end
 
   desc 'Loads flux sensitivity data'
-  task :load_flux_sensitivity_data do
+  task :load_flux_sensitivity_data => :clear_flux_sensitivity_data do
 
     conditions = {
       "EX_so4(e)" => Condition.find_by_abbrv('sul').id,
