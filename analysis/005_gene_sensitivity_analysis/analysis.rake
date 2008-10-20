@@ -23,6 +23,7 @@ namespace '005' do
     data = File.join(PROJECT_ROOT,'data','reaction_fluxes.txt')
     FasterCSV.open(data,:headers => true,:col_sep => "\t").each do |row|
       gene = Gene.find_by_name(row['gene'])
+
       if gene
         gene_id = gene.id
       else
