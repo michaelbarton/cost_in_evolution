@@ -25,4 +25,15 @@ class Gene < ActiveRecord::Base
        "Load gene: #{gene.name} is not a valid coding ORF")
     end
   end
+
+  def average_residue_weight
+    length = Bio::Sequence::NA.new(self.dna).translate.gsub('*','').length
+    total_protein_weight / length
+  end
+
+  def total_protein_weight
+    protein_less_stops = Bio::Sequence::NA.new(self.dna).translate.gsub('*','')
+    protein_less_stops.molecular_weight
+  end
+
 end
