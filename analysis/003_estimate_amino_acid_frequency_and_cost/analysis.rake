@@ -93,10 +93,10 @@ namespace '003' do
     16.times { p.call }
   end
 
-  desc 'Prints average gene cost to file'
-  task :print_average_gene_costs do
-    target = File.join(File.dirname(__FILE__),'r','data','average_protein_costs.csv')
-    sql = File.join(File.dirname(__FILE__),'sql','average_protein_costs.sql')
+  desc 'Prints average alignment cost to file'
+  task :print_average_alignment_costs do
+    target = File.join(File.dirname(__FILE__),'r','data','average_alignment_costs.csv')
+    sql = File.join(File.dirname(__FILE__),'sql','average_alignment_costs.sql')
     output_from_sql(sql,target)
   end
 

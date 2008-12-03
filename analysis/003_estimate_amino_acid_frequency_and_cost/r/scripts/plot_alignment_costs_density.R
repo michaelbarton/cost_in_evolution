@@ -1,7 +1,7 @@
 rm(list=ls())
 library(lattice)
 
-file = paste(getwd(),'../data/average_protein_costs.csv',sep='/')
+file = paste(getwd(),'../data/average_alignment_costs.csv',sep='/')
 data = read.csv(file)
 #data$cost_type <- levels(data$cost_type)
 
@@ -23,7 +23,7 @@ chart <- densityplot(
   xlab="Frequency weighted, mean per residue protein cost",
   scale="free")
 
-postscript(paste(getwd(),'../plots/average_gene_cost_density.eps',sep='/'),
+postscript(paste(getwd(),'../plots/average_alignment_cost_density.eps',sep='/'),
   width=10,height=10,onefile=FALSE,horizontal=FALSE, paper = "special")
 print(chart)
 graphics.off()
