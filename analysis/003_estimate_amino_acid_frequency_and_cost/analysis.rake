@@ -107,4 +107,19 @@ namespace '003' do
     output_from_sql(sql,target)
   end
 
+  desc 'Prints gene cost data to file'
+  task :print_average_gene_costs do
+    target = File.join(File.dirname(__FILE__),'r','data','gene_costs.csv')
+    FasterCSV.open(target,'w') do |csv|
+      csv << %w| gene total mean alignment |
+      Gene.each do |gene|
+        csv <<[
+          gene.name,
+          gene.total_protein_weight,
+          gene.average_residue_weight,
+          gene.alignments.size > 0
+        ]
+      end
+    end
+  end
 end
