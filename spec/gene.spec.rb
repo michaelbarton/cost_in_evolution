@@ -2,9 +2,9 @@ require File.dirname(__FILE__) + '/helper.rb'
 
 describe Gene do
 
- before(:all) do
-   fixtures
- end
+  before(:all) do
+    fixtures
+  end
 
   describe 'creating a valid gene' do
 
@@ -33,6 +33,18 @@ describe Gene do
       gene = Gene.create_from_flatfile( Bio::FlatFile.auto(GENE).next_entry )
       gene.dna.should == 'ATGAGTAAGAATGTTGGTAAGCTAGTGAAAATATGGAATGAATCAGAAGTTTTAGTTGATAGAAAATCGAAATTTCAAGCAAGATGTTGCCCATTACAAAATCAAAAGGATATACCCTCCATACTCCAAGAACTAACGCAAAACAACAAAAGCGTCTCCAAGGCATCCCACATGCACATGTATGCCTGGAGAACGGCCGAGGTATCAAATAATTTGCACTTACAACAAGAGCAGAAAAAGAAGGGCAATAAAGCAAATAAGAGTAATAATAGTCATGTTAACAAGTCAAGGAACATAACGGTGCAGCCAAAGAACATTGAGCAAGGATGTGCTGACTGTGGCGAAGCTGGTGCTGGACAGCGTTTATTGACCTTACTTGAAAGAGCAAACATATTCAACGTCTTGGTAATAGTGACCAGATGGTATGGTGGCACGCCTTTGGGCTCATCAAGATTCAGACACATTTCAACATGTGCAGTGGAAACCTTAAAGAAGGGTGGATTTCTTCCTTAA'
       gene.destroy
+    end
+
+  end
+
+  describe 'an existing gene' do
+
+    it 'should return the expected molecular weight' do
+      Factory(:gene).total_protein_weight.should be_close(19057.8242, 0.1)
+    end
+
+    it 'should return the average residue weight' do
+      Factory(:gene).average_residue_weight.should be_close(112.104, 0.1)
     end
 
   end
